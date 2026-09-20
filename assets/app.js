@@ -110,16 +110,22 @@
     });
 
     var card = el("div", { class: "card", id: cardId, hidden: true }, [
-      el("h3", { text: "What is this, really?" }),
-      el("p", { class: "intro", text: st.intro }),
-      st.ar ? el("span", { class: "aside-ar", lang: "ar", dir: "rtl", text: st.ar }) : null,
-      el("h3", { text: "For example" }),
-      el("p", { class: "example", text: st.example }),
-      el("h3", { text: "Why you will care" }),
-      el("p", { text: st.why }),
-      el("h3", { text: "Go here" }),
-      picks,
-      el("div", { class: "boss" }, [el("h3", { text: line.bossLabel || "Boss fight" }), el("p", { text: st.boss })]),
+      el("div", { class: "card-grid" }, [
+        el("div", { class: "card-main" }, [
+          el("h3", { text: "What is this, really?" }),
+          el("p", { class: "intro", text: st.intro }),
+          st.ar ? el("span", { class: "aside-ar", lang: "ar", dir: "rtl", text: st.ar }) : null,
+          el("h3", { text: "For example" }),
+          el("p", { class: "example", text: st.example }),
+          el("h3", { text: "Why you will care" }),
+          el("p", { text: st.why }),
+          el("div", { class: "boss" }, [el("h3", { text: line.bossLabel || "Boss fight" }), el("p", { text: st.boss })])
+        ]),
+        el("div", { class: "card-side" }, [
+          el("h3", { text: "Go here" }),
+          picks
+        ])
+      ]),
       connects,
       el("label", { class: "visit" }, [box, el("span", { text: "I have visited this station" })])
     ]);

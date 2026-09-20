@@ -17,7 +17,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "Computer science is not about fixing the family printer. It is about solving problems so clearly that a machine can follow along, and a machine is the most literal-minded creature on earth.",
-          "ar": "لأ، مش هتصلّحي الطابعة.",
+          "ar": "لأ، مش هتصلّحي البرنتر بتاعة البيت.",
           "example": "Think of giving directions to a microbus driver who does exactly, and only, what you say. Tell him 'go straight' with no 'until', and you are both in Alexandria by sunset.",
           "why": "Every subject you will study is one piece of a single picture. Seeing the whole map first makes each piece feel less random.",
           "picks": [
@@ -51,7 +51,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "Your brain is not a hard drive. You cannot copy a lecture into it the night before an exam. It behaves more like a muscle: short sessions, often, with rest in between.",
-          "ar": "واحدة واحدة.",
+          "ar": "واحدة واحدة.. محدش بيجري وراكي.",
           "example": "Nobody learns to drive by watching driving videos. Code is the same. Watching someone type is not the same as typing.",
           "why": "University moves faster than school. A few study habits picked up now will save you hundreds of hours over four years.",
           "picks": [
@@ -76,7 +76,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "Surprise. The early part of a computer science degree often has more calculus, physics and electronics than programming. This is normal, and nobody is pranking you. Many faculties also choose your department later, using your grades, so the quiet subjects count just as much as the fun ones.",
-          "ar": "فيزيا؟ في حاسبات؟ أيوه.",
+          "ar": "فيزيا؟ في حاسبات؟ آه والله.",
           "example": "It is like joining a football academy and spending the first months running laps. The laps are the point. They also decide who gets picked.",
           "why": "Knowing this early means you will not panic when it happens, and you will not neglect the subjects that quietly decide your options later.",
           "picks": [
@@ -108,6 +108,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "Every wizard needs a wand. Yours is a laptop with Python and a code editor on it. Any reasonably modern laptop will do. You do not need a gaming machine with rainbow lights, whatever your cousin says.",
+          "ar": "مش لازم لابتوب جيمنج بينوّر ألوان.",
           "example": "Setting up is like arranging your desk before studying. It feels like procrastination, and it is the one time it is not.",
           "why": "From here on, everything you learn gets typed and run on your own machine, which is where real learning happens.",
           "picks": [
@@ -137,7 +138,7 @@
           "kind": "terminus",
           "level": "easy",
           "intro": "Tradition says your first program makes the computer say 'Hello, World'. It is one line of code, it takes two seconds, and it means you are officially a programmer. A very junior one. It still counts.",
-          "ar": "يلا بينا.",
+          "ar": "يلا بينا!",
           "example": "It is the programming version of a baby's first word. Nobody expects poetry. Everyone claps anyway.",
           "why": "Starting is the hardest station on the whole map. After this one, you are no longer someone who is going to learn to code. You are someone who codes.",
           "picks": [
@@ -184,7 +185,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "There are a thousand Python courses, and choosing between them is a famous way to avoid starting any of them. Here is the shortcut: pick one from this list and stay loyal to it until the end. The stations after this one point to the matching lesson inside these courses.",
-          "ar": "اختاري واحد وكمّلي فيه.",
+          "ar": "اختاري كورس واحد وكمّلي فيه للآخر.",
           "example": "Choosing a series to watch. Forty minutes of scrolling through trailers is not watching television.",
           "why": "One course finished beats five courses started. The stations that follow are the topics any of these courses will walk you through.",
           "picks": [
@@ -226,7 +227,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "A variable is a labelled box. You put something in, stick a name on it, and ask for it later by name. You will call your first one x, regret it within the hour, and rename it number_of_cats like a civilised person.",
-          "ar": "سمّي الحاجة باسمها.",
+          "ar": "سمّي كل حاجة باسمها.. وبلاش x و y.",
           "example": "Your kitchen jars. If the jar says 'sugar' and contains salt, the tea is ruined and it is entirely your fault. Name things honestly.",
           "why": "Every program ever written is boxes of data being moved around. This is the first brick, and it never stops being useful.",
           "picks": [
@@ -255,7 +256,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "An if statement is your mother's logic. If you finished studying, you can go out. Else, do not even ask. Computers make every decision this way, just without the look.",
-          "ar": "خلصتي مذاكرة؟ اخرجي. مخلصتيش؟ انسي.",
+          "ar": "ذاكرتي؟ اخرجي. مذاكرتيش؟ انسي الموضوع.",
           "example": "A bouncer with a guest list. Name on the list: come in. Not on the list: no. Related to the owner: a third rule, called elif.",
           "why": "Without conditions a program does the same thing every time. With them it can react, which is when it starts to feel alive.",
           "picks": [
@@ -291,7 +292,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "A loop is telling the computer 'again' without it ever getting bored, tired, or asking why. It is the most obedient employee you will ever have.",
-          "ar": "تاني.. وتاني.. وتاني.",
+          "ar": "تاني.. وتاني.. وتاني.. ومبيزهقش.",
           "example": "Stirring a pot: while the rice is not done, keep stirring. The computer will stir for a thousand years if you forget to say when to stop. You will forget at least once. Everyone does.",
           "why": "Anything a computer does better than you, it does because it can repeat a simple step millions of times without sighing.",
           "picks": [
@@ -327,7 +328,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "A function is a recipe you write once and then order by name. You do not explain how to make tea every time you want tea. You just say 'tea', and perhaps how many sugars.",
-          "ar": "اعمليها مرة، واستخدميها ألف مرة.",
+          "ar": "اعمليها مرة، واستعمليها ألف مرة.",
           "example": "A remote control button. Somebody did the hard work once and wrapped it in a button. Now you press 'volume up' and never think about the electronics again.",
           "why": "Functions are how small programs grow into big ones without turning into spaghetti. Every serious program is functions calling functions.",
           "picks": [
@@ -356,6 +357,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "A list is the queue at the bakery: everyone has a position. A dictionary is your phone contacts: you look up 'Mama' and get a number. Nobody has ever scrolled to 'contact number 37'.",
+          "ar": "زي الأسامي اللي على موبايلك بالظبط.",
           "example": "A shopping list has an order. A menu is a dictionary: you look up 'koshari, large' and get a price.",
           "why": "Real programs handle thousands of things, not three variables. These two containers cover most of what you will ever need.",
           "picks": [
@@ -384,7 +386,7 @@
           "kind": "station",
           "level": "medium",
           "intro": "Variables forget everything the moment your program ends, like a goldfish with a degree. Files are how a program remembers anything until tomorrow.",
-          "ar": "الرام بتنسى، والهارد بيفتكر.",
+          "ar": "الرامات بتنسى، والهارد بيفتكر.",
           "example": "Memory is your desk, cleared every night. A file is the drawer. If you want to see it again tomorrow, it goes in the drawer.",
           "why": "Saving scores, notes, settings and data all mean files. This is the point where your programs start being useful for more than thirty seconds.",
           "picks": [
@@ -416,7 +418,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "Your code will break. Constantly. For everyone. Forever. An error message is not the computer shouting at you. It is the computer telling you exactly where it hurts, usually with a line number.",
-          "ar": "الـ error مش شتيمة، ده عنوان.",
+          "ar": "الـ error مش شتيمة.. ده بيقولك المشكلة فين.",
           "example": "A doctor does not panic when the patient says 'my knee hurts'. That is useful information. Read the last line of the error first. That is the knee.",
           "why": "Professional programmers spend more time fixing code than writing it. Getting calm and methodical about errors is the real skill.",
           "picks": [
@@ -452,6 +454,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "Reading about push-ups does not build muscle. Small problems, solved often, are how syntax turns into fluency. Ten minutes a day beats five hours on a guilty Saturday.",
+          "ar": "شوية كل يوم أحسن من كتير مرة واحدة.",
           "example": "Learning a language. You do not become fluent from a grammar book. You become fluent from ordering a thousand coffees badly.",
           "why": "This is the difference between 'I followed the tutorial' and 'I can write it myself'. Only the second one survives an exam.",
           "picks": [
@@ -487,7 +490,7 @@
           "kind": "interchange",
           "level": "medium",
           "intro": "Your university course will most likely use C++, not Python. Do not panic. You already know the ideas: variables, conditions, loops, functions. C++ is the same ideas wearing a stricter uniform. It wants to know the type of everything, and it wants semicolons. So many semicolons.",
-          "ar": "نفس الأفكار، بس لابسة يونيفورم.",
+          "ar": "نفس الأفكار بالظبط، بس لابسة يونيفورم.",
           "example": "If Python is chatting with a friend, C++ is filling in a government form. Same information. More stamps.",
           "why": "If you can already think in code, then in C++ you only fight the syntax, instead of fighting the syntax and the ideas at the same time.",
           "picks": [
@@ -527,7 +530,7 @@
           "kind": "terminus",
           "level": "medium",
           "intro": "Your first project will be bad. Everyone's is. Build it anyway: a quiz about your family, a number guessing game, a tracker for your koshari budget.",
-          "ar": "أول مشروع دايماً وحش. عادي.",
+          "ar": "أول مشروع دايماً بيطلع وحش.. عادي خالص.",
           "example": "The first pancake. It is always a disaster, and you cannot get to the second pancake without it.",
           "why": "A finished project teaches you more than ten tutorials, because nobody tells you the next step. It is also the first thing you can show someone.",
           "picks": [
@@ -579,7 +582,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "The black window with white text is not hacking, whatever films say. It is simply talking to your computer by typing instead of clicking. It is faster, and it makes you look extremely cool on the metro.",
-          "ar": "الشاشة السودا مش بتعضّ.",
+          "ar": "الشاشة السودا مبتعضّش.",
           "example": "Clicking through folders is walking around a supermarket. The terminal is handing a list to someone who already knows where everything is.",
           "why": "Programming tools, servers and half of your future labs live in the terminal. An hour of practice removes years of fear.",
           "picks": [
@@ -628,7 +631,7 @@
           "kind": "station",
           "level": "medium",
           "intro": "Git gives you save points, like in a video game, except the boss is your own code from last Tuesday. Broke everything? Go back to a save. Want to try something risky? Make a branch, which is a parallel universe you can delete.",
-          "ar": "احفظي قبل الوحش.",
+          "ar": "اعملي save قبل ما تقابلي الوحش.",
           "example": "Remember essay_final.docx, essay_final2.docx and essay_FINAL_really.docx? Git is that, done properly, by people who were tired of it.",
           "why": "Every team and every company uses Git. Group projects without it end in tears and a shared folder called 'new new final'.",
           "picks": [
@@ -713,7 +716,7 @@
           "kind": "terminus",
           "level": "easy",
           "intro": "AI assistants can explain, quiz and unstick you, which is wonderful. They can also do your whole assignment, which feels wonderful for about three weeks, until the exam, to which they are not invited.",
-          "ar": "الـ AI مش هيدخل معاكي الامتحان.",
+          "ar": "الـ AI مش هيدخل معاكي اللجنة.",
           "example": "Use one like a tutor sitting next to you, not like a friend who lets you copy. Ask 'why is this wrong?' and 'give me a hint'. Avoid 'write it for me'.",
           "why": "The struggle is where the learning happens. People who outsource the struggle arrive in later years unable to do the basics, and it shows quickly.",
           "picks": [
@@ -773,7 +776,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "An algorithm is a recipe. Koshari has steps, an order, and a moment where everything goes wrong if you skip one. So does sorting a list. The word sounds intimidating, and it just means 'a clear way of doing something'.",
-          "ar": "زي وصفة الكشري بالظبط.",
+          "ar": "زي طريقة عمل الكشري بالظبط.",
           "example": "Finding a word in a paper dictionary. You do not start at page one. You open near the middle and keep halving. Congratulations, you have been running binary search since primary school.",
           "why": "Two programs can give the same answer, one in a second and one in a week. The difference is the algorithm.",
           "picks": [
@@ -802,7 +805,7 @@
           "kind": "interchange",
           "level": "medium",
           "intro": "Big-O is how much worse your evening gets when the guest list doubles. Cooking for 20 instead of 10? Twice the work. Everyone greeting everyone? Four times the kisses. Big-O asks that same question about code.",
-          "ar": "المعازيم زادوا الضعف.. والشغل؟",
+          "ar": "المعازيم بقوا الضعف.. والشغل بقى قد إيه؟",
           "example": "Looking for a name page by page versus opening the book in the middle and halving. With ten names, who cares. With ten million, one takes a moment and the other takes your youth.",
           "why": "It is the shared language for saying 'this will be fast enough' or 'this will melt the laptop'. It shows up in courses, interviews and real work.",
           "picks": [
@@ -838,7 +841,7 @@
           "kind": "station",
           "level": "medium",
           "intro": "To understand recursion, please see the station called Recursion. Fine, seriously: recursion is solving a problem by solving a smaller copy of the same problem, like opening Russian dolls until you reach one too small to open.",
-          "ar": "عشان تفهمي الـ recursion، لازم الأول تفهمي الـ recursion.",
+          "ar": "عشان تفهمي الـ recursion، لازم تفهمي الـ recursion الأول.",
           "example": "Standing in a long queue and wanting to know your position. You ask the person in front, who asks the person in front, until someone says 'I am first'. The answer then travels back to you.",
           "why": "Some problems, like exploring folders inside folders, are painful without recursion and almost trivial with it.",
           "picks": [
@@ -867,6 +870,7 @@
           "kind": "station",
           "level": "medium",
           "intro": "Data structures are different kinds of containers. You would not store soup in a bag or carry books in a bowl. A stack is a pile of plates: last on, first off. A queue is the bakery line: first come, first served, unless somebody's uncle knows the baker.",
+          "ar": "كل حاجة وليها مكانها.",
           "example": "Your wardrobe. Everything thrown on one chair works until you need the blue shirt in a hurry. Organisation is speed.",
           "why": "Choosing the right container is often the whole difference between a slow program and a fast one.",
           "picks": [
@@ -946,7 +950,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "Logic is arguing, but with rules, so nobody can win by shouting. AND, OR and NOT are the very same words your if statements use.",
-          "ar": "الرياضة هنا مش حفظ، دي فوازير.",
+          "ar": "الرياضة هنا مش حفظ.. دي فوازير.",
           "example": "'If it is Friday AND Mama is cooking, I am home for lunch.' You have been doing propositional logic your whole life. You just never got marks for it.",
           "why": "Logic is the grammar underneath programming, circuits and proofs. Learn it once and it pays off in three places.",
           "picks": [
@@ -1115,7 +1119,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "Computers only know two things: on and off. Everything else, your photos, this page, your cousin's four-minute voice notes, is an enormous pile of ons and offs.",
-          "ar": "يا أبيض يا أسود.",
+          "ar": "يا أبيض يا إسود.",
           "example": "A light switch can say two things. Two switches can say four. Eight switches can say 256. A few billion switches can say anything at all.",
           "why": "Every idea on this line is built from this one. It also explains why programmers find the number 256 oddly satisfying.",
           "picks": [
@@ -1263,7 +1267,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "The internet is a postal system for tiny packets. Your message is torn into pieces, each piece finds its own way across the world, and they are glued back together on arrival, all before the page finishes loading.",
-          "ar": "النت فصل؟ أهو ده اللي هنفهمه.",
+          "ar": "النت فصل؟ تعالي نفهم ليه.",
           "example": "Sending a jigsaw puzzle through the post, one piece per envelope, by different routes, and having it arrive complete in under a second.",
           "why": "Almost everything you will ever build talks to the internet. Knowing what happens after you press Enter makes you far better at fixing it.",
           "picks": [
@@ -1363,7 +1367,7 @@
           "kind": "interchange",
           "level": "easy",
           "intro": "The fastest way to get good is to sit next to people who are one year ahead of you. Your faculty has a problem-solving community that trains complete beginners, for free, a short walk from your lecture hall.",
-          "ar": "انزلي من على الكنبة.",
+          "ar": "قومي من على الكنبة.",
           "example": "A gym buddy. You could train alone. You would also skip every second session.",
           "why": "These communities teach programming earlier and faster than the timetable does, and they are where you meet the people you will build things with.",
           "picks": [
@@ -1409,7 +1413,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "Student activities are where you find friends, confidence and your first taste of real teamwork. They usually recruit once a year, in autumn, with a form and an interview, and then the door closes. Pick one. Joining three is a burnout speedrun.",
-          "ar": "صاحب بالين كداب.",
+          "ar": "صاحب بالين كداب.. وصاحب تلاتة منافق.",
           "example": "A buffet. Everything looks good, and the person who piles on everything regrets it by the second plate.",
           "why": "One activity done properly gives you skills, stories and friends. Three done badly give you guilt and a full calendar.",
           "picks": [
@@ -1451,6 +1455,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "There is a whole city of developers meeting up while you are scrolling. Most events are free, beginner friendly, and come with stickers. Never underestimate stickers.",
+          "ar": "وفيه ستيكرز ببلاش.",
           "example": "Discovering that your favourite band plays free concerts twenty minutes from your house, several times a year.",
           "why": "Meeting working developers makes the career real, and makes the path from here to there much easier to picture.",
           "picks": [
@@ -1481,6 +1486,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "A hackathon is a weekend where teams build something from nothing, fuelled by snacks and questionable decisions. You do not need to be good yet. Teams need people who can think, design, present and keep morale alive at 3 a.m.",
+          "ar": "المهم تخلّصي، مش تكسبي.",
           "example": "A school play. Not everyone is the lead. Somebody paints the set, somebody runs the lights, and the play does not happen without them.",
           "why": "One finished weekend project teaches teamwork under pressure, gives you a story for every future interview, and shows you what you enjoy.",
           "picks": [
@@ -1699,6 +1705,7 @@
           "kind": "station",
           "level": "easy",
           "intro": "You will sometimes be one of only a few women in the room. You will never be the only woman in the field. There are large, friendly communities full of people a few steps ahead of you, and they would love to have you.",
+          "ar": "إنتي مش لوحدك.",
           "example": "Finding the table at a wedding where everyone already gets your jokes.",
           "why": "Mentors and peers who have walked the same road make the hard weeks shorter, and they open doors you did not know existed.",
           "picks": [

@@ -11,7 +11,7 @@ Lines are organised by topic and can be ridden in any order, at any pace.
 | | Line | What it covers |
 |---|---|---|
 | 0 | Start here | What CS is, how to learn, setting up, first program |
-| 1 | Python | The basics of programming, plus a bridge to C++ |
+| 1 | Python | One course, CS50P, followed week by week, plus a bridge to C++ |
 | 2 | Tools nobody teaches you | Terminal, editor, Git, GitHub, asking questions, AI helpers |
 | 3 | Thinking like a computer scientist | Problem solving, algorithms, Big-O, recursion, data structures |
 | 4 | Maths without fear | Logic, proofs, counting, calculus, linear algebra |
@@ -29,6 +29,11 @@ python3 -m http.server 8000
 ```
 
 Then open http://localhost:8000.
+
+## Keeping it simple
+
+Each station has one starred pick and at most two helpers. That is deliberate: too many
+options is a reason not to start. When adding a link, replace one instead of adding a fourth.
 
 ## Editing the content
 

@@ -30,15 +30,6 @@
               "star": false
             },
             {
-              "ref": "cs50x",
-              "star": false,
-              "note": "A full course, for when the short videos leave you wanting more."
-            },
-            {
-              "ref": "computerphile",
-              "star": false
-            },
-            {
               "ref": "elzero-pre",
               "star": false
             }
@@ -62,10 +53,6 @@
             {
               "ref": "wizard-zine",
               "star": false
-            },
-            {
-              "ref": "tina-huang",
-              "star": false
             }
           ],
           "boss": "Do one 25-minute focused session with your phone in another room. Yes, another room. Not face down on the desk."
@@ -86,10 +73,6 @@
             },
             {
               "ref": "khan-math",
-              "star": false
-            },
-            {
-              "ref": "prof-leonard",
               "star": false
             }
           ],
@@ -123,11 +106,6 @@
             {
               "ref": "vscode-python",
               "star": false
-            },
-            {
-              "ref": "futurecoder",
-              "star": false,
-              "note": "No laptop yet? Start in the browser with this."
             }
           ],
           "boss": "Install Python and VS Code. Then make your computer print your name. Take a photo. This is a historic moment."
@@ -143,20 +121,9 @@
           "why": "Starting is the hardest station on the whole map. After this one, you are no longer someone who is going to learn to code. You are someone who codes.",
           "picks": [
             {
-              "ref": "futurecoder",
-              "star": true
-            },
-            {
               "ref": "cs50p-w0",
-              "star": false
-            },
-            {
-              "ref": "scratch",
-              "star": false
-            },
-            {
-              "ref": "mosh-python",
-              "star": false
+              "star": true,
+              "note": "CS50P gives you a ready-made coding space in the browser, so you can start before your laptop is set up."
             }
           ],
           "boss": "Make Python greet you by name, ask how your day was, and then reply 'sounds exhausting' no matter what you type.",
@@ -175,51 +142,31 @@
       "code": "1",
       "name": "Python",
       "color": "#1C7ED6",
-      "tagline": "Learn to think in code using the friendliest language there is. The ideas carry over to every other language.",
+      "tagline": "One course, CS50P from Harvard, from start to finish. The stations follow its weeks in order, and the ideas carry over to every other language.",
       "dashed": false,
       "bossLabel": "Boss fight",
       "stations": [
         {
           "id": "pick-course",
-          "name": "Pick your course",
+          "name": "Your course: CS50P",
           "kind": "station",
           "level": "easy",
-          "intro": "There are a thousand Python courses, and choosing between them is a famous way to avoid starting any of them. Here is the shortcut: pick one from this list and stay loyal to it until the end. The stations after this one point to the matching lesson inside these courses.",
-          "ar": "اختاري كورس واحد وكمّلي فيه للآخر.",
+          "intro": "There are a thousand Python courses, and choosing between them is a famous way to avoid starting any of them. So the choosing has been done for you. CS50P is Harvard's Python course for people who have never coded. It is free, brilliantly taught, and enough on its own. The stations after this one follow its weeks in order.",
+          "ar": "كورس واحد.. وكمّلي فيه للآخر.",
           "example": "Choosing a series to watch. Forty minutes of scrolling through trailers is not watching television.",
-          "why": "One course finished beats five courses started. The stations that follow are the topics any of these courses will walk you through.",
+          "why": "One course finished beats five courses started. Everything the Python stations cover is inside CS50P, so each station simply points to the right week. Week 7, on text patterns, and week 9 have no station of their own here. Do them anyway.",
           "picks": [
             {
-              "ref": "helsinki-mooc",
-              "star": true,
-              "note": "Best if you like learning by doing lots of small exercises."
-            },
-            {
               "ref": "cs50p",
-              "star": false,
+              "star": true,
               "note": "Best if you like a brilliant lecturer and meatier problem sets."
             },
             {
               "ref": "cs50p-lectures",
               "star": false
-            },
-            {
-              "ref": "py4e",
-              "star": false,
-              "note": "A gentler, lighter alternative."
-            },
-            {
-              "ref": "brocode-python",
-              "star": false,
-              "note": "Best if you like typing along with a video."
-            },
-            {
-              "ref": "mit-6100l",
-              "star": false,
-              "note": "A taste of real university lectures."
             }
           ],
-          "boss": "Pick one course. Tell someone which one, so that switching becomes embarrassing."
+          "boss": "Create your CS50 account and submit the very first problem. Then tell someone you have started, so that quitting becomes embarrassing."
         },
         {
           "id": "variables",
@@ -232,23 +179,28 @@
           "why": "Every program ever written is boxes of data being moved around. This is the first brick, and it never stops being useful.",
           "picks": [
             {
-              "ref": "helsinki-1",
-              "star": true
-            },
-            {
               "ref": "cs50p-w0",
-              "star": false
-            },
-            {
-              "ref": "atbs-ch1",
-              "star": false
-            },
-            {
-              "ref": "pythontutor",
-              "star": false
+              "star": true
             }
           ],
           "boss": "Store your name, your age and your favourite food in three variables. Print one sentence that uses all three."
+        },
+        {
+          "id": "functions",
+          "name": "Functions",
+          "kind": "station",
+          "level": "easy",
+          "intro": "A function is a recipe you write once and then order by name. You do not explain how to make tea every time you want tea. You just say 'tea', and perhaps how many sugars.",
+          "ar": "اعمليها مرة، واستعمليها ألف مرة.",
+          "example": "A remote control button. Somebody did the hard work once and wrapped it in a button. Now you press 'volume up' and never think about the electronics again.",
+          "why": "Functions are how small programs grow into big ones without turning into spaghetti. Every serious program is functions calling functions.",
+          "picks": [
+            {
+              "ref": "cs50p-w0",
+              "star": true
+            }
+          ],
+          "boss": "Write a function make_tea(sugars) that returns a sentence. Call it with 0, 2 and 4 sugars. Feel free to judge the four."
         },
         {
           "id": "conditions",
@@ -263,18 +215,6 @@
             {
               "ref": "cs50p-w1",
               "star": true
-            },
-            {
-              "ref": "helsinki-2",
-              "star": false
-            },
-            {
-              "ref": "atbs-ch2",
-              "star": false
-            },
-            {
-              "ref": "pythontutor",
-              "star": false
             }
           ],
           "boss": "Write a program that asks for the temperature and tells you to wear a jacket, wear a t-shirt, or stay home next to the air conditioner.",
@@ -299,18 +239,6 @@
             {
               "ref": "cs50p-w2",
               "star": true
-            },
-            {
-              "ref": "helsinki-3",
-              "star": false
-            },
-            {
-              "ref": "pythontutor",
-              "star": false
-            },
-            {
-              "ref": "corey-schafer",
-              "star": false
             }
           ],
           "boss": "Make Python politely insult you 10 times using a loop. Then change one number and make it 1,000 times. Notice you typed the same amount of code.",
@@ -323,35 +251,6 @@
           ]
         },
         {
-          "id": "functions",
-          "name": "Functions",
-          "kind": "station",
-          "level": "easy",
-          "intro": "A function is a recipe you write once and then order by name. You do not explain how to make tea every time you want tea. You just say 'tea', and perhaps how many sugars.",
-          "ar": "اعمليها مرة، واستعمليها ألف مرة.",
-          "example": "A remote control button. Somebody did the hard work once and wrapped it in a button. Now you press 'volume up' and never think about the electronics again.",
-          "why": "Functions are how small programs grow into big ones without turning into spaghetti. Every serious program is functions calling functions.",
-          "picks": [
-            {
-              "ref": "helsinki-4",
-              "star": true
-            },
-            {
-              "ref": "helsinki-3",
-              "star": false
-            },
-            {
-              "ref": "cs50p-w0",
-              "star": false
-            },
-            {
-              "ref": "corey-schafer",
-              "star": false
-            }
-          ],
-          "boss": "Write a function make_tea(sugars) that returns a sentence. Call it with 0, 2 and 4 sugars. Feel free to judge the four."
-        },
-        {
           "id": "lists-dicts",
           "name": "Lists and dictionaries",
           "kind": "station",
@@ -362,55 +261,11 @@
           "why": "Real programs handle thousands of things, not three variables. These two containers cover most of what you will ever need.",
           "picks": [
             {
-              "ref": "helsinki-5",
-              "star": true
-            },
-            {
-              "ref": "helsinki-4",
-              "star": false
-            },
-            {
               "ref": "cs50p-w2",
-              "star": false
-            },
-            {
-              "ref": "pythontutor",
-              "star": false
+              "star": true
             }
           ],
           "boss": "Build a tiny contact book: a dictionary of three friends and their favourite snacks. Ask for a name and print the snack."
-        },
-        {
-          "id": "files",
-          "name": "Files",
-          "kind": "station",
-          "level": "medium",
-          "intro": "Variables forget everything the moment your program ends, like a goldfish with a degree. Files are how a program remembers anything until tomorrow.",
-          "ar": "الرامات بتنسى، والهارد بيفتكر.",
-          "example": "Memory is your desk, cleared every night. A file is the drawer. If you want to see it again tomorrow, it goes in the drawer.",
-          "why": "Saving scores, notes, settings and data all mean files. This is the point where your programs start being useful for more than thirty seconds.",
-          "picks": [
-            {
-              "ref": "helsinki-6",
-              "star": true
-            },
-            {
-              "ref": "cs50p-w6",
-              "star": false
-            },
-            {
-              "ref": "atbs",
-              "star": false
-            }
-          ],
-          "boss": "Write a program that adds one to-do item to a file every time you run it, then prints the whole list.",
-          "connects": [
-            {
-              "line": "computers",
-              "station": "memory",
-              "label": "Computers line: Memory"
-            }
-          ]
         },
         {
           "id": "debugging",
@@ -427,16 +282,9 @@
               "star": true
             },
             {
-              "ref": "pythontutor",
-              "star": false
-            },
-            {
-              "ref": "rubberduck",
-              "star": false
-            },
-            {
-              "ref": "helsinki-6",
-              "star": false
+              "ref": "cs50p-w5",
+              "star": false,
+              "note": "The follow-up week: teach your program to check itself."
             }
           ],
           "boss": "Break a working program on purpose in three different ways. Read each error out loud and find the line number inside it.",
@@ -449,40 +297,62 @@
           ]
         },
         {
-          "id": "practice",
-          "name": "The practice gym",
+          "id": "libraries",
+          "name": "Libraries: other people's code",
           "kind": "station",
-          "level": "easy",
-          "intro": "Reading about push-ups does not build muscle. Small problems, solved often, are how syntax turns into fluency. Ten minutes a day beats five hours on a guilty Saturday.",
-          "ar": "شوية كل يوم أحسن من كتير مرة واحدة.",
-          "example": "Learning a language. You do not become fluent from a grammar book. You become fluent from ordering a thousand coffees badly.",
-          "why": "This is the difference between 'I followed the tutorial' and 'I can write it myself'. Only the second one survives an exam.",
+          "level": "medium",
+          "intro": "A library is code that somebody else already wrote, tested and gave away for free. Need random numbers, dates, or to talk to a website? Someone has done the hard part. Your job is to type 'import' and look clever.",
+          "ar": "ليه تعمليها من الأول وهي جاهزة؟",
+          "example": "You could grow the wheat, grind the flour and bake the bread yourself. Or you could walk to the bakery like a normal person.",
+          "why": "Real programs are mostly other people's libraries, glued together well. Knowing how to find one and use it is half the job.",
           "picks": [
             {
-              "ref": "exercism-python",
+              "ref": "cs50p-w4",
               "star": true
-            },
-            {
-              "ref": "codewars",
-              "star": false
-            },
-            {
-              "ref": "hackerrank-python",
-              "star": false
-            },
-            {
-              "ref": "kaggle-python",
-              "star": false
             }
           ],
-          "boss": "Solve one tiny exercise a day for seven days. Seven. Not forty-nine on Saturday.",
+          "boss": "Use the random library to write a program that decides what the family eats tonight. Blame the computer for the result."
+        },
+        {
+          "id": "files",
+          "name": "Files",
+          "kind": "station",
+          "level": "medium",
+          "intro": "Variables forget everything the moment your program ends, like a goldfish with a degree. Files are how a program remembers anything until tomorrow.",
+          "ar": "الرامات بتنسى، والهارد بيفتكر.",
+          "example": "Memory is your desk, cleared every night. A file is the drawer. If you want to see it again tomorrow, it goes in the drawer.",
+          "why": "Saving scores, notes, settings and data all mean files. This is the point where your programs start being useful for more than thirty seconds.",
+          "picks": [
+            {
+              "ref": "cs50p-w6",
+              "star": true
+            }
+          ],
+          "boss": "Write a program that adds one to-do item to a file every time you run it, then prints the whole list.",
           "connects": [
             {
-              "line": "side",
-              "station": "puzzles",
-              "label": "Side quests: Puzzles"
+              "line": "computers",
+              "station": "memory",
+              "label": "Computers line: Memory"
             }
           ]
+        },
+        {
+          "id": "objects",
+          "name": "Objects and classes",
+          "kind": "station",
+          "level": "medium",
+          "intro": "A class is a cookie cutter, and objects are the cookies. You describe once what a Student looks like, a name, a grade, a talent for arriving late, and then stamp out as many students as you need.",
+          "ar": "القالب واحد.. والكحك كتير.",
+          "example": "A form at a government office. The blank form is the class. Every filled-in copy is an object. Thankfully, Python asks for fewer stamps.",
+          "why": "Bigger programs are organised this way, and object-oriented programming comes back as a full subject later in most degrees. Meeting it gently now helps a lot.",
+          "picks": [
+            {
+              "ref": "cs50p-w8",
+              "star": true
+            }
+          ],
+          "boss": "Write a Cat class with a name and a mood. Create three cats. Make one of them knock something off a table."
         },
         {
           "id": "bridge-cpp",
@@ -499,19 +369,7 @@
               "star": true
             },
             {
-              "ref": "elzero-cpp",
-              "star": false
-            },
-            {
               "ref": "learncpp",
-              "star": false
-            },
-            {
-              "ref": "fcc-cpp",
-              "star": false
-            },
-            {
-              "ref": "w3-cpp",
               "star": false
             }
           ],
@@ -537,18 +395,6 @@
             {
               "ref": "cs50p-project",
               "star": true
-            },
-            {
-              "ref": "invent-python",
-              "star": false
-            },
-            {
-              "ref": "atbs",
-              "star": false
-            },
-            {
-              "ref": "techwithtim",
-              "star": false
             }
           ],
           "boss": "Finish one small project and show it to someone. Finished and ugly beats perfect and imaginary.",
@@ -593,10 +439,6 @@
             {
               "ref": "missing-shell",
               "star": false
-            },
-            {
-              "ref": "missing-videos",
-              "star": false
             }
           ],
           "boss": "Using only the terminal: make a folder, create a file inside it, rename the file, then delete it. No mouse allowed."
@@ -616,10 +458,6 @@
             },
             {
               "ref": "vscode-python",
-              "star": false
-            },
-            {
-              "ref": "fireship",
               "star": false
             }
           ],
@@ -642,14 +480,6 @@
             {
               "ref": "fcc-git",
               "star": false
-            },
-            {
-              "ref": "missing-git",
-              "star": false
-            },
-            {
-              "ref": "progit",
-              "star": false
             }
           ],
           "boss": "Finish the first four levels of Learn Git Branching. It is a game. You are allowed to enjoy it."
@@ -666,10 +496,6 @@
             {
               "ref": "github-hello",
               "star": true
-            },
-            {
-              "ref": "github-skills",
-              "star": false
             },
             {
               "ref": "student-pack",
@@ -700,10 +526,6 @@
               "star": true
             },
             {
-              "ref": "so-ask",
-              "star": false
-            },
-            {
               "ref": "rubberduck",
               "star": false
             }
@@ -726,10 +548,6 @@
             },
             {
               "ref": "cs50-duck",
-              "star": false
-            },
-            {
-              "ref": "missing-semester",
               "star": false
             }
           ],
@@ -762,10 +580,6 @@
             {
               "ref": "csunplugged",
               "star": false
-            },
-            {
-              "ref": "think-python",
-              "star": false
             }
           ],
           "boss": "Write instructions for making a sandwich, for someone who has never seen bread. Get a family member to follow them literally. Laugh. Fix the instructions."
@@ -786,10 +600,6 @@
             },
             {
               "ref": "khan-algorithms",
-              "star": false
-            },
-            {
-              "ref": "spanningtree",
               "star": false
             },
             {
@@ -814,15 +624,7 @@
               "star": true
             },
             {
-              "ref": "khan-algorithms",
-              "star": false
-            },
-            {
               "ref": "bigo-cheatsheet",
-              "star": false
-            },
-            {
-              "ref": "visualgo",
               "star": false
             }
           ],
@@ -850,15 +652,7 @@
               "star": true
             },
             {
-              "ref": "khan-algorithms",
-              "star": false
-            },
-            {
               "ref": "pythontutor",
-              "star": false
-            },
-            {
-              "ref": "cs50-shorts",
               "star": false
             }
           ],
@@ -881,14 +675,6 @@
             {
               "ref": "visualgo",
               "star": false
-            },
-            {
-              "ref": "fcc-dsa",
-              "star": false
-            },
-            {
-              "ref": "cs50-shorts",
-              "star": false
             }
           ],
           "boss": "Use a Python list as a stack, then as a queue. Explain the difference to your rubber duck."
@@ -907,27 +693,11 @@
               "star": true
             },
             {
-              "ref": "fiset-ds",
-              "star": false
-            },
-            {
               "ref": "mit-6006",
               "star": false
             },
             {
-              "ref": "open-ds",
-              "star": false
-            },
-            {
-              "ref": "composing-programs",
-              "star": false
-            },
-            {
               "ref": "leetcode",
-              "star": false
-            },
-            {
-              "ref": "neetcode",
               "star": false
             }
           ],
@@ -961,10 +731,6 @@
             {
               "ref": "levin-dm",
               "star": false
-            },
-            {
-              "ref": "brehm-dm",
-              "star": false
             }
           ],
           "boss": "Write the truth table for: 'I go out if I finished studying OR it is my birthday, but NOT if it is raining.'",
@@ -997,10 +763,6 @@
             {
               "ref": "levin-dm",
               "star": false
-            },
-            {
-              "ref": "brehm-dm",
-              "star": false
             }
           ],
           "boss": "Prove that the sum of two even numbers is always even. In words. No hand waving."
@@ -1020,10 +782,6 @@
             },
             {
               "ref": "trevtutor",
-              "star": false
-            },
-            {
-              "ref": "khan-math",
               "star": false
             }
           ],
@@ -1045,10 +803,6 @@
             {
               "ref": "prof-leonard",
               "star": false
-            },
-            {
-              "ref": "khan-calc",
-              "star": false
             }
           ],
           "boss": "Watch the first Essence of Calculus video. Then explain to someone why the area of a circle is pi times r squared."
@@ -1068,10 +822,6 @@
             },
             {
               "ref": "khan-linalg",
-              "star": false
-            },
-            {
-              "ref": "3b1b",
               "star": false
             }
           ],
@@ -1093,11 +843,6 @@
             {
               "ref": "brehm-dm",
               "star": false
-            },
-            {
-              "ref": "mit-6042",
-              "star": false,
-              "note": "For later, when you want the demanding version."
             }
           ],
           "boss": "Work through one full chapter of Levin's book, exercises included. The exercises are the book."
@@ -1128,10 +873,6 @@
               "star": true
             },
             {
-              "ref": "khan-internet",
-              "star": false
-            },
-            {
               "ref": "code-petzold",
               "star": false
             }
@@ -1153,14 +894,6 @@
             },
             {
               "ref": "lague-sim",
-              "star": false
-            },
-            {
-              "ref": "code-petzold",
-              "star": false
-            },
-            {
-              "ref": "nand-ted",
               "star": false
             }
           ],
@@ -1189,14 +922,6 @@
             {
               "ref": "branch-education",
               "star": false
-            },
-            {
-              "ref": "crashcourse-cs",
-              "star": false
-            },
-            {
-              "ref": "core-dumped",
-              "star": false
             }
           ],
           "boss": "Watch how a CPU runs a program. Then explain 'fetch, decode, execute' using a kitchen as your metaphor."
@@ -1216,10 +941,6 @@
             },
             {
               "ref": "branch-education",
-              "star": false
-            },
-            {
-              "ref": "crashcourse-cs",
               "star": false
             }
           ],
@@ -1246,17 +967,8 @@
               "star": true
             },
             {
-              "ref": "crashcourse-cs",
-              "star": false
-            },
-            {
               "ref": "jvns",
               "star": false
-            },
-            {
-              "ref": "ostep",
-              "star": false,
-              "note": "The standard free textbook, for later."
             }
           ],
           "boss": "Count how many programs are running on your laptop right now. You opened perhaps five of them."
@@ -1278,14 +990,6 @@
             {
               "ref": "khan-internet",
               "star": false
-            },
-            {
-              "ref": "jvns",
-              "star": false
-            },
-            {
-              "ref": "crashcourse-cs",
-              "star": false
             }
           ],
           "boss": "In the terminal, run ping on a website and watch messages travel across the world and back. Read the times."
@@ -1305,10 +1009,6 @@
             },
             {
               "ref": "nand-ted",
-              "star": false
-            },
-            {
-              "ref": "ben-eater-8bit",
               "star": false
             }
           ],
@@ -1339,23 +1039,11 @@
               "star": true
             },
             {
-              "ref": "fcis-site",
-              "star": false
-            },
-            {
               "ref": "adel-nasim",
               "star": false
             },
             {
               "ref": "elzero",
-              "star": false
-            },
-            {
-              "ref": "desouki",
-              "star": false
-            },
-            {
-              "ref": "codezilla",
               "star": false
             }
           ],
@@ -1377,24 +1065,12 @@
               "note": "Beginner training usually opens around October to November, with another intake in the mid-year break."
             },
             {
-              "ref": "acmascis",
-              "star": false
-            },
-            {
               "ref": "gdg-asu",
               "star": false,
               "note": "No application needed for events. Just RSVP and show up."
             },
             {
               "ref": "fcis-union",
-              "star": false
-            },
-            {
-              "ref": "codeforces",
-              "star": false
-            },
-            {
-              "ref": "arabic-cp",
               "star": false
             }
           ],
@@ -1431,20 +1107,6 @@
               "ref": "ieee-asusb",
               "star": false,
               "note": "Based next door in Engineering. Ask whether your faculty can join."
-            },
-            {
-              "ref": "asu-ihub",
-              "star": false,
-              "note": "Open to students from every faculty."
-            },
-            {
-              "ref": "stp-asu",
-              "star": false
-            },
-            {
-              "ref": "enactus-asu",
-              "star": false,
-              "note": "The heaviest workload here. A better fit from second year."
             }
           ],
           "boss": "In early autumn, watch their pages for recruitment posts. Apply to the one whose members look like people you would happily have lunch with."
@@ -1468,14 +1130,6 @@
               "ref": "wtm-cairo",
               "star": false,
               "note": "Main event around International Women's Day, usually March to April."
-            },
-            {
-              "ref": "creativa",
-              "star": false
-            },
-            {
-              "ref": "fablab-egypt",
-              "star": false
             }
           ],
           "boss": "Go to one event this year with a friend. Talk to one stranger. That is the entire assignment."
@@ -1496,10 +1150,6 @@
               "note": "Usually in autumn. States clearly that no experience is needed."
             },
             {
-              "ref": "spaceapps",
-              "star": false
-            },
-            {
               "ref": "cybertalents",
               "star": false,
               "note": "Egypt's national cybersecurity contest is usually around January, online, and welcomes beginners."
@@ -1508,15 +1158,6 @@
               "ref": "egypt-gamedevs",
               "star": false,
               "note": "Global Game Jam in Egypt is usually late January."
-            },
-            {
-              "ref": "ecpc",
-              "star": false,
-              "note": "You reach it through the campus community. Qualifications are usually in summer."
-            },
-            {
-              "ref": "huawei-ict",
-              "star": false
             }
           ],
           "boss": "Sign up for one beginner-friendly event. The goal is not to win. The goal is to finish and collect the story."
@@ -1544,15 +1185,6 @@
               "ref": "iti-summer",
               "star": false,
               "note": "Applications usually open around May to June."
-            },
-            {
-              "ref": "depi",
-              "star": false,
-              "note": "Excellent and demanding. A better fit after your first year."
-            },
-            {
-              "ref": "netacad",
-              "star": false
             }
           ],
           "boss": "Start one Mahara-Tech course this week. Put a reminder in your calendar for late spring to check the summer training registrations."
@@ -1572,14 +1204,6 @@
             },
             {
               "ref": "arab-dev-hub",
-              "star": false
-            },
-            {
-              "ref": "cybertalents-tg",
-              "star": false
-            },
-            {
-              "ref": "ecpc",
               "star": false
             },
             {
@@ -1617,24 +1241,9 @@
             {
               "ref": "projecteuler",
               "star": false
-            },
-            {
-              "ref": "codingame",
-              "star": false
-            },
-            {
-              "ref": "codewars",
-              "star": false
             }
           ],
-          "boss": "Solve day 1 of any past Advent of Code year. Both parts.",
-          "connects": [
-            {
-              "line": "python",
-              "station": "practice",
-              "label": "Python line: The practice gym"
-            }
-          ]
+          "boss": "Solve day 1 of any past Advent of Code year. Both parts."
         },
         {
           "id": "build",
@@ -1651,14 +1260,6 @@
             },
             {
               "ref": "atbs",
-              "star": false
-            },
-            {
-              "ref": "techwithtim",
-              "star": false
-            },
-            {
-              "ref": "invent-games",
               "star": false
             }
           ],
@@ -1687,14 +1288,6 @@
             {
               "ref": "p5js",
               "star": false
-            },
-            {
-              "ref": "lague",
-              "star": false
-            },
-            {
-              "ref": "reducible",
-              "star": false
             }
           ],
           "boss": "Follow one Coding Train challenge from start to finish. Then change the colours and one rule, and make it yours."
@@ -1715,10 +1308,6 @@
             },
             {
               "ref": "wtm-cairo",
-              "star": false
-            },
-            {
-              "ref": "womentechmakers",
               "star": false
             },
             {
@@ -1746,14 +1335,10 @@
           "picks": [
             {
               "ref": "google-scholarships",
-              "star": false
+              "star": true
             },
             {
               "ref": "ghc",
-              "star": false
-            },
-            {
-              "ref": "student-pack",
               "star": false
             }
           ],

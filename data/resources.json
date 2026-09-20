@@ -25,42 +25,6 @@
       "why": "A clickable map of how CS topics connect. Read it for orientation, not as a to-do list."
     },
     {
-      "id": "cs50x",
-      "name": "CS50x, Harvard's Introduction to Computer Science",
-      "url": "https://cs50.harvard.edu/x/",
-      "type": "course",
-      "topic": "start",
-      "cost": "Free",
-      "time": "About 11 weeks",
-      "level": "medium",
-      "lang": "en",
-      "why": "The best-produced intro course there is, with auto-graded problem sets. It starts in C, so it pairs well with a bit of Python first. Use this site, not edX."
-    },
-    {
-      "id": "cs50x-lectures",
-      "name": "CS50x Lectures (official playlist)",
-      "url": "https://www.youtube.com/playlist?list=PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6",
-      "type": "video",
-      "topic": "start",
-      "cost": "Free",
-      "time": "About 2 hours per lecture",
-      "level": "medium",
-      "lang": "en",
-      "why": "David Malan's lectures. Watch one a week like a TV series with homework."
-    },
-    {
-      "id": "cs50-shorts",
-      "name": "CS50 Shorts",
-      "url": "https://www.youtube.com/playlist?list=PLhQjrBD2T381k8ul4WQ8SQ165XqY149WW",
-      "type": "video",
-      "topic": "start",
-      "cost": "Free",
-      "time": "5 to 15 min each",
-      "level": "easy",
-      "lang": "en",
-      "why": "One short video per concept. When a lecture loses you, the fix is usually in here."
-    },
-    {
       "id": "cs50x-week0",
       "name": "CS50x Week 0: Scratch",
       "url": "https://cs50.harvard.edu/x/weeks/0/",
@@ -71,30 +35,6 @@
       "level": "easy",
       "lang": "en",
       "why": "What computing actually is, taught with drag-and-drop blocks before any typing."
-    },
-    {
-      "id": "computerphile",
-      "name": "Computerphile",
-      "url": "https://www.youtube.com/@Computerphile",
-      "type": "video",
-      "topic": "start",
-      "cost": "Free",
-      "time": "8 to 20 min each",
-      "level": "easy",
-      "lang": "en",
-      "why": "University lecturers explaining one idea at a time. Browse when curious. Some videos are advanced, and that is fine."
-    },
-    {
-      "id": "ossu",
-      "name": "OSSU Computer Science curriculum",
-      "url": "https://github.com/ossu/computer-science",
-      "type": "site",
-      "topic": "start",
-      "cost": "Free",
-      "time": "A reference",
-      "level": "later",
-      "lang": "en",
-      "why": "A full degree assembled from free courses. Useful as a map of what a CS degree contains. You already have a degree to do, so do not adopt it as a plan."
     },
     {
       "id": "lhtl",
@@ -119,18 +59,6 @@
       "level": "easy",
       "lang": "en",
       "why": "A short illustrated zine on how to get good at not understanding things yet. Perfect first read."
-    },
-    {
-      "id": "tina-huang",
-      "name": "Tina Huang",
-      "url": "https://www.youtube.com/@TinaHuang1",
-      "type": "video",
-      "topic": "start",
-      "cost": "Free",
-      "time": "Browse",
-      "level": "easy",
-      "lang": "en",
-      "why": "Practical videos on how to study technical subjects and stay sane while doing it."
     },
     {
       "id": "python-download",
@@ -169,114 +97,6 @@
       "why": "The official walk-through: install, write hello world, press run."
     },
     {
-      "id": "scratch",
-      "name": "Scratch",
-      "url": "https://scratch.mit.edu/",
-      "type": "tool",
-      "topic": "start",
-      "cost": "Free",
-      "time": "An afternoon",
-      "level": "easy",
-      "lang": "en",
-      "why": "Programming with drag-and-drop blocks. CS50 starts here for a reason: you learn the ideas without fighting syntax."
-    },
-    {
-      "id": "futurecoder",
-      "name": "futurecoder",
-      "url": "https://futurecoder.io/",
-      "type": "course",
-      "topic": "python",
-      "cost": "Free",
-      "time": "20 to 40 hours",
-      "level": "easy",
-      "lang": "en",
-      "why": "Interactive Python in your browser. Nothing to install, no account, kind error messages, and a built-in visual debugger."
-    },
-    {
-      "id": "helsinki-mooc",
-      "name": "Python Programming MOOC 2026, University of Helsinki",
-      "url": "https://programming-26.mooc.fi/",
-      "type": "course",
-      "topic": "python",
-      "cost": "Free",
-      "time": "14 parts",
-      "level": "easy",
-      "lang": "en",
-      "why": "The backbone. Hundreds of small auto-graded exercises with a steady difficulty ramp. It also teaches you to run Python on your own laptop."
-    },
-    {
-      "id": "helsinki-1",
-      "name": "Helsinki MOOC, Part 1: getting started, variables, arithmetic, conditions",
-      "url": "https://programming-26.mooc.fi/part-1",
-      "type": "course",
-      "topic": "python",
-      "cost": "Free",
-      "time": "About a week",
-      "level": "easy",
-      "lang": "en",
-      "why": "Printing, input, variables, arithmetic and your first if statements, each with exercises."
-    },
-    {
-      "id": "helsinki-2",
-      "name": "Helsinki MOOC, Part 2: more conditions and simple loops",
-      "url": "https://programming-26.mooc.fi/part-2",
-      "type": "course",
-      "topic": "python",
-      "cost": "Free",
-      "time": "About a week",
-      "level": "easy",
-      "lang": "en",
-      "why": "elif, combining conditions, and the while loop."
-    },
-    {
-      "id": "helsinki-3",
-      "name": "Helsinki MOOC, Part 3: loops, strings and your own functions",
-      "url": "https://programming-26.mooc.fi/part-3",
-      "type": "course",
-      "topic": "python",
-      "cost": "Free",
-      "time": "About a week",
-      "level": "easy",
-      "lang": "en",
-      "why": "Loops with conditions, working with strings, and defining functions."
-    },
-    {
-      "id": "helsinki-4",
-      "name": "Helsinki MOOC, Part 4: lists and more functions",
-      "url": "https://programming-26.mooc.fi/part-4",
-      "type": "course",
-      "topic": "python",
-      "cost": "Free",
-      "time": "About a week",
-      "level": "easy",
-      "lang": "en",
-      "why": "Running code in your own editor, lists, for loops, and functions that return things."
-    },
-    {
-      "id": "helsinki-5",
-      "name": "Helsinki MOOC, Part 5: dictionaries, tuples and nested lists",
-      "url": "https://programming-26.mooc.fi/part-5",
-      "type": "course",
-      "topic": "python",
-      "cost": "Free",
-      "time": "About a week",
-      "level": "medium",
-      "lang": "en",
-      "why": "More ways to organise data, including the dictionary."
-    },
-    {
-      "id": "helsinki-6",
-      "name": "Helsinki MOOC, Part 6: files and handling errors",
-      "url": "https://programming-26.mooc.fi/part-6",
-      "type": "course",
-      "topic": "python",
-      "cost": "Free",
-      "time": "About a week",
-      "level": "medium",
-      "lang": "en",
-      "why": "Reading files, writing files, and dealing with errors on purpose."
-    },
-    {
       "id": "cs50p",
       "name": "CS50P, Harvard's Introduction to Programming with Python",
       "url": "https://cs50.harvard.edu/python/",
@@ -286,7 +106,7 @@
       "time": "10 weeks",
       "level": "easy",
       "lang": "en",
-      "why": "The best-taught Python course going. It assumes nothing, and the problem sets are graded automatically."
+      "why": "Harvard's Python course for people who have never coded. Free, brilliantly taught, with problem sets that are graded automatically. This is the one course for the Python line."
     },
     {
       "id": "cs50p-lectures",
@@ -298,7 +118,7 @@
       "time": "About 15 hours total",
       "level": "easy",
       "lang": "en",
-      "why": "The full lecture set. Watching is not learning, so do the problem sets too."
+      "why": "The same lectures on YouTube, if you prefer watching there. Watching is not learning, so do the problem sets too."
     },
     {
       "id": "cs50p-w0",
@@ -385,42 +205,6 @@
       "why": "Practical Python: files, spreadsheets, web pages. Every chapter ends with something that does a real job for you."
     },
     {
-      "id": "atbs-ch1",
-      "name": "Automate the Boring Stuff, Chapter 1: Python Basics",
-      "url": "https://automatetheboringstuff.com/3e/chapter1.html",
-      "type": "book",
-      "topic": "python",
-      "cost": "Free to read online",
-      "time": "An evening",
-      "level": "easy",
-      "lang": "en",
-      "why": "Expressions, variables and your first program, explained from zero."
-    },
-    {
-      "id": "atbs-ch2",
-      "name": "Automate the Boring Stuff, Chapter 2: if-else and Flow Control",
-      "url": "https://automatetheboringstuff.com/3e/chapter2.html",
-      "type": "book",
-      "topic": "python",
-      "cost": "Free to read online",
-      "time": "An evening",
-      "level": "easy",
-      "lang": "en",
-      "why": "Conditions and decisions, with flowcharts."
-    },
-    {
-      "id": "py4e",
-      "name": "Python for Everybody",
-      "url": "https://www.py4e.com/",
-      "type": "course",
-      "topic": "python",
-      "cost": "Free",
-      "time": "40 to 60 hours",
-      "level": "easy",
-      "lang": "en",
-      "why": "Famously gentle pacing, with a free book and auto-graded exercises. A lighter alternative to the Helsinki course."
-    },
-    {
       "id": "pythontutor",
       "name": "Python Tutor",
       "url": "https://pythontutor.com/",
@@ -433,90 +217,6 @@
       "why": "Paste your code and step through it line by line, watching every variable change. The cure for 'why is my loop doing that'."
     },
     {
-      "id": "mit-6100l",
-      "name": "MIT 6.100L, Introduction to CS and Programming using Python",
-      "url": "https://www.youtube.com/playlist?list=PLUl4u3cNGP62A-ynp6v6-LGBCzeH3VAQB",
-      "type": "video",
-      "topic": "python",
-      "cost": "Free",
-      "time": "26 lectures",
-      "level": "medium",
-      "lang": "en",
-      "why": "A real first-year university course, recorded. Good for seeing the pace and tone of actual lectures."
-    },
-    {
-      "id": "mosh-python",
-      "name": "Python Full Course for Beginners, Programming with Mosh",
-      "url": "https://www.youtube.com/watch?v=K5KVEU3aaeQ",
-      "type": "video",
-      "topic": "python",
-      "cost": "Free",
-      "time": "About 2 hours",
-      "level": "easy",
-      "lang": "en",
-      "why": "The fastest credible way to be writing Python tonight. A warm-up, not a full course."
-    },
-    {
-      "id": "corey-schafer",
-      "name": "Corey Schafer",
-      "url": "https://www.youtube.com/@coreyms",
-      "type": "video",
-      "topic": "python",
-      "cost": "Free",
-      "time": "15 to 30 min each",
-      "level": "easy",
-      "lang": "en",
-      "why": "The clearest single-topic Python videos on YouTube. Use it as a reference when one concept will not stick."
-    },
-    {
-      "id": "brocode-python",
-      "name": "Python Full Course, Bro Code",
-      "url": "https://www.youtube.com/watch?v=XKHEtdqhLK8",
-      "type": "video",
-      "topic": "python",
-      "cost": "Free",
-      "time": "About 12 hours",
-      "level": "easy",
-      "lang": "en",
-      "why": "Very patient, type-along style, full of small games. Good if you learn by doing along with the video."
-    },
-    {
-      "id": "techwithtim",
-      "name": "Tech With Tim",
-      "url": "https://www.youtube.com/@TechWithTim",
-      "type": "video",
-      "topic": "python",
-      "cost": "Free",
-      "time": "Browse",
-      "level": "medium",
-      "lang": "en",
-      "why": "Project-first Python: games, bots, small tools. Best once the basics are in place."
-    },
-    {
-      "id": "realpython",
-      "name": "Real Python",
-      "url": "https://realpython.com/",
-      "type": "site",
-      "topic": "python",
-      "cost": "Free articles, paid courses",
-      "time": "Use as needed",
-      "level": "medium",
-      "lang": "en",
-      "why": "A huge library of written tutorials. Great for looking up one specific topic."
-    },
-    {
-      "id": "kaggle-python",
-      "name": "Kaggle Learn: Python",
-      "url": "https://www.kaggle.com/learn/python",
-      "type": "course",
-      "topic": "python",
-      "cost": "Free",
-      "time": "About 5 hours",
-      "level": "medium",
-      "lang": "en",
-      "why": "A quick, brisk run through Python in browser notebooks. Better as a second pass than a first."
-    },
-    {
       "id": "invent-python",
       "name": "Invent Your Own Computer Games with Python",
       "url": "https://inventwithpython.com/invent4thed/",
@@ -527,42 +227,6 @@
       "level": "easy",
       "lang": "en",
       "why": "Learn by building small games, from Hangman to Tic-Tac-Toe. By the author of Automate the Boring Stuff."
-    },
-    {
-      "id": "exercism-python",
-      "name": "Exercism, Python track",
-      "url": "https://exercism.org/tracks/python",
-      "type": "site",
-      "topic": "python",
-      "cost": "Free",
-      "time": "15 to 30 min a day",
-      "level": "easy",
-      "lang": "en",
-      "why": "Short exercises with automatic checks, plus optional feedback from volunteer human mentors."
-    },
-    {
-      "id": "codewars",
-      "name": "Codewars",
-      "url": "https://www.codewars.com/",
-      "type": "site",
-      "topic": "python",
-      "cost": "Free",
-      "time": "15 to 30 min a day",
-      "level": "medium",
-      "lang": "en",
-      "why": "Bite-sized puzzles with ranks. Start at 8 kyu, the easiest. The fun part is reading other people's solutions after yours."
-    },
-    {
-      "id": "hackerrank-python",
-      "name": "HackerRank, Python",
-      "url": "https://www.hackerrank.com/domains/python",
-      "type": "site",
-      "topic": "python",
-      "cost": "Free",
-      "time": "Use as needed",
-      "level": "easy",
-      "lang": "en",
-      "why": "A structured ladder of easy Python problems."
     },
     {
       "id": "adventofcode",
@@ -589,18 +253,6 @@
       "why": "Maths-flavoured programming puzzles. Problems 1 to 20 are a lovely way to get fluent. It gets hard quickly after that."
     },
     {
-      "id": "codingame",
-      "name": "CodinGame",
-      "url": "https://www.codingame.com/",
-      "type": "site",
-      "topic": "side",
-      "cost": "Free",
-      "time": "Use as needed",
-      "level": "medium",
-      "lang": "en",
-      "why": "Puzzles dressed up as video games. Your code steers the ship."
-    },
-    {
       "id": "leetcode",
       "name": "LeetCode",
       "url": "https://leetcode.com/",
@@ -623,18 +275,6 @@
       "level": "easy",
       "lang": "ar",
       "why": "The C++ course Egyptian CS students recommend most. In Arabic, from zero."
-    },
-    {
-      "id": "elzero-cpp",
-      "name": "Elzero Web School: Fundamentals of Programming with C++",
-      "url": "https://www.youtube.com/playlist?list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS",
-      "type": "video",
-      "topic": "cpp",
-      "cost": "Free",
-      "time": "A full playlist",
-      "level": "easy",
-      "lang": "ar",
-      "why": "Short, tidy Arabic lessons that build up C++ one idea at a time."
     },
     {
       "id": "elzero-pre",
@@ -661,42 +301,6 @@
       "why": "The most thorough free written C++ tutorial. Read the chapter that matches what you are stuck on."
     },
     {
-      "id": "fcc-cpp",
-      "name": "C++ Tutorial for Beginners, freeCodeCamp",
-      "url": "https://www.youtube.com/watch?v=vLnPwxZdW4Y",
-      "type": "video",
-      "topic": "cpp",
-      "cost": "Free",
-      "time": "About 4 hours",
-      "level": "easy",
-      "lang": "en",
-      "why": "One long English video covering the C++ basics end to end."
-    },
-    {
-      "id": "w3-cpp",
-      "name": "W3Schools C++",
-      "url": "https://www.w3schools.com/cpp/",
-      "type": "site",
-      "topic": "cpp",
-      "cost": "Free",
-      "time": "Use as a reference",
-      "level": "easy",
-      "lang": "en",
-      "why": "Quick examples you can run in the browser. Handy as a syntax cheat sheet."
-    },
-    {
-      "id": "missing-semester",
-      "name": "The Missing Semester of Your CS Education, MIT",
-      "url": "https://missing.csail.mit.edu/",
-      "type": "course",
-      "topic": "tools",
-      "cost": "Free",
-      "time": "9 lectures",
-      "level": "medium",
-      "lang": "en",
-      "why": "The terminal, Git, editors and debugging: everything lecturers assume you know and nobody teaches."
-    },
-    {
       "id": "missing-shell",
       "name": "Missing Semester: The Shell",
       "url": "https://missing.csail.mit.edu/2020/course-shell/",
@@ -707,30 +311,6 @@
       "level": "medium",
       "lang": "en",
       "why": "A one-hour introduction to the terminal, with exercises."
-    },
-    {
-      "id": "missing-git",
-      "name": "Missing Semester: Version Control (Git)",
-      "url": "https://missing.csail.mit.edu/2020/version-control/",
-      "type": "course",
-      "topic": "tools",
-      "cost": "Free",
-      "time": "1.5 hours",
-      "level": "medium",
-      "lang": "en",
-      "why": "Explains how Git thinks, which is why it finally makes sense. Dense, so pair it with an easier video."
-    },
-    {
-      "id": "missing-videos",
-      "name": "Missing Semester lecture videos",
-      "url": "https://www.youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J",
-      "type": "video",
-      "topic": "tools",
-      "cost": "Free",
-      "time": "11 lectures",
-      "level": "medium",
-      "lang": "en",
-      "why": "The recorded lectures for the course."
     },
     {
       "id": "ubuntu-cli",
@@ -769,18 +349,6 @@
       "why": "From nothing to working on a shared project, in one sitting."
     },
     {
-      "id": "github-skills",
-      "name": "GitHub Skills",
-      "url": "https://skills.github.com/",
-      "type": "course",
-      "topic": "tools",
-      "cost": "Free",
-      "time": "15 to 60 min each",
-      "level": "easy",
-      "lang": "en",
-      "why": "Hands-on lessons that run inside a real GitHub repository of your own."
-    },
-    {
       "id": "github-hello",
       "name": "GitHub Docs: Hello World",
       "url": "https://docs.github.com/en/get-started/start-your-journey/hello-world",
@@ -791,18 +359,6 @@
       "level": "easy",
       "lang": "en",
       "why": "The official ten-step first project on GitHub."
-    },
-    {
-      "id": "progit",
-      "name": "Pro Git (book)",
-      "url": "https://git-scm.com/book/en/v2",
-      "type": "book",
-      "topic": "tools",
-      "cost": "Free",
-      "time": "Chapters 1 to 3",
-      "level": "medium",
-      "lang": "en",
-      "why": "The standard Git book. Chapters 1 to 3 are all you need for a long time."
     },
     {
       "id": "student-pack",
@@ -827,18 +383,6 @@
       "level": "easy",
       "lang": "en",
       "why": "A short, kind guide to asking technical questions that get answered."
-    },
-    {
-      "id": "so-ask",
-      "name": "Stack Overflow: How do I ask a good question?",
-      "url": "https://stackoverflow.com/help/how-to-ask",
-      "type": "site",
-      "topic": "tools",
-      "cost": "Free",
-      "time": "10 minutes",
-      "level": "easy",
-      "lang": "en",
-      "why": "The checklist the internet expects you to have read."
     },
     {
       "id": "rubberduck",
@@ -875,18 +419,6 @@
       "level": "easy",
       "lang": "en",
       "why": "An AI tutor built to nudge you toward the answer instead of handing it over."
-    },
-    {
-      "id": "fireship",
-      "name": "Fireship",
-      "url": "https://www.youtube.com/@Fireship",
-      "type": "video",
-      "topic": "tools",
-      "cost": "Free",
-      "time": "100 seconds each",
-      "level": "easy",
-      "lang": "en",
-      "why": "Any tech word explained in 100 seconds. Great for decoding jargon. Take the doom-and-gloom jokes with salt."
     },
     {
       "id": "jvns",
@@ -961,18 +493,6 @@
       "why": "Linked lists, trees and hash tables explained from the ground up."
     },
     {
-      "id": "spanningtree",
-      "name": "Spanning Tree",
-      "url": "https://www.youtube.com/@SpanningTree",
-      "type": "video",
-      "topic": "thinking",
-      "cost": "Free",
-      "time": "5 to 12 min each",
-      "level": "easy",
-      "lang": "en",
-      "why": "Short animated explainers on algorithms and puzzles. The friendliest entry point there is."
-    },
-    {
       "id": "visualgo",
       "name": "VisuAlgo",
       "url": "https://visualgo.net/en",
@@ -1009,42 +529,6 @@
       "why": "Recursion explained calmly, with a whiteboard."
     },
     {
-      "id": "think-python",
-      "name": "Think Python, 3rd edition",
-      "url": "https://greenteapress.com/wp/think-python-3rd-edition/",
-      "type": "book",
-      "topic": "thinking",
-      "cost": "Free to read online",
-      "time": "A few weeks",
-      "level": "medium",
-      "lang": "en",
-      "why": "A short book on how to think like a computer scientist, using Python."
-    },
-    {
-      "id": "fcc-dsa",
-      "name": "Algorithms and Data Structures Tutorial, freeCodeCamp",
-      "url": "https://www.youtube.com/watch?v=8hly31xKli0",
-      "type": "video",
-      "topic": "thinking",
-      "cost": "Free",
-      "time": "About 5 hours",
-      "level": "medium",
-      "lang": "en",
-      "why": "A beginner-level full course in one video."
-    },
-    {
-      "id": "fiset-ds",
-      "name": "Data Structures: Easy to Advanced, William Fiset",
-      "url": "https://www.youtube.com/watch?v=RBSGKlAvoiM",
-      "type": "video",
-      "topic": "thinking",
-      "cost": "Free",
-      "time": "About 8 hours",
-      "level": "later",
-      "lang": "en",
-      "why": "Animated, thorough coverage of every major data structure. Examples are in Java, and the ideas carry over."
-    },
-    {
       "id": "abdul-bari",
       "name": "Abdul Bari: Algorithms",
       "url": "https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O",
@@ -1067,42 +551,6 @@
       "level": "later",
       "lang": "en",
       "why": "A rigorous university algorithms course, taught in Python. For when you want the real thing."
-    },
-    {
-      "id": "open-ds",
-      "name": "Open Data Structures",
-      "url": "https://opendatastructures.org/",
-      "type": "book",
-      "topic": "thinking",
-      "cost": "Free",
-      "time": "A reference",
-      "level": "later",
-      "lang": "en",
-      "why": "A free data structures textbook, with a C++ edition."
-    },
-    {
-      "id": "composing-programs",
-      "name": "Composing Programs",
-      "url": "https://composingprograms.com/",
-      "type": "book",
-      "topic": "thinking",
-      "cost": "Free",
-      "time": "A semester",
-      "level": "later",
-      "lang": "en",
-      "why": "The book behind Berkeley's intro course. A deeper way to think about programs, best after a few months of Python."
-    },
-    {
-      "id": "neetcode",
-      "name": "NeetCode",
-      "url": "https://neetcode.io/",
-      "type": "site",
-      "topic": "thinking",
-      "cost": "Free tier",
-      "time": "Later",
-      "level": "later",
-      "lang": "en",
-      "why": "Clear explanations of interview problems. Not a first-year activity. Save it for internship season."
     },
     {
       "id": "3b1b-linalg",
@@ -1129,18 +577,6 @@
       "why": "What derivatives and integrals actually mean, shown visually."
     },
     {
-      "id": "3b1b",
-      "name": "3Blue1Brown",
-      "url": "https://www.youtube.com/@3blue1brown",
-      "type": "video",
-      "topic": "maths",
-      "cost": "Free",
-      "time": "Browse",
-      "level": "easy",
-      "lang": "en",
-      "why": "Beautiful animated maths. Proof that maths can be a pleasure to watch."
-    },
-    {
       "id": "prof-leonard",
       "name": "Professor Leonard: Calculus 1",
       "url": "https://www.youtube.com/playlist?list=PLF797E961509B4EB5",
@@ -1151,18 +587,6 @@
       "level": "easy",
       "lang": "en",
       "why": "Patient, complete classroom lectures. He explains everything three ways."
-    },
-    {
-      "id": "khan-calc",
-      "name": "Khan Academy: Calculus 1",
-      "url": "https://www.khanacademy.org/math/calculus-1",
-      "type": "course",
-      "topic": "maths",
-      "cost": "Free",
-      "time": "Use as needed",
-      "level": "easy",
-      "lang": "en",
-      "why": "Short videos with practice questions. Ideal for patching one shaky topic."
     },
     {
       "id": "khan-linalg",
@@ -1235,18 +659,6 @@
       "level": "easy",
       "lang": "en",
       "why": "Short worked examples in discrete maths: logic, sets, proofs, counting."
-    },
-    {
-      "id": "mit-6042",
-      "name": "MIT 6.042J, Mathematics for Computer Science",
-      "url": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/",
-      "type": "course",
-      "topic": "maths",
-      "cost": "Free",
-      "time": "A full semester",
-      "level": "later",
-      "lang": "en",
-      "why": "The classic 'maths a computer scientist needs' course, with videos and a free textbook. Demanding."
     },
     {
       "id": "lague-computers",
@@ -1369,18 +781,6 @@
       "why": "A short, clear article on what actually happens between your laptop and a website."
     },
     {
-      "id": "ostep",
-      "name": "Operating Systems: Three Easy Pieces",
-      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
-      "type": "book",
-      "topic": "computers",
-      "cost": "Free",
-      "time": "A semester",
-      "level": "later",
-      "lang": "en",
-      "why": "The free standard textbook on operating systems. For later, when you meet the subject properly."
-    },
-    {
       "id": "fcishub",
       "name": "FcisHub",
       "url": "https://fcishub.com/",
@@ -1393,18 +793,6 @@
       "why": "A student-built hub for your faculty: past exams, lecture material, schedules and staff contacts."
     },
     {
-      "id": "fcis-site",
-      "name": "Faculty of Computer and Information Sciences, Ain Shams",
-      "url": "https://cis.asu.edu.eg/",
-      "type": "site",
-      "topic": "cairo",
-      "cost": "Free",
-      "time": "Use as needed",
-      "level": "easy",
-      "lang": "en",
-      "why": "The official faculty site: announcements, timetables and exam schedules."
-    },
-    {
       "id": "icpc-fcis",
       "name": "FCIS Ain Shams ICPC Community",
       "url": "https://www.facebook.com/ICPCFCIS/",
@@ -1415,30 +803,6 @@
       "level": "easy",
       "lang": "en",
       "why": "Your faculty's problem-solving community. Runs beginner training from zero. New rounds usually open around October to November, with another intake in the mid-year break."
-    },
-    {
-      "id": "acmascis",
-      "name": "acmASCIS, the ACM student chapter at your faculty",
-      "url": "https://eg.linkedin.com/company/acmascis-student-chapter",
-      "type": "community",
-      "topic": "cairo",
-      "cost": "Free",
-      "time": "Weekly",
-      "level": "easy",
-      "lang": "en",
-      "why": "About 25 years old. Runs levelled programming training, contests and career events. Trains in C++, which helps with your course too."
-    },
-    {
-      "id": "codeforces",
-      "name": "Codeforces",
-      "url": "https://codeforces.com/",
-      "type": "site",
-      "topic": "cairo",
-      "cost": "Free",
-      "time": "Use as needed",
-      "level": "medium",
-      "lang": "en",
-      "why": "The site where the campus training sheets and contests live."
     },
     {
       "id": "gdg-asu",
@@ -1501,42 +865,6 @@
       "why": "Technical committees, workshops and events, based in the Faculty of Engineering next door. Ask whether your faculty's students can join."
     },
     {
-      "id": "stp-asu",
-      "name": "STP, Steps Towards Progress",
-      "url": "https://eng.asu.edu.eg/education/undergraduates/SA/stp",
-      "type": "community",
-      "topic": "cairo",
-      "cost": "Free",
-      "time": "Varies",
-      "level": "medium",
-      "lang": "en",
-      "why": "A student activity at Ain Shams that runs workshops and an AI summit with a student competition."
-    },
-    {
-      "id": "enactus-asu",
-      "name": "Enactus Ain Shams University",
-      "url": "https://www.facebook.com/EnactusASU/",
-      "type": "community",
-      "topic": "cairo",
-      "cost": "Free",
-      "time": "High",
-      "level": "medium",
-      "lang": "en",
-      "why": "Student teams building real social-impact projects. Valuable, and the heaviest workload on this list. Better from your second year."
-    },
-    {
-      "id": "asu-ihub",
-      "name": "ASU iHub, Innovation and Entrepreneurship Center",
-      "url": "https://www.asu.edu.eg/ihub/",
-      "type": "community",
-      "topic": "cairo",
-      "cost": "Free",
-      "time": "Varies",
-      "level": "easy",
-      "lang": "en",
-      "why": "The university's innovation hub on the Abbassia campus. Workshops, hackathons and a team open to students from every faculty."
-    },
-    {
       "id": "gdg-cairo",
       "name": "GDG Cairo",
       "url": "https://gdg.community.dev/gdg-cairo/",
@@ -1561,30 +889,6 @@
       "why": "Google's women-in-tech community for Cairo. The main event is around International Women's Day, usually March to April."
     },
     {
-      "id": "creativa",
-      "name": "Creativa Innovation Hubs",
-      "url": "https://creativa.gov.eg/",
-      "type": "community",
-      "topic": "cairo",
-      "cost": "Free",
-      "time": "Varies",
-      "level": "easy",
-      "lang": "en",
-      "why": "Government tech hubs that host free training, events and hackathons."
-    },
-    {
-      "id": "fablab-egypt",
-      "name": "Fab Lab Egypt",
-      "url": "https://www.facebook.com/fablab.egypt/",
-      "type": "community",
-      "topic": "cairo",
-      "cost": "Some paid courses",
-      "time": "Drop in",
-      "level": "easy",
-      "lang": "en",
-      "why": "A maker space in Maadi with 3D printers, electronics and robotics workshops."
-    },
-    {
       "id": "spaceapps-cairo",
       "name": "NASA Space Apps Cairo",
       "url": "https://www.facebook.com/spaceappscairo/",
@@ -1595,30 +899,6 @@
       "level": "easy",
       "lang": "en",
       "why": "A two-day hackathon, usually in autumn. No experience needed. Teams want designers and storytellers as well as coders."
-    },
-    {
-      "id": "spaceapps",
-      "name": "NASA Space Apps Challenge",
-      "url": "https://www.spaceappschallenge.org/",
-      "type": "event",
-      "topic": "cairo",
-      "cost": "Free",
-      "time": "One weekend",
-      "level": "easy",
-      "lang": "en",
-      "why": "The global site for the hackathon, with registration and past challenges."
-    },
-    {
-      "id": "ecpc",
-      "name": "ECPC, Egyptian Collegiate Programming Contest",
-      "url": "https://www.facebook.com/EgyptCPC/",
-      "type": "event",
-      "topic": "cairo",
-      "cost": "Free",
-      "time": "Train all year",
-      "level": "medium",
-      "lang": "en",
-      "why": "Egypt's national university programming contest. You reach it through your campus community. Qualifications are usually in the summer."
     },
     {
       "id": "cybertalents",
@@ -1669,30 +949,6 @@
       "why": "An Arabic-speaking developer community for beginners and professionals."
     },
     {
-      "id": "cybertalents-tg",
-      "name": "CyberTalents on Telegram",
-      "url": "https://t.me/cybertalents",
-      "type": "community",
-      "topic": "cairo",
-      "cost": "Free",
-      "time": "As you like",
-      "level": "easy",
-      "lang": "en",
-      "why": "Announcements for security competitions in Egypt and the region."
-    },
-    {
-      "id": "huawei-ict",
-      "name": "Huawei ICT Competition and Academy",
-      "url": "https://e.huawei.com/en/talent/",
-      "type": "program",
-      "topic": "cairo",
-      "cost": "Free",
-      "time": "A few months",
-      "level": "medium",
-      "lang": "en",
-      "why": "Free courses and a yearly student competition. Ain Shams takes part. The first round in Egypt is usually in autumn."
-    },
-    {
       "id": "maharatech",
       "name": "Mahara-Tech",
       "url": "https://maharatech.gov.eg/",
@@ -1727,30 +983,6 @@
       "level": "medium",
       "lang": "en",
       "why": "The Information Technology Institute's free summer camp for undergraduates, in branches across Egypt. Applications usually open around May to June."
-    },
-    {
-      "id": "depi",
-      "name": "DEPI, Digital Egypt Pioneers Initiative",
-      "url": "https://depi.gov.eg/",
-      "type": "program",
-      "topic": "cairo",
-      "cost": "Free",
-      "time": "4 to 6 months",
-      "level": "medium",
-      "lang": "en",
-      "why": "A free government training programme open to university students. Excellent and demanding, so it fits better after your first year."
-    },
-    {
-      "id": "netacad",
-      "name": "Cisco Networking Academy",
-      "url": "https://www.netacad.com/",
-      "type": "program",
-      "topic": "cairo",
-      "cost": "Free courses",
-      "time": "Self-paced",
-      "level": "easy",
-      "lang": "en",
-      "why": "Free self-paced courses with certificates, including networking basics and Python."
     },
     {
       "id": "internship-guide",
@@ -1789,42 +1021,6 @@
       "why": "Very organised Arabic courses, with a written study plan for each one."
     },
     {
-      "id": "desouki",
-      "name": "Mohamed El Desouki",
-      "url": "https://www.youtube.com/@DesoukiEgypt",
-      "type": "video",
-      "topic": "cairo",
-      "cost": "Free",
-      "time": "Browse",
-      "level": "easy",
-      "lang": "ar",
-      "why": "Arabic lectures widely used by Egyptian CS students, especially for databases."
-    },
-    {
-      "id": "arabic-cp",
-      "name": "Arabic Competitive Programming",
-      "url": "https://www.youtube.com/@ArabicCompetitiveProgramming",
-      "type": "video",
-      "topic": "cairo",
-      "cost": "Free",
-      "time": "Browse",
-      "level": "medium",
-      "lang": "ar",
-      "why": "Problem solving and algorithms in Arabic, by Mostafa Saad Ibrahim."
-    },
-    {
-      "id": "codezilla",
-      "name": "Codezilla",
-      "url": "https://www.youtube.com/@codezilla",
-      "type": "video",
-      "topic": "cairo",
-      "cost": "Free",
-      "time": "Browse",
-      "level": "easy",
-      "lang": "ar",
-      "why": "Arabic videos on learning to program, careers and Python."
-    },
-    {
       "id": "coding-train",
       "name": "The Coding Train",
       "url": "https://www.youtube.com/@TheCodingTrain",
@@ -1837,18 +1033,6 @@
       "why": "Joyful creative coding. He makes mistakes on camera and fixes them live, which is the most reassuring thing you can watch."
     },
     {
-      "id": "coding-train-site",
-      "name": "The Coding Train website",
-      "url": "https://thecodingtrain.com/",
-      "type": "site",
-      "topic": "side",
-      "cost": "Free",
-      "time": "Browse",
-      "level": "easy",
-      "lang": "en",
-      "why": "All the challenges and tutorials, organised by topic."
-    },
-    {
       "id": "p5js",
       "name": "p5.js",
       "url": "https://p5js.org/",
@@ -1859,30 +1043,6 @@
       "level": "easy",
       "lang": "en",
       "why": "Draw and animate with code in your browser. It is JavaScript, and it is for play."
-    },
-    {
-      "id": "lague",
-      "name": "Sebastian Lague: Coding Adventures",
-      "url": "https://www.youtube.com/@SebastianLague",
-      "type": "video",
-      "topic": "side",
-      "cost": "Free",
-      "time": "20 to 40 min each",
-      "level": "easy",
-      "lang": "en",
-      "why": "Watching someone build a simulation from broken to beautiful. Proof that programming is a creative medium."
-    },
-    {
-      "id": "reducible",
-      "name": "Reducible",
-      "url": "https://www.youtube.com/@Reducible",
-      "type": "video",
-      "topic": "side",
-      "cost": "Free",
-      "time": "20 to 30 min each",
-      "level": "medium",
-      "lang": "en",
-      "why": "Gorgeous animations of how clever algorithms work, such as how images get compressed."
     },
     {
       "id": "sundas-khalid",
@@ -1909,18 +1069,6 @@
       "why": "A large international community for university women in tech, with mentorship and events. Open to first-years."
     },
     {
-      "id": "womentechmakers",
-      "name": "Women Techmakers",
-      "url": "https://www.womentechmakers.com/",
-      "type": "community",
-      "topic": "side",
-      "cost": "Free",
-      "time": "As you like",
-      "level": "easy",
-      "lang": "en",
-      "why": "Google's global programme for women in technology. The Cairo chapter runs local events."
-    },
-    {
       "id": "ghc",
       "name": "Grace Hopper Celebration",
       "url": "https://ghc.anitab.org/",
@@ -1945,16 +1093,40 @@
       "why": "Google's scholarships for computer science students, including a Europe, Middle East and Africa edition."
     },
     {
-      "id": "invent-games",
-      "name": "Invent with Python: all free books",
-      "url": "https://inventwithpython.com/",
-      "type": "book",
-      "topic": "side",
-      "cost": "Free to read online",
-      "time": "Browse",
-      "level": "easy",
+      "id": "cs50p-w4",
+      "name": "CS50P Week 4: Libraries",
+      "url": "https://cs50.harvard.edu/python/weeks/4/",
+      "type": "course",
+      "topic": "python",
+      "cost": "Free",
+      "time": "One week",
+      "level": "medium",
       "lang": "en",
-      "why": "Several free books for building games and small tools in Python."
+      "why": "Using code that other people wrote: random numbers, statistics, and talking to websites."
+    },
+    {
+      "id": "cs50p-w5",
+      "name": "CS50P Week 5: Unit Tests",
+      "url": "https://cs50.harvard.edu/python/weeks/5/",
+      "type": "course",
+      "topic": "python",
+      "cost": "Free",
+      "time": "One week",
+      "level": "medium",
+      "lang": "en",
+      "why": "Writing small programs that check your program, so bugs get caught before you do."
+    },
+    {
+      "id": "cs50p-w8",
+      "name": "CS50P Week 8: Object-Oriented Programming",
+      "url": "https://cs50.harvard.edu/python/weeks/8/",
+      "type": "course",
+      "topic": "python",
+      "cost": "Free",
+      "time": "One week",
+      "level": "medium",
+      "lang": "en",
+      "why": "Classes and objects, introduced gently with clear examples."
     }
   ]
 }

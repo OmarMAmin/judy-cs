@@ -17,7 +17,7 @@
     [12, "A regular commuter now."],
     [25, "Halfway across the city."],
     [40, "You could draw this map from memory."],
-    [53, "End of the line. Time to build your own map."]
+    [999, "End of the line. Time to build your own map."]
   ];
 
   var resources = {};   // id -> resource

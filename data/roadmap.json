@@ -1,0 +1,1758 @@
+{
+  "title": "Judy@CS",
+  "subtitle": "A metro map for learning computer science, at your own pace.",
+  "lines": [
+    {
+      "id": "start",
+      "code": "0",
+      "name": "Start here",
+      "color": "#F76707",
+      "tagline": "Four short stops before the real journey. Do not skip the second one.",
+      "dashed": false,
+      "bossLabel": "Boss fight",
+      "stations": [
+        {
+          "id": "what-is-cs",
+          "name": "What is CS, actually?",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Computer science is not about fixing the family printer. It is about solving problems so clearly that a machine can follow along, and a machine is the most literal-minded creature on earth.",
+          "ar": "لأ، مش هتصلّحي الطابعة.",
+          "example": "Think of giving directions to a microbus driver who does exactly, and only, what you say. Tell him 'go straight' with no 'until', and you are both in Alexandria by sunset.",
+          "why": "Every subject you will study is one piece of a single picture. Seeing the whole map first makes each piece feel less random.",
+          "picks": [
+            {
+              "ref": "crashcourse-cs",
+              "star": true
+            },
+            {
+              "ref": "roadmap-sh",
+              "star": false
+            },
+            {
+              "ref": "cs50x",
+              "star": false,
+              "note": "A full course, for when the short videos leave you wanting more."
+            },
+            {
+              "ref": "computerphile",
+              "star": false
+            },
+            {
+              "ref": "elzero-pre",
+              "star": false
+            }
+          ],
+          "boss": "Watch the first three Crash Course episodes. Then explain to someone at home what a computer is, in two sentences. If they nod, you win."
+        },
+        {
+          "id": "how-to-learn",
+          "name": "How to learn without suffering",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Your brain is not a hard drive. You cannot copy a lecture into it the night before an exam. It behaves more like a muscle: short sessions, often, with rest in between.",
+          "ar": "واحدة واحدة.",
+          "example": "Nobody learns to drive by watching driving videos. Code is the same. Watching someone type is not the same as typing.",
+          "why": "University moves faster than school. A few study habits picked up now will save you hundreds of hours over four years.",
+          "picks": [
+            {
+              "ref": "lhtl",
+              "star": true
+            },
+            {
+              "ref": "wizard-zine",
+              "star": false
+            },
+            {
+              "ref": "tina-huang",
+              "star": false
+            }
+          ],
+          "boss": "Do one 25-minute focused session with your phone in another room. Yes, another room. Not face down on the desk."
+        },
+        {
+          "id": "plot-twist",
+          "name": "Plot twist: there will be physics",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Surprise. The early part of a computer science degree often has more calculus, physics and electronics than programming. This is normal, and nobody is pranking you. Many faculties also choose your department later, using your grades, so the quiet subjects count just as much as the fun ones.",
+          "ar": "فيزيا؟ في حاسبات؟ أيوه.",
+          "example": "It is like joining a football academy and spending the first months running laps. The laps are the point. They also decide who gets picked.",
+          "why": "Knowing this early means you will not panic when it happens, and you will not neglect the subjects that quietly decide your options later.",
+          "picks": [
+            {
+              "ref": "fcishub",
+              "star": true
+            },
+            {
+              "ref": "khan-math",
+              "star": false
+            },
+            {
+              "ref": "prof-leonard",
+              "star": false
+            }
+          ],
+          "boss": "Ask an older student how department choice works at your faculty and which grades matter. Write the answer on a sticky note where you will see it.",
+          "connects": [
+            {
+              "line": "maths",
+              "station": "calculus",
+              "label": "Maths line: Calculus"
+            }
+          ]
+        },
+        {
+          "id": "setup",
+          "name": "Set up your laptop",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Every wizard needs a wand. Yours is a laptop with Python and a code editor on it. Any reasonably modern laptop will do. You do not need a gaming machine with rainbow lights, whatever your cousin says.",
+          "example": "Setting up is like arranging your desk before studying. It feels like procrastination, and it is the one time it is not.",
+          "why": "From here on, everything you learn gets typed and run on your own machine, which is where real learning happens.",
+          "picks": [
+            {
+              "ref": "python-download",
+              "star": true
+            },
+            {
+              "ref": "vscode",
+              "star": false
+            },
+            {
+              "ref": "vscode-python",
+              "star": false
+            },
+            {
+              "ref": "futurecoder",
+              "star": false,
+              "note": "No laptop yet? Start in the browser with this."
+            }
+          ],
+          "boss": "Install Python and VS Code. Then make your computer print your name. Take a photo. This is a historic moment."
+        },
+        {
+          "id": "first-program",
+          "name": "Your first program",
+          "kind": "terminus",
+          "level": "easy",
+          "intro": "Tradition says your first program makes the computer say 'Hello, World'. It is one line of code, it takes two seconds, and it means you are officially a programmer. A very junior one. It still counts.",
+          "ar": "يلا بينا.",
+          "example": "It is the programming version of a baby's first word. Nobody expects poetry. Everyone claps anyway.",
+          "why": "Starting is the hardest station on the whole map. After this one, you are no longer someone who is going to learn to code. You are someone who codes.",
+          "picks": [
+            {
+              "ref": "futurecoder",
+              "star": true
+            },
+            {
+              "ref": "cs50p-w0",
+              "star": false
+            },
+            {
+              "ref": "scratch",
+              "star": false
+            },
+            {
+              "ref": "mosh-python",
+              "star": false
+            }
+          ],
+          "boss": "Make Python greet you by name, ask how your day was, and then reply 'sounds exhausting' no matter what you type.",
+          "connects": [
+            {
+              "line": "python",
+              "station": "pick-course",
+              "label": "Python line: Pick your course"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "python",
+      "code": "1",
+      "name": "Python",
+      "color": "#1C7ED6",
+      "tagline": "Learn to think in code using the friendliest language there is. The ideas carry over to every other language.",
+      "dashed": false,
+      "bossLabel": "Boss fight",
+      "stations": [
+        {
+          "id": "pick-course",
+          "name": "Pick your course",
+          "kind": "station",
+          "level": "easy",
+          "intro": "There are a thousand Python courses, and choosing between them is a famous way to avoid starting any of them. Here is the shortcut: pick one from this list and stay loyal to it until the end. The stations after this one point to the matching lesson inside these courses.",
+          "ar": "اختاري واحد وكمّلي فيه.",
+          "example": "Choosing a series to watch. Forty minutes of scrolling through trailers is not watching television.",
+          "why": "One course finished beats five courses started. The stations that follow are the topics any of these courses will walk you through.",
+          "picks": [
+            {
+              "ref": "helsinki-mooc",
+              "star": true,
+              "note": "Best if you like learning by doing lots of small exercises."
+            },
+            {
+              "ref": "cs50p",
+              "star": false,
+              "note": "Best if you like a brilliant lecturer and meatier problem sets."
+            },
+            {
+              "ref": "cs50p-lectures",
+              "star": false
+            },
+            {
+              "ref": "py4e",
+              "star": false,
+              "note": "A gentler, lighter alternative."
+            },
+            {
+              "ref": "brocode-python",
+              "star": false,
+              "note": "Best if you like typing along with a video."
+            },
+            {
+              "ref": "mit-6100l",
+              "star": false,
+              "note": "A taste of real university lectures."
+            }
+          ],
+          "boss": "Pick one course. Tell someone which one, so that switching becomes embarrassing."
+        },
+        {
+          "id": "variables",
+          "name": "Variables",
+          "kind": "station",
+          "level": "easy",
+          "intro": "A variable is a labelled box. You put something in, stick a name on it, and ask for it later by name. You will call your first one x, regret it within the hour, and rename it number_of_cats like a civilised person.",
+          "ar": "سمّي الحاجة باسمها.",
+          "example": "Your kitchen jars. If the jar says 'sugar' and contains salt, the tea is ruined and it is entirely your fault. Name things honestly.",
+          "why": "Every program ever written is boxes of data being moved around. This is the first brick, and it never stops being useful.",
+          "picks": [
+            {
+              "ref": "helsinki-1",
+              "star": true
+            },
+            {
+              "ref": "cs50p-w0",
+              "star": false
+            },
+            {
+              "ref": "atbs-ch1",
+              "star": false
+            },
+            {
+              "ref": "pythontutor",
+              "star": false
+            }
+          ],
+          "boss": "Store your name, your age and your favourite food in three variables. Print one sentence that uses all three."
+        },
+        {
+          "id": "conditions",
+          "name": "Conditions",
+          "kind": "station",
+          "level": "easy",
+          "intro": "An if statement is your mother's logic. If you finished studying, you can go out. Else, do not even ask. Computers make every decision this way, just without the look.",
+          "ar": "خلصتي مذاكرة؟ اخرجي. مخلصتيش؟ انسي.",
+          "example": "A bouncer with a guest list. Name on the list: come in. Not on the list: no. Related to the owner: a third rule, called elif.",
+          "why": "Without conditions a program does the same thing every time. With them it can react, which is when it starts to feel alive.",
+          "picks": [
+            {
+              "ref": "cs50p-w1",
+              "star": true
+            },
+            {
+              "ref": "helsinki-2",
+              "star": false
+            },
+            {
+              "ref": "atbs-ch2",
+              "star": false
+            },
+            {
+              "ref": "pythontutor",
+              "star": false
+            }
+          ],
+          "boss": "Write a program that asks for the temperature and tells you to wear a jacket, wear a t-shirt, or stay home next to the air conditioner.",
+          "connects": [
+            {
+              "line": "maths",
+              "station": "logic",
+              "label": "Maths line: Logic"
+            }
+          ]
+        },
+        {
+          "id": "loops",
+          "name": "Loops",
+          "kind": "station",
+          "level": "easy",
+          "intro": "A loop is telling the computer 'again' without it ever getting bored, tired, or asking why. It is the most obedient employee you will ever have.",
+          "ar": "تاني.. وتاني.. وتاني.",
+          "example": "Stirring a pot: while the rice is not done, keep stirring. The computer will stir for a thousand years if you forget to say when to stop. You will forget at least once. Everyone does.",
+          "why": "Anything a computer does better than you, it does because it can repeat a simple step millions of times without sighing.",
+          "picks": [
+            {
+              "ref": "cs50p-w2",
+              "star": true
+            },
+            {
+              "ref": "helsinki-3",
+              "star": false
+            },
+            {
+              "ref": "pythontutor",
+              "star": false
+            },
+            {
+              "ref": "corey-schafer",
+              "star": false
+            }
+          ],
+          "boss": "Make Python politely insult you 10 times using a loop. Then change one number and make it 1,000 times. Notice you typed the same amount of code.",
+          "connects": [
+            {
+              "line": "thinking",
+              "station": "big-o",
+              "label": "Thinking line: Big-O"
+            }
+          ]
+        },
+        {
+          "id": "functions",
+          "name": "Functions",
+          "kind": "station",
+          "level": "easy",
+          "intro": "A function is a recipe you write once and then order by name. You do not explain how to make tea every time you want tea. You just say 'tea', and perhaps how many sugars.",
+          "ar": "اعمليها مرة، واستخدميها ألف مرة.",
+          "example": "A remote control button. Somebody did the hard work once and wrapped it in a button. Now you press 'volume up' and never think about the electronics again.",
+          "why": "Functions are how small programs grow into big ones without turning into spaghetti. Every serious program is functions calling functions.",
+          "picks": [
+            {
+              "ref": "helsinki-4",
+              "star": true
+            },
+            {
+              "ref": "helsinki-3",
+              "star": false
+            },
+            {
+              "ref": "cs50p-w0",
+              "star": false
+            },
+            {
+              "ref": "corey-schafer",
+              "star": false
+            }
+          ],
+          "boss": "Write a function make_tea(sugars) that returns a sentence. Call it with 0, 2 and 4 sugars. Feel free to judge the four."
+        },
+        {
+          "id": "lists-dicts",
+          "name": "Lists and dictionaries",
+          "kind": "station",
+          "level": "easy",
+          "intro": "A list is the queue at the bakery: everyone has a position. A dictionary is your phone contacts: you look up 'Mama' and get a number. Nobody has ever scrolled to 'contact number 37'.",
+          "example": "A shopping list has an order. A menu is a dictionary: you look up 'koshari, large' and get a price.",
+          "why": "Real programs handle thousands of things, not three variables. These two containers cover most of what you will ever need.",
+          "picks": [
+            {
+              "ref": "helsinki-5",
+              "star": true
+            },
+            {
+              "ref": "helsinki-4",
+              "star": false
+            },
+            {
+              "ref": "cs50p-w2",
+              "star": false
+            },
+            {
+              "ref": "pythontutor",
+              "star": false
+            }
+          ],
+          "boss": "Build a tiny contact book: a dictionary of three friends and their favourite snacks. Ask for a name and print the snack."
+        },
+        {
+          "id": "files",
+          "name": "Files",
+          "kind": "station",
+          "level": "medium",
+          "intro": "Variables forget everything the moment your program ends, like a goldfish with a degree. Files are how a program remembers anything until tomorrow.",
+          "ar": "الرام بتنسى، والهارد بيفتكر.",
+          "example": "Memory is your desk, cleared every night. A file is the drawer. If you want to see it again tomorrow, it goes in the drawer.",
+          "why": "Saving scores, notes, settings and data all mean files. This is the point where your programs start being useful for more than thirty seconds.",
+          "picks": [
+            {
+              "ref": "helsinki-6",
+              "star": true
+            },
+            {
+              "ref": "cs50p-w6",
+              "star": false
+            },
+            {
+              "ref": "atbs",
+              "star": false
+            }
+          ],
+          "boss": "Write a program that adds one to-do item to a file every time you run it, then prints the whole list.",
+          "connects": [
+            {
+              "line": "computers",
+              "station": "memory",
+              "label": "Computers line: Memory"
+            }
+          ]
+        },
+        {
+          "id": "debugging",
+          "name": "Errors and debugging",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Your code will break. Constantly. For everyone. Forever. An error message is not the computer shouting at you. It is the computer telling you exactly where it hurts, usually with a line number.",
+          "ar": "الـ error مش شتيمة، ده عنوان.",
+          "example": "A doctor does not panic when the patient says 'my knee hurts'. That is useful information. Read the last line of the error first. That is the knee.",
+          "why": "Professional programmers spend more time fixing code than writing it. Getting calm and methodical about errors is the real skill.",
+          "picks": [
+            {
+              "ref": "cs50p-w3",
+              "star": true
+            },
+            {
+              "ref": "pythontutor",
+              "star": false
+            },
+            {
+              "ref": "rubberduck",
+              "star": false
+            },
+            {
+              "ref": "helsinki-6",
+              "star": false
+            }
+          ],
+          "boss": "Break a working program on purpose in three different ways. Read each error out loud and find the line number inside it.",
+          "connects": [
+            {
+              "line": "tools",
+              "station": "asking",
+              "label": "Tools line: Asking good questions"
+            }
+          ]
+        },
+        {
+          "id": "practice",
+          "name": "The practice gym",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Reading about push-ups does not build muscle. Small problems, solved often, are how syntax turns into fluency. Ten minutes a day beats five hours on a guilty Saturday.",
+          "example": "Learning a language. You do not become fluent from a grammar book. You become fluent from ordering a thousand coffees badly.",
+          "why": "This is the difference between 'I followed the tutorial' and 'I can write it myself'. Only the second one survives an exam.",
+          "picks": [
+            {
+              "ref": "exercism-python",
+              "star": true
+            },
+            {
+              "ref": "codewars",
+              "star": false
+            },
+            {
+              "ref": "hackerrank-python",
+              "star": false
+            },
+            {
+              "ref": "kaggle-python",
+              "star": false
+            }
+          ],
+          "boss": "Solve one tiny exercise a day for seven days. Seven. Not forty-nine on Saturday.",
+          "connects": [
+            {
+              "line": "side",
+              "station": "puzzles",
+              "label": "Side quests: Puzzles"
+            }
+          ]
+        },
+        {
+          "id": "bridge-cpp",
+          "name": "Bridge to C++",
+          "kind": "interchange",
+          "level": "medium",
+          "intro": "Your university course will most likely use C++, not Python. Do not panic. You already know the ideas: variables, conditions, loops, functions. C++ is the same ideas wearing a stricter uniform. It wants to know the type of everything, and it wants semicolons. So many semicolons.",
+          "ar": "نفس الأفكار، بس لابسة يونيفورم.",
+          "example": "If Python is chatting with a friend, C++ is filling in a government form. Same information. More stamps.",
+          "why": "If you can already think in code, then in C++ you only fight the syntax, instead of fighting the syntax and the ideas at the same time.",
+          "picks": [
+            {
+              "ref": "adel-nasim-cpp",
+              "star": true
+            },
+            {
+              "ref": "elzero-cpp",
+              "star": false
+            },
+            {
+              "ref": "learncpp",
+              "star": false
+            },
+            {
+              "ref": "fcc-cpp",
+              "star": false
+            },
+            {
+              "ref": "w3-cpp",
+              "star": false
+            }
+          ],
+          "boss": "Take three small Python programs you already wrote and rewrite them in C++. Count the semicolons you forgot.",
+          "connects": [
+            {
+              "line": "cairo",
+              "station": "on-campus",
+              "label": "Cairo line: the campus community trains in C++"
+            }
+          ]
+        },
+        {
+          "id": "first-project",
+          "name": "Your first project",
+          "kind": "terminus",
+          "level": "medium",
+          "intro": "Your first project will be bad. Everyone's is. Build it anyway: a quiz about your family, a number guessing game, a tracker for your koshari budget.",
+          "ar": "أول مشروع دايماً وحش. عادي.",
+          "example": "The first pancake. It is always a disaster, and you cannot get to the second pancake without it.",
+          "why": "A finished project teaches you more than ten tutorials, because nobody tells you the next step. It is also the first thing you can show someone.",
+          "picks": [
+            {
+              "ref": "cs50p-project",
+              "star": true
+            },
+            {
+              "ref": "invent-python",
+              "star": false
+            },
+            {
+              "ref": "atbs",
+              "star": false
+            },
+            {
+              "ref": "techwithtim",
+              "star": false
+            }
+          ],
+          "boss": "Finish one small project and show it to someone. Finished and ugly beats perfect and imaginary.",
+          "connects": [
+            {
+              "line": "tools",
+              "station": "github",
+              "label": "Tools line: put it on GitHub"
+            },
+            {
+              "line": "side",
+              "station": "build",
+              "label": "Side quests: Build something fun"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "code": "2",
+      "name": "Tools nobody teaches you",
+      "color": "#2F9E44",
+      "tagline": "Lecturers assume you know these. Nobody ever teaches them. Now you will know.",
+      "dashed": false,
+      "bossLabel": "Boss fight",
+      "stations": [
+        {
+          "id": "terminal",
+          "name": "The terminal",
+          "kind": "station",
+          "level": "easy",
+          "intro": "The black window with white text is not hacking, whatever films say. It is simply talking to your computer by typing instead of clicking. It is faster, and it makes you look extremely cool on the metro.",
+          "ar": "الشاشة السودا مش بتعضّ.",
+          "example": "Clicking through folders is walking around a supermarket. The terminal is handing a list to someone who already knows where everything is.",
+          "why": "Programming tools, servers and half of your future labs live in the terminal. An hour of practice removes years of fear.",
+          "picks": [
+            {
+              "ref": "ubuntu-cli",
+              "star": true
+            },
+            {
+              "ref": "missing-shell",
+              "star": false
+            },
+            {
+              "ref": "missing-videos",
+              "star": false
+            }
+          ],
+          "boss": "Using only the terminal: make a folder, create a file inside it, rename the file, then delete it. No mouse allowed."
+        },
+        {
+          "id": "editor",
+          "name": "Your code editor",
+          "kind": "station",
+          "level": "easy",
+          "intro": "A code editor is a word processor for code, except it colours your text, finishes your sentences, and underlines mistakes before you make them. Learn five keyboard shortcuts and you will feel like a pianist.",
+          "example": "A chef's knife. You could cook with a butter knife, and people have, but it is slow and sad.",
+          "why": "You will spend thousands of hours in this window. Twenty minutes learning it properly pays you back every single day.",
+          "picks": [
+            {
+              "ref": "vscode",
+              "star": true
+            },
+            {
+              "ref": "vscode-python",
+              "star": false
+            },
+            {
+              "ref": "fireship",
+              "star": false
+            }
+          ],
+          "boss": "Learn the shortcuts for: run, comment out a line, find, rename everywhere, and open the terminal. Use each one once today."
+        },
+        {
+          "id": "git",
+          "name": "Git",
+          "kind": "station",
+          "level": "medium",
+          "intro": "Git gives you save points, like in a video game, except the boss is your own code from last Tuesday. Broke everything? Go back to a save. Want to try something risky? Make a branch, which is a parallel universe you can delete.",
+          "ar": "احفظي قبل الوحش.",
+          "example": "Remember essay_final.docx, essay_final2.docx and essay_FINAL_really.docx? Git is that, done properly, by people who were tired of it.",
+          "why": "Every team and every company uses Git. Group projects without it end in tears and a shared folder called 'new new final'.",
+          "picks": [
+            {
+              "ref": "learngitbranching",
+              "star": true
+            },
+            {
+              "ref": "fcc-git",
+              "star": false
+            },
+            {
+              "ref": "missing-git",
+              "star": false
+            },
+            {
+              "ref": "progit",
+              "star": false
+            }
+          ],
+          "boss": "Finish the first four levels of Learn Git Branching. It is a game. You are allowed to enjoy it."
+        },
+        {
+          "id": "github",
+          "name": "GitHub",
+          "kind": "interchange",
+          "level": "easy",
+          "intro": "If Git is your save file, GitHub is the cloud where you keep it, show it off, and work on it with friends. It is also your portfolio. Future employers will look at it before they finish reading your CV.",
+          "example": "An artist's sketchbook that the whole world can flip through. The early pages are meant to be rough. That is what makes the later ones impressive.",
+          "why": "Putting small projects online from the start builds a track record without any extra effort. This very page lives on GitHub.",
+          "picks": [
+            {
+              "ref": "github-hello",
+              "star": true
+            },
+            {
+              "ref": "github-skills",
+              "star": false
+            },
+            {
+              "ref": "student-pack",
+              "star": false
+            }
+          ],
+          "boss": "Create a GitHub account, make a repository, and upload your first Python program. Then apply for the Student Developer Pack with your university email.",
+          "connects": [
+            {
+              "line": "python",
+              "station": "first-project",
+              "label": "Python line: Your first project"
+            }
+          ]
+        },
+        {
+          "id": "asking",
+          "name": "Asking good questions",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Everybody gets stuck. Experts simply get stuck on fancier things and ask better questions. 'It doesn't work' is not a question. 'I expected 5, I got 7, here is the code and here is the error' is a question people enjoy answering.",
+          "ar": "اللي يسأل ميتوهش.",
+          "example": "Telling a mechanic 'the car is weird' versus 'it squeaks when I turn left'. One of these gets your car fixed today.",
+          "why": "Teaching assistants, older students and online communities all help faster when you ask well. It is a superpower that costs nothing.",
+          "picks": [
+            {
+              "ref": "jvns-questions",
+              "star": true
+            },
+            {
+              "ref": "so-ask",
+              "star": false
+            },
+            {
+              "ref": "rubberduck",
+              "star": false
+            }
+          ],
+          "boss": "Next time you are stuck, write the question out in full: what you expected, what happened, what you tried. Half the time you will solve it before you finish writing."
+        },
+        {
+          "id": "ai-helpers",
+          "name": "AI helpers, used wisely",
+          "kind": "terminus",
+          "level": "easy",
+          "intro": "AI assistants can explain, quiz and unstick you, which is wonderful. They can also do your whole assignment, which feels wonderful for about three weeks, until the exam, to which they are not invited.",
+          "ar": "الـ AI مش هيدخل معاكي الامتحان.",
+          "example": "Use one like a tutor sitting next to you, not like a friend who lets you copy. Ask 'why is this wrong?' and 'give me a hint'. Avoid 'write it for me'.",
+          "why": "The struggle is where the learning happens. People who outsource the struggle arrive in later years unable to do the basics, and it shows quickly.",
+          "picks": [
+            {
+              "ref": "cs50-ai-policy",
+              "star": true
+            },
+            {
+              "ref": "cs50-duck",
+              "star": false
+            },
+            {
+              "ref": "missing-semester",
+              "star": false
+            }
+          ],
+          "boss": "Take a bug you have already fixed. Ask an AI helper for a hint only. Decide honestly whether the hint would have been enough."
+        }
+      ]
+    },
+    {
+      "id": "thinking",
+      "code": "3",
+      "name": "Thinking like a computer scientist",
+      "color": "#7048E8",
+      "tagline": "The part that has nothing to do with typing: how to break problems down and why some solutions are faster.",
+      "dashed": false,
+      "bossLabel": "Boss fight",
+      "stations": [
+        {
+          "id": "problem-solving",
+          "name": "Problem solving",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Programming is mostly figuring out what to do, and only a little bit typing it. The secret move never changes: break the big scary problem into small boring ones.",
+          "example": "'Organise a wedding' is terrifying. 'Call the hall', 'order the cake' and 'keep a certain cousin away from the microphone' are all doable.",
+          "why": "This is the skill the whole degree is secretly teaching. Languages change every few years. This does not.",
+          "picks": [
+            {
+              "ref": "cs50x-week0",
+              "star": true
+            },
+            {
+              "ref": "csunplugged",
+              "star": false
+            },
+            {
+              "ref": "think-python",
+              "star": false
+            }
+          ],
+          "boss": "Write instructions for making a sandwich, for someone who has never seen bread. Get a family member to follow them literally. Laugh. Fix the instructions."
+        },
+        {
+          "id": "algorithms",
+          "name": "Algorithms",
+          "kind": "station",
+          "level": "easy",
+          "intro": "An algorithm is a recipe. Koshari has steps, an order, and a moment where everything goes wrong if you skip one. So does sorting a list. The word sounds intimidating, and it just means 'a clear way of doing something'.",
+          "ar": "زي وصفة الكشري بالظبط.",
+          "example": "Finding a word in a paper dictionary. You do not start at page one. You open near the middle and keep halving. Congratulations, you have been running binary search since primary school.",
+          "why": "Two programs can give the same answer, one in a second and one in a week. The difference is the algorithm.",
+          "picks": [
+            {
+              "ref": "cc-algorithms",
+              "star": true
+            },
+            {
+              "ref": "khan-algorithms",
+              "star": false
+            },
+            {
+              "ref": "spanningtree",
+              "star": false
+            },
+            {
+              "ref": "visualgo",
+              "star": false
+            }
+          ],
+          "boss": "Shuffle a deck of cards and sort it two different ways. Count your moves each time. You have just compared two algorithms."
+        },
+        {
+          "id": "big-o",
+          "name": "Big-O",
+          "kind": "interchange",
+          "level": "medium",
+          "intro": "Big-O is how much worse your evening gets when the guest list doubles. Cooking for 20 instead of 10? Twice the work. Everyone greeting everyone? Four times the kisses. Big-O asks that same question about code.",
+          "ar": "المعازيم زادوا الضعف.. والشغل؟",
+          "example": "Looking for a name page by page versus opening the book in the middle and halving. With ten names, who cares. With ten million, one takes a moment and the other takes your youth.",
+          "why": "It is the shared language for saying 'this will be fast enough' or 'this will melt the laptop'. It shows up in courses, interviews and real work.",
+          "picks": [
+            {
+              "ref": "cs50x-week3",
+              "star": true
+            },
+            {
+              "ref": "khan-algorithms",
+              "star": false
+            },
+            {
+              "ref": "bigo-cheatsheet",
+              "star": false
+            },
+            {
+              "ref": "visualgo",
+              "star": false
+            }
+          ],
+          "boss": "Find a name in a long list by checking one by one, then by halving. Feel the difference. That feeling is Big-O.",
+          "connects": [
+            {
+              "line": "python",
+              "station": "loops",
+              "label": "Python line: Loops"
+            }
+          ]
+        },
+        {
+          "id": "recursion",
+          "name": "Recursion",
+          "kind": "station",
+          "level": "medium",
+          "intro": "To understand recursion, please see the station called Recursion. Fine, seriously: recursion is solving a problem by solving a smaller copy of the same problem, like opening Russian dolls until you reach one too small to open.",
+          "ar": "عشان تفهمي الـ recursion، لازم الأول تفهمي الـ recursion.",
+          "example": "Standing in a long queue and wanting to know your position. You ask the person in front, who asks the person in front, until someone says 'I am first'. The answer then travels back to you.",
+          "why": "Some problems, like exploring folders inside folders, are painful without recursion and almost trivial with it.",
+          "picks": [
+            {
+              "ref": "recursion-computerphile",
+              "star": true
+            },
+            {
+              "ref": "khan-algorithms",
+              "star": false
+            },
+            {
+              "ref": "pythontutor",
+              "star": false
+            },
+            {
+              "ref": "cs50-shorts",
+              "star": false
+            }
+          ],
+          "boss": "Write a function that counts down from 10 to liftoff by calling itself. Watch it run in Python Tutor."
+        },
+        {
+          "id": "data-structures",
+          "name": "Data structures",
+          "kind": "station",
+          "level": "medium",
+          "intro": "Data structures are different kinds of containers. You would not store soup in a bag or carry books in a bowl. A stack is a pile of plates: last on, first off. A queue is the bakery line: first come, first served, unless somebody's uncle knows the baker.",
+          "example": "Your wardrobe. Everything thrown on one chair works until you need the blue shirt in a hurry. Organisation is speed.",
+          "why": "Choosing the right container is often the whole difference between a slow program and a fast one.",
+          "picks": [
+            {
+              "ref": "cs50x-week5",
+              "star": true
+            },
+            {
+              "ref": "visualgo",
+              "star": false
+            },
+            {
+              "ref": "fcc-dsa",
+              "star": false
+            },
+            {
+              "ref": "cs50-shorts",
+              "star": false
+            }
+          ],
+          "boss": "Use a Python list as a stack, then as a queue. Explain the difference to your rubber duck."
+        },
+        {
+          "id": "deep-end",
+          "name": "The deep end",
+          "kind": "terminus",
+          "level": "later",
+          "intro": "This is where the friendly cartoons end and the serious courses begin. Nothing here is meant for your first months. Come back when the earlier stations feel easy. You will be surprised how readable these have become.",
+          "example": "The deep end of the pool. It looks the same from above. You will know when you are ready, because you will stop holding the edge.",
+          "why": "These are the courses and books people use when they want real mastery, and later on, when they prepare for interviews.",
+          "picks": [
+            {
+              "ref": "abdul-bari",
+              "star": true
+            },
+            {
+              "ref": "fiset-ds",
+              "star": false
+            },
+            {
+              "ref": "mit-6006",
+              "star": false
+            },
+            {
+              "ref": "open-ds",
+              "star": false
+            },
+            {
+              "ref": "composing-programs",
+              "star": false
+            },
+            {
+              "ref": "leetcode",
+              "star": false
+            },
+            {
+              "ref": "neetcode",
+              "star": false
+            }
+          ],
+          "boss": "Pick one algorithm from VisuAlgo and implement it yourself without looking at anyone's code."
+        }
+      ]
+    },
+    {
+      "id": "maths",
+      "code": "4",
+      "name": "Maths without fear",
+      "color": "#E03131",
+      "tagline": "Less memorising, more puzzles. The maths that makes the rest of the map easier.",
+      "dashed": false,
+      "bossLabel": "Boss fight",
+      "stations": [
+        {
+          "id": "logic",
+          "name": "Logic",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Logic is arguing, but with rules, so nobody can win by shouting. AND, OR and NOT are the very same words your if statements use.",
+          "ar": "الرياضة هنا مش حفظ، دي فوازير.",
+          "example": "'If it is Friday AND Mama is cooking, I am home for lunch.' You have been doing propositional logic your whole life. You just never got marks for it.",
+          "why": "Logic is the grammar underneath programming, circuits and proofs. Learn it once and it pays off in three places.",
+          "picks": [
+            {
+              "ref": "trevtutor",
+              "star": true
+            },
+            {
+              "ref": "levin-dm",
+              "star": false
+            },
+            {
+              "ref": "brehm-dm",
+              "star": false
+            }
+          ],
+          "boss": "Write the truth table for: 'I go out if I finished studying OR it is my birthday, but NOT if it is raining.'",
+          "connects": [
+            {
+              "line": "python",
+              "station": "conditions",
+              "label": "Python line: Conditions"
+            },
+            {
+              "line": "computers",
+              "station": "logic-gates",
+              "label": "Computers line: Logic gates"
+            }
+          ]
+        },
+        {
+          "id": "sets-proofs",
+          "name": "Sets and proofs",
+          "kind": "station",
+          "level": "medium",
+          "intro": "A set is a group with no repeats and no order. The set of your cousins is the same whether you list them by age or by how annoying they are. A proof is an argument so tight that even your most stubborn relative would have to agree.",
+          "example": "A lawyer's closing argument in which every sentence follows from the one before, and the judge is a very picky mathematician.",
+          "why": "Writing proofs is where many first-years hit a wall. A little early practice turns the wall into a step.",
+          "picks": [
+            {
+              "ref": "book-of-proof",
+              "star": true
+            },
+            {
+              "ref": "levin-dm",
+              "star": false
+            },
+            {
+              "ref": "brehm-dm",
+              "star": false
+            }
+          ],
+          "boss": "Prove that the sum of two even numbers is always even. In words. No hand waving."
+        },
+        {
+          "id": "counting",
+          "name": "Counting",
+          "kind": "station",
+          "level": "medium",
+          "intro": "Counting sounds like kindergarten until someone asks how many 8-character passwords exist, or in how many ways five friends can squeeze onto a microbus bench built for three.",
+          "example": "Choosing toppings. Three sauces and four fillings give twelve sandwiches. Now add 'in any order' and things get interesting quickly.",
+          "why": "Passwords, probability, and working out how long a program will take all come down to counting cleverly.",
+          "picks": [
+            {
+              "ref": "levin-dm",
+              "star": true
+            },
+            {
+              "ref": "trevtutor",
+              "star": false
+            },
+            {
+              "ref": "khan-math",
+              "star": false
+            }
+          ],
+          "boss": "How many 4-digit PINs are there? How many have no repeated digit? Work it out by reasoning, not by listing them."
+        },
+        {
+          "id": "calculus",
+          "name": "Calculus",
+          "kind": "station",
+          "level": "medium",
+          "intro": "Calculus is the maths of change: how fast something is moving right now, and how much has piled up in total. Your speedometer is a derivative. Your odometer is an integral. You have been doing calculus in every taxi ride.",
+          "example": "Filling a water tank. How fast the level is rising this second is a derivative. How much water is in there after an hour is an integral.",
+          "why": "It appears early in most computer science degrees, and later it powers graphics, simulations and machine learning.",
+          "picks": [
+            {
+              "ref": "3b1b-calc",
+              "star": true
+            },
+            {
+              "ref": "prof-leonard",
+              "star": false
+            },
+            {
+              "ref": "khan-calc",
+              "star": false
+            }
+          ],
+          "boss": "Watch the first Essence of Calculus video. Then explain to someone why the area of a circle is pi times r squared."
+        },
+        {
+          "id": "linear-algebra",
+          "name": "Linear algebra",
+          "kind": "station",
+          "level": "medium",
+          "intro": "Vectors and matrices look like boring grids of numbers. They are secretly the engine behind every game camera, every photo filter and every AI model. A matrix is a machine that stretches, spins and squashes space.",
+          "example": "A photo filter. Behind the pretty button, a grid of numbers is multiplying every pixel in your selfie.",
+          "why": "If you ever go near graphics, data science or AI, this is the language they are all written in.",
+          "picks": [
+            {
+              "ref": "3b1b-linalg",
+              "star": true
+            },
+            {
+              "ref": "khan-linalg",
+              "star": false
+            },
+            {
+              "ref": "3b1b",
+              "star": false
+            }
+          ],
+          "boss": "Watch the first three chapters of Essence of Linear Algebra. Then describe what a matrix does without using the word 'numbers'."
+        },
+        {
+          "id": "discrete-journey",
+          "name": "The full discrete maths journey",
+          "kind": "terminus",
+          "level": "medium",
+          "intro": "Discrete mathematics is the official name for the maths of computer science: logic, sets, proofs, counting and graphs, all in one subject. If the earlier stations were the trailer, this is the film.",
+          "example": "Learning chess. You have met the pieces one by one. Now you play whole games.",
+          "why": "It is the subject first-years most often underestimate. Arriving with a head start changes the whole experience.",
+          "picks": [
+            {
+              "ref": "levin-dm",
+              "star": true
+            },
+            {
+              "ref": "brehm-dm",
+              "star": false
+            },
+            {
+              "ref": "mit-6042",
+              "star": false,
+              "note": "For later, when you want the demanding version."
+            }
+          ],
+          "boss": "Work through one full chapter of Levin's book, exercises included. The exercises are the book."
+        }
+      ]
+    },
+    {
+      "id": "computers",
+      "code": "5",
+      "name": "How computers actually work",
+      "color": "#0C8599",
+      "tagline": "From a single switch to the whole internet. It is not magic, and finding that out is the fun part.",
+      "dashed": false,
+      "bossLabel": "Boss fight",
+      "stations": [
+        {
+          "id": "binary",
+          "name": "Binary",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Computers only know two things: on and off. Everything else, your photos, this page, your cousin's four-minute voice notes, is an enormous pile of ons and offs.",
+          "ar": "يا أبيض يا أسود.",
+          "example": "A light switch can say two things. Two switches can say four. Eight switches can say 256. A few billion switches can say anything at all.",
+          "why": "Every idea on this line is built from this one. It also explains why programmers find the number 256 oddly satisfying.",
+          "picks": [
+            {
+              "ref": "crashcourse-cs",
+              "star": true
+            },
+            {
+              "ref": "khan-internet",
+              "star": false
+            },
+            {
+              "ref": "code-petzold",
+              "star": false
+            }
+          ],
+          "boss": "Write your age in binary. Then learn to count to 31 on the fingers of one hand."
+        },
+        {
+          "id": "logic-gates",
+          "name": "Logic gates",
+          "kind": "station",
+          "level": "easy",
+          "intro": "A logic gate is a tiny bouncer. Two signals arrive, and it decides whether to let a signal through. Put a few billion bouncers together in the right pattern and you get a computer. Really. That is the whole trick.",
+          "example": "The stair light with a switch at the top and another at the bottom. Two inputs, one lamp, one rule connecting them. That is a logic gate in your building.",
+          "why": "This is the exact spot where logic turns into a physical machine. It is one of the great 'oh!' moments in the whole subject.",
+          "picks": [
+            {
+              "ref": "lague-computers",
+              "star": true
+            },
+            {
+              "ref": "lague-sim",
+              "star": false
+            },
+            {
+              "ref": "code-petzold",
+              "star": false
+            },
+            {
+              "ref": "nand-ted",
+              "star": false
+            }
+          ],
+          "boss": "In Digital Logic Sim, build a circuit that adds two one-bit numbers.",
+          "connects": [
+            {
+              "line": "maths",
+              "station": "logic",
+              "label": "Maths line: Logic"
+            }
+          ]
+        },
+        {
+          "id": "cpu",
+          "name": "The CPU",
+          "kind": "station",
+          "level": "medium",
+          "intro": "The CPU is a very fast, very stupid clerk. It can only do tiny things: fetch a number, add, compare, jump. It does billions of them every second, without a tea break.",
+          "example": "A cook who follows recipe cards one line at a time and never thinks ahead, but moves so quickly that dinner for a thousand is ready before you sit down.",
+          "why": "Once you see what the machine really does, programming languages stop looking like magic spells and start looking like conveniences.",
+          "picks": [
+            {
+              "ref": "ben-eater-8bit",
+              "star": true
+            },
+            {
+              "ref": "branch-education",
+              "star": false
+            },
+            {
+              "ref": "crashcourse-cs",
+              "star": false
+            },
+            {
+              "ref": "core-dumped",
+              "star": false
+            }
+          ],
+          "boss": "Watch how a CPU runs a program. Then explain 'fetch, decode, execute' using a kitchen as your metaphor."
+        },
+        {
+          "id": "memory",
+          "name": "Memory",
+          "kind": "station",
+          "level": "medium",
+          "intro": "RAM is your desk: fast, small, and cleared when you leave. Storage is your cupboard: slow, huge and permanent. Programs shuffle things between the two all day long.",
+          "example": "Cooking with your ingredients on the counter versus walking to the shop for each one. That gap is roughly the gap between memory and disk.",
+          "why": "It explains why your laptop slows down with forty tabs open, and why programs have to save things.",
+          "picks": [
+            {
+              "ref": "core-dumped",
+              "star": true
+            },
+            {
+              "ref": "branch-education",
+              "star": false
+            },
+            {
+              "ref": "crashcourse-cs",
+              "star": false
+            }
+          ],
+          "boss": "Open your laptop's task manager or activity monitor. Find the app eating the most memory. Judge it.",
+          "connects": [
+            {
+              "line": "python",
+              "station": "files",
+              "label": "Python line: Files"
+            }
+          ]
+        },
+        {
+          "id": "operating-systems",
+          "name": "Operating systems",
+          "kind": "station",
+          "level": "medium",
+          "intro": "The operating system is the doorman of the building. It decides which program gets the lift, keeps tenants out of each other's flats, and deals with the printer so that you do not have to.",
+          "example": "A restaurant with one kitchen and fifty tables. Someone has to decide whose order is cooked next, and make every table believe they are the only one.",
+          "why": "Windows, macOS, Linux and Android are all the same idea. Knowing the idea makes every one of them less mysterious.",
+          "picks": [
+            {
+              "ref": "core-dumped",
+              "star": true
+            },
+            {
+              "ref": "crashcourse-cs",
+              "star": false
+            },
+            {
+              "ref": "jvns",
+              "star": false
+            },
+            {
+              "ref": "ostep",
+              "star": false,
+              "note": "The standard free textbook, for later."
+            }
+          ],
+          "boss": "Count how many programs are running on your laptop right now. You opened perhaps five of them."
+        },
+        {
+          "id": "internet",
+          "name": "The internet",
+          "kind": "station",
+          "level": "easy",
+          "intro": "The internet is a postal system for tiny packets. Your message is torn into pieces, each piece finds its own way across the world, and they are glued back together on arrival, all before the page finishes loading.",
+          "ar": "النت فصل؟ أهو ده اللي هنفهمه.",
+          "example": "Sending a jigsaw puzzle through the post, one piece per envelope, by different routes, and having it arrive complete in under a second.",
+          "why": "Almost everything you will ever build talks to the internet. Knowing what happens after you press Enter makes you far better at fixing it.",
+          "picks": [
+            {
+              "ref": "mdn-internet",
+              "star": true
+            },
+            {
+              "ref": "khan-internet",
+              "star": false
+            },
+            {
+              "ref": "jvns",
+              "star": false
+            },
+            {
+              "ref": "crashcourse-cs",
+              "star": false
+            }
+          ],
+          "boss": "In the terminal, run ping on a website and watch messages travel across the world and back. Read the times."
+        },
+        {
+          "id": "nand2tetris",
+          "name": "Build a computer from scratch",
+          "kind": "terminus",
+          "level": "later",
+          "intro": "The ultimate project: build a complete computer, starting from one logic gate and ending with a game running on it. It takes months. People describe it as the moment the entire field clicked into place.",
+          "example": "Building a car from raw metal to understand driving. Completely unnecessary. Completely unforgettable.",
+          "why": "After this, no part of a computer is a black box to you. Very few graduates can say that.",
+          "picks": [
+            {
+              "ref": "nand2tetris",
+              "star": true
+            },
+            {
+              "ref": "nand-ted",
+              "star": false
+            },
+            {
+              "ref": "ben-eater-8bit",
+              "star": false
+            }
+          ],
+          "boss": "Do project 1. Only project 1. See how it feels."
+        }
+      ]
+    },
+    {
+      "id": "cairo",
+      "code": "C",
+      "name": "Cairo line: things to join in real life",
+      "color": "#D6336C",
+      "tagline": "Real people, a short walk from your lecture hall. Recruitment times shift every year, so follow the pages and check.",
+      "dashed": false,
+      "bossLabel": "Your move",
+      "stations": [
+        {
+          "id": "campus-toolkit",
+          "name": "Your campus toolkit",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Every faculty has secret knowledge passed down from older students: which past papers matter, and which channel explains it better in Arabic. Here it is, without having to bribe a third-year with a sandwich.",
+          "example": "Moving into a new building and finding that a neighbour already wrote down where the good bakery is and which lift gets stuck.",
+          "why": "Past exams and good explanations in your own language are the two cheapest ways to protect your grades.",
+          "picks": [
+            {
+              "ref": "fcishub",
+              "star": true
+            },
+            {
+              "ref": "fcis-site",
+              "star": false
+            },
+            {
+              "ref": "adel-nasim",
+              "star": false
+            },
+            {
+              "ref": "elzero",
+              "star": false
+            },
+            {
+              "ref": "desouki",
+              "star": false
+            },
+            {
+              "ref": "codezilla",
+              "star": false
+            }
+          ],
+          "boss": "Bookmark FcisHub and find the past exams for one subject you are taking right now."
+        },
+        {
+          "id": "on-campus",
+          "name": "On campus: start here",
+          "kind": "interchange",
+          "level": "easy",
+          "intro": "The fastest way to get good is to sit next to people who are one year ahead of you. Your faculty has a problem-solving community that trains complete beginners, for free, a short walk from your lecture hall.",
+          "ar": "انزلي من على الكنبة.",
+          "example": "A gym buddy. You could train alone. You would also skip every second session.",
+          "why": "These communities teach programming earlier and faster than the timetable does, and they are where you meet the people you will build things with.",
+          "picks": [
+            {
+              "ref": "icpc-fcis",
+              "star": true,
+              "note": "Beginner training usually opens around October to November, with another intake in the mid-year break."
+            },
+            {
+              "ref": "acmascis",
+              "star": false
+            },
+            {
+              "ref": "gdg-asu",
+              "star": false,
+              "note": "No application needed for events. Just RSVP and show up."
+            },
+            {
+              "ref": "fcis-union",
+              "star": false
+            },
+            {
+              "ref": "codeforces",
+              "star": false
+            },
+            {
+              "ref": "arabic-cp",
+              "star": false
+            }
+          ],
+          "boss": "Follow the ICPC community and the GDG chapter today. Go to one event, even if you understand a third of it. Especially then.",
+          "connects": [
+            {
+              "line": "python",
+              "station": "bridge-cpp",
+              "label": "Python line: Bridge to C++"
+            }
+          ]
+        },
+        {
+          "id": "pick-one",
+          "name": "Pick ONE student activity",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Student activities are where you find friends, confidence and your first taste of real teamwork. They usually recruit once a year, in autumn, with a form and an interview, and then the door closes. Pick one. Joining three is a burnout speedrun.",
+          "ar": "صاحب بالين كداب.",
+          "example": "A buffet. Everything looks good, and the person who piles on everything regrets it by the second plate.",
+          "why": "One activity done properly gives you skills, stories and friends. Three done badly give you guilt and a full calendar.",
+          "picks": [
+            {
+              "ref": "msp-asu",
+              "star": false,
+              "note": "Usually recruits around October."
+            },
+            {
+              "ref": "osc-asu",
+              "star": false,
+              "note": "Started in your own faculty. Usually recruits in autumn."
+            },
+            {
+              "ref": "ieee-asusb",
+              "star": false,
+              "note": "Based next door in Engineering. Ask whether your faculty can join."
+            },
+            {
+              "ref": "asu-ihub",
+              "star": false,
+              "note": "Open to students from every faculty."
+            },
+            {
+              "ref": "stp-asu",
+              "star": false
+            },
+            {
+              "ref": "enactus-asu",
+              "star": false,
+              "note": "The heaviest workload here. A better fit from second year."
+            }
+          ],
+          "boss": "In early autumn, watch their pages for recruitment posts. Apply to the one whose members look like people you would happily have lunch with."
+        },
+        {
+          "id": "cairo-scene",
+          "name": "The Cairo tech scene",
+          "kind": "station",
+          "level": "easy",
+          "intro": "There is a whole city of developers meeting up while you are scrolling. Most events are free, beginner friendly, and come with stickers. Never underestimate stickers.",
+          "example": "Discovering that your favourite band plays free concerts twenty minutes from your house, several times a year.",
+          "why": "Meeting working developers makes the career real, and makes the path from here to there much easier to picture.",
+          "picks": [
+            {
+              "ref": "gdg-cairo",
+              "star": true,
+              "note": "DevFest Cairo is usually in December. Google I/O Extended is usually in June."
+            },
+            {
+              "ref": "wtm-cairo",
+              "star": false,
+              "note": "Main event around International Women's Day, usually March to April."
+            },
+            {
+              "ref": "creativa",
+              "star": false
+            },
+            {
+              "ref": "fablab-egypt",
+              "star": false
+            }
+          ],
+          "boss": "Go to one event this year with a friend. Talk to one stranger. That is the entire assignment."
+        },
+        {
+          "id": "hackathons",
+          "name": "First hackathons and contests",
+          "kind": "station",
+          "level": "easy",
+          "intro": "A hackathon is a weekend where teams build something from nothing, fuelled by snacks and questionable decisions. You do not need to be good yet. Teams need people who can think, design, present and keep morale alive at 3 a.m.",
+          "example": "A school play. Not everyone is the lead. Somebody paints the set, somebody runs the lights, and the play does not happen without them.",
+          "why": "One finished weekend project teaches teamwork under pressure, gives you a story for every future interview, and shows you what you enjoy.",
+          "picks": [
+            {
+              "ref": "spaceapps-cairo",
+              "star": true,
+              "note": "Usually in autumn. States clearly that no experience is needed."
+            },
+            {
+              "ref": "spaceapps",
+              "star": false
+            },
+            {
+              "ref": "cybertalents",
+              "star": false,
+              "note": "Egypt's national cybersecurity contest is usually around January, online, and welcomes beginners."
+            },
+            {
+              "ref": "egypt-gamedevs",
+              "star": false,
+              "note": "Global Game Jam in Egypt is usually late January."
+            },
+            {
+              "ref": "ecpc",
+              "star": false,
+              "note": "You reach it through the campus community. Qualifications are usually in summer."
+            },
+            {
+              "ref": "huawei-ict",
+              "star": false
+            }
+          ],
+          "boss": "Sign up for one beginner-friendly event. The goal is not to win. The goal is to finish and collect the story."
+        },
+        {
+          "id": "national-training",
+          "name": "Free national training",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Egypt runs a surprising amount of free, government-funded tech training, and students are eligible for much of it. Summers are long. One of these beats three months of reorganising your playlists.",
+          "example": "Finding out the gym membership you thought was expensive is actually free, and has been all along.",
+          "why": "Company internships mostly open in later years. Until then, these programmes are how you make a summer count.",
+          "picks": [
+            {
+              "ref": "maharatech",
+              "star": true,
+              "note": "No application. Start any time."
+            },
+            {
+              "ref": "nti-summer",
+              "star": false,
+              "note": "Registration usually opens around June."
+            },
+            {
+              "ref": "iti-summer",
+              "star": false,
+              "note": "Applications usually open around May to June."
+            },
+            {
+              "ref": "depi",
+              "star": false,
+              "note": "Excellent and demanding. A better fit after your first year."
+            },
+            {
+              "ref": "netacad",
+              "star": false
+            }
+          ],
+          "boss": "Start one Mahara-Tech course this week. Put a reminder in your calendar for late spring to check the summer training registrations."
+        },
+        {
+          "id": "online-communities",
+          "name": "Online communities, and what can wait",
+          "kind": "terminus",
+          "level": "easy",
+          "intro": "Arabic tech communities online are lively and generous. A gentle tip from your uncle: moderated spaces with clear rules are nicer places than giant open groups. Read the big ones. Post in the smaller, moderated ones.",
+          "example": "A study group in the library versus shouting a question across a crowded square. Both get answers. One is more pleasant.",
+          "why": "Also worth knowing: company internships in Egypt mostly open from third year, and some programmes are only for graduates or school pupils. Save your application energy for the things on this line.",
+          "picks": [
+            {
+              "ref": "egd-discord",
+              "star": false
+            },
+            {
+              "ref": "arab-dev-hub",
+              "star": false
+            },
+            {
+              "ref": "cybertalents-tg",
+              "star": false
+            },
+            {
+              "ref": "ecpc",
+              "star": false
+            },
+            {
+              "ref": "internship-guide",
+              "star": false,
+              "note": "Star it now. Use it in a couple of years."
+            }
+          ],
+          "boss": "Join one community and introduce yourself. Then star the internship guide for the future version of you."
+        }
+      ]
+    },
+    {
+      "id": "side",
+      "code": "S",
+      "name": "Side quests",
+      "color": "#868E96",
+      "tagline": "Optional branches. No schedule, no guilt. Visit when the main lines feel like work.",
+      "dashed": true,
+      "bossLabel": "Quest",
+      "stations": [
+        {
+          "id": "puzzles",
+          "name": "Puzzles",
+          "kind": "station",
+          "level": "medium",
+          "intro": "Puzzles are the gym disguised as a playground. Same muscles, much better mood.",
+          "example": "Sudoku, but at the end you can tell people you were 'practising algorithms'.",
+          "why": "Puzzle sites build the exact skill that programming contests and interviews test later, with none of the pressure.",
+          "picks": [
+            {
+              "ref": "adventofcode",
+              "star": true
+            },
+            {
+              "ref": "projecteuler",
+              "star": false
+            },
+            {
+              "ref": "codingame",
+              "star": false
+            },
+            {
+              "ref": "codewars",
+              "star": false
+            }
+          ],
+          "boss": "Solve day 1 of any past Advent of Code year. Both parts.",
+          "connects": [
+            {
+              "line": "python",
+              "station": "practice",
+              "label": "Python line: The practice gym"
+            }
+          ]
+        },
+        {
+          "id": "build",
+          "name": "Build something fun",
+          "kind": "station",
+          "level": "easy",
+          "intro": "The best project is one you actually want to exist: a bot that remembers family birthdays, or a game in which your little brother is the final boss.",
+          "example": "Cooking something because you are hungry for it, not because it is on the syllabus. It always tastes better.",
+          "why": "Motivation beats discipline. A project you care about will teach you things no course could make you sit through.",
+          "picks": [
+            {
+              "ref": "invent-python",
+              "star": true
+            },
+            {
+              "ref": "atbs",
+              "star": false
+            },
+            {
+              "ref": "techwithtim",
+              "star": false
+            },
+            {
+              "ref": "invent-games",
+              "star": false
+            }
+          ],
+          "boss": "Write down three silly program ideas. Build the smallest one.",
+          "connects": [
+            {
+              "line": "python",
+              "station": "first-project",
+              "label": "Python line: Your first project"
+            }
+          ]
+        },
+        {
+          "id": "creative-coding",
+          "name": "Creative coding",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Code is also a paintbrush. People use it to make art, music, animations and simulations of things that have no business being simulated.",
+          "example": "Doodling in the margins, except the doodle moves, reacts to your mouse, and occasionally becomes a galaxy.",
+          "why": "On the days when coursework feels grey, this is the reminder of why programming is fun.",
+          "picks": [
+            {
+              "ref": "coding-train",
+              "star": true
+            },
+            {
+              "ref": "p5js",
+              "star": false
+            },
+            {
+              "ref": "lague",
+              "star": false
+            },
+            {
+              "ref": "reducible",
+              "star": false
+            }
+          ],
+          "boss": "Follow one Coding Train challenge from start to finish. Then change the colours and one rule, and make it yours."
+        },
+        {
+          "id": "women-in-tech",
+          "name": "Women in tech communities",
+          "kind": "station",
+          "level": "easy",
+          "intro": "You will sometimes be one of only a few women in the room. You will never be the only woman in the field. There are large, friendly communities full of people a few steps ahead of you, and they would love to have you.",
+          "example": "Finding the table at a wedding where everyone already gets your jokes.",
+          "why": "Mentors and peers who have walked the same road make the hard weeks shorter, and they open doors you did not know existed.",
+          "picks": [
+            {
+              "ref": "rtc",
+              "star": true
+            },
+            {
+              "ref": "wtm-cairo",
+              "star": false
+            },
+            {
+              "ref": "womentechmakers",
+              "star": false
+            },
+            {
+              "ref": "sundas-khalid",
+              "star": false
+            }
+          ],
+          "boss": "Join one community and read what people are talking about this week.",
+          "connects": [
+            {
+              "line": "cairo",
+              "station": "cairo-scene",
+              "label": "Cairo line: The Cairo tech scene"
+            }
+          ]
+        },
+        {
+          "id": "big-dreams",
+          "name": "Scholarships and big dreams",
+          "kind": "terminus",
+          "level": "later",
+          "intro": "Somewhere out there are conferences, scholarships and programmes designed for students exactly like you. Most want you a little further along. Knowing they exist now means you can quietly aim at them.",
+          "example": "Spotting a mountain on the horizon. You are not climbing it today. It is still good to know which direction it is in.",
+          "why": "Students who hear about these in their final year wish they had heard earlier. Now you have.",
+          "picks": [
+            {
+              "ref": "google-scholarships",
+              "star": false
+            },
+            {
+              "ref": "ghc",
+              "star": false
+            },
+            {
+              "ref": "student-pack",
+              "star": false
+            }
+          ],
+          "boss": "Read the requirements for one scholarship. Note the one thing you could start doing this year that would help."
+        }
+      ]
+    }
+  ]
+}

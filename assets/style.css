@@ -68,11 +68,7 @@ h1, h2, h3 { line-height: 1.2; text-wrap: balance; }
 [lang="ar"] { font-family: var(--font-ar); }
 
 /* ---------- hero */
-.hero { padding-block: 36px 26px; border-bottom: 1px solid var(--rule);
-  background:
-    linear-gradient(90deg, #C2410C 0 11.1%, #1971C2 0 22.2%, #237A36 0 33.3%, #6741D9 0 44.4%, #C92A2A 0 55.5%, #0B7285 0 66.6%, #C2255C 0 77.7%, #8F5E00 0 88.8%, #5F6B7A 0) top / 100% 6px no-repeat,
-    var(--surface);
-}
+.hero { padding-block: 36px 26px; border-bottom: 1px solid var(--rule); }
 .sign { display: inline-flex; align-items: center; gap: 8px; margin: 0 0 6px; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; }
 .sign-ar { letter-spacing: 0; font-size: .95rem; text-transform: none; }
 .sign-dot { width: 14px; height: 14px; border-radius: 50%; border: 4px solid #1971C2; background: var(--surface); }
@@ -240,3 +236,76 @@ h1 .at { color: var(--accent); }
   .rail a.rail-line { width: 38px; }
   .rail a.rail-line .roundel { width: 30px; height: 30px; font-size: .85rem; }
 }
+
+/* ---------- two-pane layout: left index, one line at a time */
+body { border-top: 6px solid; border-image: linear-gradient(90deg, #C2410C 0 11.1%, #1971C2 0 22.2%, #237A36 0 33.3%, #6741D9 0 44.4%, #C92A2A 0 55.5%, #0B7285 0 66.6%, #C2255C 0 77.7%, #8F5E00 0 88.8%, #5F6B7A 0) 1; }
+.shell { display: grid; grid-template-columns: minmax(0, 1fr); max-width: 1440px; margin: 0 auto; }
+main { min-width: 0; padding: 22px clamp(16px, 4vw, 48px) 0; outline: none; }
+.side { display: none; }
+.hero { background: none; border-bottom: 1px solid var(--rule); padding-block: 8px 22px; margin-bottom: 26px; }
+.hero h1 { font-size: clamp(2.4rem, 8vw, 3.6rem); }
+.hero .howto { margin-block: 22px 8px; }
+.hero .network { margin-block: 18px 4px; }
+.line { margin-bottom: 26px; }
+.line-head h2 { outline: none; }
+.library { margin-block: 0 30px; padding-top: 0; border-top: 0; }
+.library h2 { font-size: 1.4rem; outline: none; }
+.footer { background: none; margin-top: 34px; padding-block: 20px 40px; }
+
+/* phone and tablet: the row of line circles is the index, always visible */
+.rail { transform: none; top: 0; }
+.rail-inner { padding-inline: clamp(12px, 4vw, 48px); }
+.rail a.rail-line.active .roundel { box-shadow: 0 0 0 3px var(--surface), 0 0 0 6px var(--line-ui); }
+body { padding-top: 56px; }
+.line, .station { scroll-margin-top: 72px; }
+
+.pager { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
+.pager-link { display: grid; gap: 6px; padding: 14px 16px; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--surface); text-decoration: none; color: var(--ink); box-shadow: var(--shadow); min-height: 44px; --line-ui: var(--line); }
+.pager-link:hover { border-color: var(--line-ui, var(--accent)); }
+.pager-next { text-align: right; justify-items: end; }
+.pager-dir { font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-3); font-weight: 700; }
+.pager-name { display: inline-flex; align-items: center; gap: 8px; font-weight: 650; }
+.pager-name .roundel { width: 26px; height: 26px; font-size: .8rem; }
+
+@media (min-width: 980px) {
+  body { padding-top: 0; }
+  .rail { display: none; }
+  .hero .network, .overall-mobile { display: none; }
+  .line, .station { scroll-margin-top: 16px; }
+  .shell { grid-template-columns: 320px minmax(0, 1fr); }
+  .side { display: block; position: sticky; top: 0; align-self: start; height: 100vh; overflow-y: auto; padding: 22px 16px 28px 22px; border-right: 1px solid var(--rule); background: var(--surface); }
+  .brand { display: block; font-size: 2rem; font-weight: 800; letter-spacing: -.03em; color: var(--ink); text-decoration: none; line-height: 1.1; }
+  .brand .at { color: var(--accent); }
+  .side .sign { margin: 4px 0 16px; font-size: .72rem; }
+  .side .overall { margin-bottom: 18px; }
+  .side .overall-top { font-size: .85rem; }
+  .side .cheer { margin: 6px 0 0; font-size: .82rem; }
+  .index { display: grid; gap: 2px; }
+  .idx-line { --line-ui: var(--line); }
+  .idx-head { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 10px; text-decoration: none; color: var(--ink); min-height: 44px; }
+  .idx-head:hover { background: var(--surface-2); }
+  .idx-line.active > .idx-head, .idx-lib.active { background: var(--surface-2); font-weight: 700; }
+  .idx-head .roundel { width: 28px; height: 28px; font-size: .85rem; }
+  .idx-name { flex: 1; font-size: .93rem; line-height: 1.25; }
+  .idx-count { font-size: .75rem; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+  .roundel-lib { background: var(--ink-3); }
+  .idx-lib { margin-top: 10px; border-top: 1px solid var(--rule); border-radius: 0 0 10px 10px; padding-top: 14px; }
+  .idx-stations { list-style: none; margin: 2px 0 8px; padding: 0 0 0 23px; position: relative; }
+  .idx-stations::before { content: ""; position: absolute; left: 22px; top: 10px; bottom: 10px; width: 4px; border-radius: 99px; background: var(--line-ui); }
+  .idx-st a { position: relative; display: flex; align-items: center; gap: 10px; padding: 6px 8px 6px 0; font-size: .88rem; color: var(--ink-2); text-decoration: none; border-radius: 8px; line-height: 1.3; }
+  .idx-st a:hover { color: var(--ink); background: var(--surface-2); }
+  .idx-dot { flex: none; position: relative; z-index: 1; width: 12px; height: 12px; margin-left: -5px; border-radius: 50%; background: var(--surface); border: 3px solid var(--line-ui); }
+  .idx-st.k-interchange .idx-dot { width: 14px; height: 14px; margin-left: -6px; }
+  .idx-st.k-terminus .idx-dot { border-radius: 3px; background: var(--line-ui); }
+  .idx-st.visited .idx-dot { background: var(--line-ui); }
+  .idx-st.visited a { color: var(--ink-3); }
+  .idx-st.current a { color: var(--ink); font-weight: 700; }
+}
+@media (prefers-color-scheme: dark) {
+  .idx-line, .pager-link { --line-ui: color-mix(in srgb, var(--line) 62%, white); }
+}
+@media print { .side, .pager { display: none; } body { padding-top: 0; } }
+/* keep the chevron pinned right when a long station name wraps */
+.st-btn { position: relative; padding-right: 40px; }
+.chev { position: absolute; right: 16px; top: 19px; margin: 0; }
+.pager-link { align-content: start; }

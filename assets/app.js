@@ -146,44 +146,66 @@
 
   function lineById(id) { return roadmap.lines.filter(function (l) { return l.id === id; })[0]; }
 
-  // ---------- render everything
+  // ---------- render everything once; the router then shows one line at a time
   function render() {
-    var nav = document.getElementById("network");
+    var network = document.getElementById("network");
     var host = document.getElementById("lines");
     var rail = document.getElementById("rail-inner");
-    nav.textContent = ""; host.textContent = "";
-    Array.prototype.slice.call(rail.querySelectorAll(".rail-line")).forEach(function (n) { n.remove(); });
+    var index = document.getElementById("index");
+    network.textContent = ""; host.textContent = ""; rail.textContent = ""; index.textContent = "";
 
     roadmap.lines.forEach(function (line) {
-      nav.appendChild(el("a", { class: "net-chip", href: "#line-" + line.id, style: "--line:" + line.color }, [
+      var style = "--line:" + line.color;
+
+      // overview chips on the welcome view
+      network.appendChild(el("a", { class: "net-chip", href: "#line-" + line.id, style: style }, [
         el("span", { class: "roundel", text: line.code, "aria-hidden": "true" }),
         el("span", { class: "net-name", text: line.name }),
-        el("span", { class: "net-count", id: "net-count-" + line.id })
+        el("span", { class: "net-count", "data-count": line.id })
       ]));
 
-      rail.appendChild(el("a", { class: "rail-line", href: "#line-" + line.id, style: "--line:" + line.color, title: line.name, "aria-label": line.name, "data-line": line.id }, [
+      // phone line switcher
+      rail.appendChild(el("a", { class: "rail-line", href: "#line-" + line.id, style: style, title: line.name, "aria-label": line.name, "data-line": line.id }, [
         el("span", { class: "roundel", text: line.code, "aria-hidden": "true" })
       ]));
 
-      var section = el("section", { class: "line" + (line.dashed ? " dashed" : ""), id: "line-" + line.id, style: "--line:" + line.color, "aria-labelledby": "h-" + line.id }, [
+      // left index: the line, and under it the stations of the open line
+      var sub = el("ol", { class: "idx-stations", hidden: true }, line.stations.map(function (st) {
+        return el("li", { class: "idx-st k-" + st.kind, "data-key": key(line.id, st.id) }, [
+          el("a", { href: "#" + key(line.id, st.id) }, [el("span", { class: "idx-dot", "aria-hidden": "true" }), el("span", { text: st.name })])
+        ]);
+      }));
+      index.appendChild(el("div", { class: "idx-line", style: style, "data-line": line.id }, [
+        el("a", { class: "idx-head", href: "#line-" + line.id }, [
+          el("span", { class: "roundel", text: line.code, "aria-hidden": "true" }),
+          el("span", { class: "idx-name", text: line.name }),
+          el("span", { class: "idx-count", "data-count": line.id })
+        ]),
+        sub
+      ]));
+
+      host.appendChild(el("section", { class: "line" + (line.dashed ? " dashed" : ""), id: "line-" + line.id, style: style, "aria-labelledby": "h-" + line.id, hidden: true }, [
         el("div", { class: "line-head" }, [
           el("span", { class: "roundel", text: line.code, "aria-hidden": "true" }),
           el("div", null, [
-            el("h2", { id: "h-" + line.id, text: line.name }),
+            el("h2", { id: "h-" + line.id, text: line.name, tabindex: "-1" }),
             el("p", { class: "line-tag", text: line.tagline }),
             el("p", { class: "line-count", id: "line-count-" + line.id })
           ])
         ]),
         el("ol", { class: "stations" }, line.stations.map(function (st) { return stationNode(line, st); }))
-      ]);
-      host.appendChild(section);
+      ]));
     });
 
+    index.appendChild(el("a", { class: "idx-head idx-lib", href: "#library", "data-line": "library" }, [
+      el("span", { class: "roundel roundel-lib", text: "≡", "aria-hidden": "true" }),
+      el("span", { class: "idx-name", text: "Everything on the map" })
+    ]));
+
     updateProgress();
-    setupRail();
     renderLibraryFilters();
     renderLibrary();
-    openFromHash(false);
+    route(false);
   }
 
   function updateProgress() {
@@ -191,55 +213,84 @@
     roadmap.lines.forEach(function (line) {
       var n = line.stations.length, d = line.stations.filter(function (s) { return visited.has(key(line.id, s.id)); }).length;
       total += n; done += d;
-      var txt = d === n ? "All " + n + " stations visited. Line complete." : d + " of " + n + " stations visited";
-      document.getElementById("line-count-" + line.id).textContent = txt;
+      document.getElementById("line-count-" + line.id).textContent =
+        d === n ? "All " + n + " stations visited. Line complete." : d + " of " + n + " stations visited";
       document.getElementById("line-" + line.id).classList.toggle("done", d === n);
-      document.getElementById("net-count-" + line.id).textContent = d + "/" + n;
+      all('[data-count="' + line.id + '"]').forEach(function (c) { c.textContent = d + "/" + n; });
     });
-    document.getElementById("overall-text").textContent = done + " of " + total + " stations visited";
-    var bar = document.getElementById("overall-bar");
-    bar.setAttribute("aria-valuemax", total); bar.setAttribute("aria-valuenow", done);
-    bar.firstElementChild.style.width = (total ? (100 * done / total) : 0) + "%";
+    all(".idx-st").forEach(function (li) { li.classList.toggle("visited", visited.has(li.getAttribute("data-key"))); });
     var cheer = CHEERS[0][1];
     CHEERS.forEach(function (c) { if (done >= Math.min(c[0], total)) cheer = c[1]; });
     if (done < total && cheer === CHEERS[CHEERS.length - 1][1]) cheer = CHEERS[CHEERS.length - 2][1];
-    document.getElementById("overall-cheer").textContent = cheer;
+    all(".overall-text").forEach(function (n) { n.textContent = done + " of " + total + " stations visited"; });
+    all(".overall-cheer").forEach(function (n) { n.textContent = cheer; });
+    all(".overall-bar").forEach(function (bar) {
+      bar.setAttribute("aria-valuemax", total); bar.setAttribute("aria-valuenow", done);
+      bar.firstElementChild.style.width = (total ? (100 * done / total) : 0) + "%";
+    });
   }
 
-  // ---------- sticky rail: appears once the line index has scrolled away, marks the current line
-  function setupRail() {
-    var rail = document.getElementById("rail"), index = document.getElementById("network");
-    if (!("IntersectionObserver" in window)) return;
-    new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) { rail.classList.toggle("show", !e.isIntersecting && e.boundingClientRect.top < 0); });
-    }).observe(index);
-    var current = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (!e.isIntersecting) return;
-        var id = e.target.id.replace("line-", "");
-        Array.prototype.slice.call(rail.querySelectorAll(".rail-line")).forEach(function (a) {
-          if (a.getAttribute("data-line") === id) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
-        });
-      });
-    }, { rootMargin: "-45% 0px -50% 0px" });
-    Array.prototype.slice.call(document.querySelectorAll("section.line")).forEach(function (s) { current.observe(s); });
-  }
+  function all(sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)); }
 
-  // ---------- deep links: #python/loops opens that station
-  function openFromHash(scroll) {
-    var id = decodeURIComponent(location.hash.slice(1));
-    if (!id || id.indexOf("/") === -1) return;
-    var li = document.getElementById(id);
-    if (!li) return;
-    toggle(li, true);
-    if (scroll !== false) {
-      li.scrollIntoView({ block: "start" });
-      var btn = li.querySelector(".st-btn"); if (btn) btn.focus({ preventScroll: true });
-    } else {
-      setTimeout(function () { li.scrollIntoView({ block: "start" }); }, 0);
+  // ---------- router: "#line-python" shows one line, "#python/loops" also opens that station,
+  //            "#library" shows the full list, and no hash means the Start line with the welcome.
+  function route(fromUser) {
+    var hash = decodeURIComponent(location.hash.slice(1));
+    var first = roadmap.lines[0].id, view = first, stationKey = null;
+    if (hash === "library") view = "library";
+    else if (hash.indexOf("line-") === 0 && lineById(hash.slice(5))) view = hash.slice(5);
+    else if (hash.indexOf("/") !== -1 && document.getElementById(hash)) { view = hash.split("/")[0]; stationKey = hash; }
+
+    roadmap.lines.forEach(function (line) { document.getElementById("line-" + line.id).hidden = line.id !== view; });
+    document.getElementById("library").hidden = view !== "library";
+    document.getElementById("welcome").hidden = view !== first;
+
+    all("[data-line]").forEach(function (n) {
+      var on = n.getAttribute("data-line") === view;
+      n.classList.toggle("active", on);
+      var link = n.classList.contains("idx-line") ? n.querySelector(".idx-head") : n;
+      if (on) link.setAttribute("aria-current", "page"); else link.removeAttribute("aria-current");
+      var sub = n.querySelector && n.querySelector(".idx-stations"); if (sub) sub.hidden = !on;
+    });
+    all(".idx-st").forEach(function (li) { li.classList.toggle("current", li.getAttribute("data-key") === stationKey); });
+    var activeRail = document.querySelector(".rail-line.active");
+    if (activeRail && activeRail.scrollIntoView) activeRail.scrollIntoView({ block: "nearest", inline: "center" });
+
+    renderPager(view);
+    var line = lineById(view);
+    document.title = (view === "library" ? "Everything on the map" : line.name) + " · Judy@CS";
+
+    if (stationKey) {
+      var li = document.getElementById(stationKey);
+      toggle(li, true);
+      setTimeout(function () {
+        li.scrollIntoView({ block: "start" });
+        if (fromUser) li.querySelector(".st-btn").focus({ preventScroll: true });
+      }, 0);
+    } else if (fromUser) {
+      window.scrollTo(0, 0);
+      var h = view === "library" ? document.getElementById("lib-h") : (view === first ? document.getElementById("main") : document.getElementById("h-" + view));
+      if (h) h.focus({ preventScroll: true });
     }
   }
-  window.addEventListener("hashchange", function () { openFromHash(true); });
+
+  function renderPager(view) {
+    var pager = document.getElementById("pager"); pager.textContent = "";
+    var ids = roadmap.lines.map(function (l) { return l.id; });
+    var i = ids.indexOf(view);
+    function link(line, dir) {
+      return el("a", { class: "pager-link pager-" + dir, href: "#line-" + line.id, style: "--line:" + line.color }, [
+        el("span", { class: "pager-dir", text: dir === "prev" ? "← Previous line" : "Next line →" }),
+        el("span", { class: "pager-name" }, [el("span", { class: "roundel", text: line.code, "aria-hidden": "true" }), el("span", { text: line.name })])
+      ]);
+    }
+    if (i === -1) { pager.appendChild(link(roadmap.lines[0], "prev")); return; }
+    pager.appendChild(i > 0 ? link(roadmap.lines[i - 1], "prev") : el("span"));
+    if (i < ids.length - 1) pager.appendChild(link(roadmap.lines[i + 1], "next"));
+    else pager.appendChild(el("a", { class: "pager-link pager-next", href: "#library" }, [
+      el("span", { class: "pager-dir", text: "End of the network →" }), el("span", { class: "pager-name", text: "Everything on the map" })]));
+  }
+  window.addEventListener("hashchange", function () { route(true); });
 
   // ---------- library
   function renderLibraryFilters() {

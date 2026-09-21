@@ -20,6 +20,13 @@ Lines are organised by topic and can be ridden in any order, at any pace.
 | B | Bonus line | Student freebies, and programmes that open doors |
 | S | Side quests | Puzzles, fun projects, creative coding, communities, scholarships |
 
+## How the page is organised
+
+The left index lists the lines. Choosing a line shows only that line, with its stations listed
+under it in the index. On phones the index is the row of line circles at the top.
+Addresses work as links: `#line-python` opens the Python line, `#python/loops` opens that
+station, and `#library` opens the full list of links.
+
 ## Preview it locally
 
 The page loads its content from JSON files, so it needs a small web server. Opening

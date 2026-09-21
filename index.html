@@ -20,64 +20,69 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <a class="skip" href="#network">Skip to the map</a>
-  <nav class="rail" id="rail" aria-label="Jump to a line"><div class="wrap rail-inner" id="rail-inner"><a class="rail-home" href="#top">Judy@CS</a></div></nav>
+  <a class="skip" href="#main">Skip to the content</a>
+  <nav class="rail" id="rail" aria-label="Lines"><div class="rail-inner" id="rail-inner"></div></nav>
 
-  <header class="hero" id="top">
-    <div class="wrap">
-      <p class="sign"><span class="sign-dot" aria-hidden="true"></span> Computer Science Metro <span class="sign-ar" lang="ar" dir="rtl">مترو حاسبات</span></p>
-      <h1>Judy<span class="at">@</span>CS</h1>
-      <p class="lede">Welcome aboard. This is a map, not a textbook. Every station tells you what a topic really is, why you will care, and the best places on the internet to learn it. Ride the lines in any order, at your own speed. There are no ticket inspectors.</p>
+  <div class="shell">
+    <aside class="side" id="side" aria-label="Map index">
+      <a class="brand" href="#line-start">Judy<span class="at">@</span>CS</a>
+      <p class="sign"><span class="sign-dot" aria-hidden="true"></span> CS Metro <span class="sign-ar" lang="ar" dir="rtl">مترو حاسبات</span></p>
+      <div class="overall">
+        <div class="overall-top"><span class="overall-text">0 of 0 stations visited</span></div>
+        <div class="bar overall-bar" role="progressbar" aria-label="Stations visited" aria-valuemin="0" aria-valuenow="0" aria-valuemax="0"><span></span></div>
+        <p class="cheer overall-cheer"></p>
+      </div>
+      <nav id="index" class="index" aria-label="Lines and stations"></nav>
+    </aside>
 
-      <div class="overall" aria-live="polite">
-        <div class="overall-top">
-          <span id="overall-text">0 of 0 stations visited</span>
-          <span id="overall-cheer" class="cheer"></span>
+    <main id="main" tabindex="-1">
+      <header class="hero" id="welcome">
+        <p class="sign"><span class="sign-dot" aria-hidden="true"></span> Computer Science Metro <span class="sign-ar" lang="ar" dir="rtl">مترو حاسبات</span></p>
+        <h1>Judy<span class="at">@</span>CS</h1>
+        <p class="lede">Welcome aboard. This is a map, not a textbook. Every station tells you what a topic really is, why you will care, and the best places on the internet to learn it. Ride the lines in any order, at your own speed. There are no ticket inspectors.</p>
+        <div class="overall overall-mobile" aria-live="polite">
+          <div class="overall-top"><span class="overall-text">0 of 0 stations visited</span><span class="cheer overall-cheer"></span></div>
+          <div class="bar overall-bar" role="progressbar" aria-label="Stations visited" aria-valuemin="0" aria-valuenow="0" aria-valuemax="0"><span></span></div>
         </div>
-        <div class="bar" role="progressbar" aria-label="Stations visited" aria-valuemin="0" aria-valuenow="0" aria-valuemax="0" id="overall-bar"><span></span></div>
-      </div>
-    </div>
-  </header>
+        <section class="howto" aria-labelledby="howto-h">
+          <h2 id="howto-h">How to read this map</h2>
+          <ul class="legend">
+            <li><span class="lg-dot" aria-hidden="true"></span><span><strong>Station.</strong> One topic. Tap it to open.</span></li>
+            <li><span class="lg-dot lg-inter" aria-hidden="true"></span><span><strong>Interchange.</strong> Two lines meet here. Change trains if you feel like it.</span></li>
+            <li><span class="lg-dot lg-term" aria-hidden="true"></span><span><strong>Terminus.</strong> End of the line, with a bigger challenge.</span></li>
+            <li><span class="badge lvl-easy">Easy start</span><span class="badge lvl-medium">Some effort</span><span class="badge lvl-later">When you are ready</span></li>
+          </ul>
+          <p class="fine">Pick a line from the index and ride it on its own. Tick a station when you have visited it. Your progress is saved in this browser only. Nobody else can see it, including your uncle.</p>
+        </section>
+        <nav id="network" class="network" aria-label="All lines"></nav>
+      </header>
 
-  <main class="wrap">
-    <section class="howto" aria-labelledby="howto-h">
-      <h2 id="howto-h">How to read this map</h2>
-      <ul class="legend">
-        <li><span class="lg-dot" aria-hidden="true"></span><span><strong>Station.</strong> One topic. Tap it to open.</span></li>
-        <li><span class="lg-dot lg-inter" aria-hidden="true"></span><span><strong>Interchange.</strong> Two lines meet here. Change trains if you feel like it.</span></li>
-        <li><span class="lg-dot lg-term" aria-hidden="true"></span><span><strong>Terminus.</strong> End of the line, with a bigger challenge.</span></li>
-        <li><span class="badge lvl-easy">Easy start</span><span class="badge lvl-medium">Some effort</span><span class="badge lvl-later">When you are ready</span></li>
-      </ul>
-      <p class="fine">Tick a station when you have visited it. Your progress is saved in this browser only. Nobody else can see it, including your uncle.</p>
-    </section>
+      <noscript><p class="noscript">This map needs JavaScript to draw its lines and stations. Please turn it on and reload the page.</p></noscript>
+      <div id="lines"><p class="loading">Loading the map…</p></div>
 
-    <nav id="network" class="network" aria-label="Metro lines"></nav>
+      <section class="library" id="library" aria-labelledby="lib-h" hidden>
+        <h2 id="lib-h" tabindex="-1">Everything on the map</h2>
+        <p class="fine">Every link from every station, in one searchable list. Nothing extra.</p>
+        <div class="filters">
+          <label class="sr-only" for="lib-search">Search the library</label>
+          <input id="lib-search" type="search" placeholder="Search: git, maths, Arabic…" autocomplete="off">
+          <label class="sr-only" for="lib-topic">Topic</label>
+          <select id="lib-topic"><option value="">All topics</option></select>
+          <label class="sr-only" for="lib-type">Type</label>
+          <select id="lib-type"><option value="">All types</option></select>
+        </div>
+        <p id="lib-count" class="fine" aria-live="polite"></p>
+        <ul id="lib-list" class="lib-list"></ul>
+      </section>
 
-    <noscript><p class="noscript">This map needs JavaScript to draw its lines and stations. Please turn it on and reload the page.</p></noscript>
-    <div id="lines"><p class="loading">Loading the map…</p></div>
+      <nav class="pager" id="pager" aria-label="Previous and next line"></nav>
 
-    <section class="library" aria-labelledby="lib-h">
-      <h2 id="lib-h">Everything on the map</h2>
-      <p class="fine">Every link from the stations above, in one searchable list. Nothing extra.</p>
-      <div class="filters">
-        <label class="sr-only" for="lib-search">Search the library</label>
-        <input id="lib-search" type="search" placeholder="Search: git, maths, Arabic…" autocomplete="off">
-        <label class="sr-only" for="lib-topic">Topic</label>
-        <select id="lib-topic"><option value="">All topics</option></select>
-        <label class="sr-only" for="lib-type">Type</label>
-        <select id="lib-type"><option value="">All types</option></select>
-      </div>
-      <p id="lib-count" class="fine" aria-live="polite"></p>
-      <ul id="lib-list" class="lib-list"></ul>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap">
-      <p>Curated with love by your uncle. <span lang="ar" dir="rtl">بالتوفيق يا جودي.. وشدّي حيلك.</span></p>
-      <p class="fine">Links last checked in September 2026. Dates for events and recruitment change every year, so always confirm on the linked page. Found a broken link? Tell your uncle.</p>
-    </div>
-  </footer>
+      <footer class="footer">
+        <p>Curated with love by your uncle. <span lang="ar" dir="rtl">بالتوفيق يا جودي.. وشدّي حيلك.</span></p>
+        <p class="fine">Links last checked in September 2026. Dates for events and recruitment change every year, so always confirm on the linked page. Found a broken link? Tell your uncle.</p>
+      </footer>
+    </main>
+  </div>
 
   <script src="assets/app.js"></script>
 </body>

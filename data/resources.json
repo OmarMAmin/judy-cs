@@ -341,12 +341,12 @@
       "name": "GitHub Student Developer Pack",
       "url": "https://education.github.com/pack",
       "type": "tool",
-      "topic": "tools",
-      "cost": "Free with student ID",
-      "time": "20 minutes to apply",
+      "topic": "perks",
+      "cost": "Free for verified students",
+      "time": "20 minutes to apply, a few days for approval",
       "level": "easy",
       "lang": "en",
-      "why": "Free professional tools for verified students. Apply with your university email as soon as you have one."
+      "why": "One verification unlocks more than eighty offers: GitHub Pro, a student version of Copilot with unlimited code completions and limited chat, free domain names for a year, and months of paid learning sites. Offers change, so check the page."
     },
     {
       "id": "jvns-questions",
@@ -1319,6 +1319,54 @@
       "level": "easy",
       "lang": "en",
       "why": "Drawing and animation with code for complete beginners. Begin with video 1.1, which is 13 minutes. It uses JavaScript, and it is for play."
+    },
+    {
+      "id": "jetbrains-student",
+      "name": "JetBrains free student licence",
+      "url": "https://www.jetbrains.com/academy/student-pack/",
+      "type": "tool",
+      "topic": "perks",
+      "cost": "Free for students, renewed yearly",
+      "time": "10 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "Every professional JetBrains editor, including PyCharm and CLion for C++. An individual pays about 300 dollars a year for this, and a company about 1,000."
+    },
+    {
+      "id": "m365-asu",
+      "name": "Microsoft 365 with your university email",
+      "url": "https://www.office.com/",
+      "type": "tool",
+      "topic": "perks",
+      "cost": "Free through the university",
+      "time": "10 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "Ain Shams provides Microsoft 365 to students through the university email: Word, Excel, PowerPoint, cloud storage and Copilot Chat. Sign in with your university address."
+    },
+    {
+      "id": "azure-students",
+      "name": "Azure for Students",
+      "url": "https://azure.microsoft.com/en-us/free/students",
+      "type": "tool",
+      "topic": "perks",
+      "cost": "Free, 100 dollars of credit a year",
+      "time": "10 minutes",
+      "level": "medium",
+      "lang": "en",
+      "why": "Cloud computing credit for running real servers and databases, renewable every year you are a student. No credit card is needed."
+    },
+    {
+      "id": "gemini-students-eg",
+      "name": "Google AI Plus for students in Egypt",
+      "url": "https://gemini.google/eg/students/",
+      "type": "tool",
+      "topic": "perks",
+      "cost": "Free for one year",
+      "time": "10 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "Google's student offer for Egypt: a year of the paid Gemini plan with extra storage."
     }
   ]
 }

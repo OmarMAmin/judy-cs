@@ -17,6 +17,7 @@ Lines are organised by topic and can be ridden in any order, at any pace.
 | 4 | Maths without fear | Logic, proofs, counting, calculus, linear algebra |
 | 5 | How computers actually work | Binary, logic gates, CPU, memory, operating systems, the internet |
 | C | Cairo line | Campus communities, Cairo events, hackathons, free national training |
+| B | Bonus line | Student freebies, and programmes that open doors |
 | S | Side quests | Puzzles, fun projects, creative coding, communities, scholarships |
 
 ## Preview it locally
@@ -32,7 +33,7 @@ Then open http://localhost:8000.
 
 ## Keeping it simple
 
-Each station has one starred pick and at most two helpers. That is deliberate: too many
+Each learning station has one starred pick and at most two helpers. Checklist stations on the Bonus and Cairo lines may list more, because those are things to claim, not options to choose between. That is deliberate: too many
 options is a reason not to start. When adding a link, replace one instead of adding a fourth.
 
 ## Editing the content

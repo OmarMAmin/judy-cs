@@ -8,7 +8,7 @@
   var TYPES = { site: "Website", video: "Video", course: "Course", book: "Book", tool: "Tool",
                 community: "Community", event: "Event", program: "Programme" };
   var TOPICS = { start: "Start here", python: "Python", cpp: "C++", tools: "Tools", thinking: "Thinking",
-                 maths: "Maths", computers: "How computers work", cairo: "Cairo and campus", side: "Side quests" };
+                 maths: "Maths", computers: "How computers work", cairo: "Cairo and campus", perks: "Perks and passports", side: "Side quests" };
   var KINDS = { interchange: "Interchange", terminus: "Terminus" };
   var CHEERS = [
     [0, "The train is at the platform."],

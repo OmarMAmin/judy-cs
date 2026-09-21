@@ -509,18 +509,19 @@
             {
               "ref": "github-hello",
               "star": true
-            },
-            {
-              "ref": "student-pack",
-              "star": false
             }
           ],
-          "boss": "Create a GitHub account, make a repository, and upload your first Python program. Then apply for the Student Developer Pack with your university email.",
+          "boss": "Make a repository and upload your first Python program. Then visit the bonus line and apply for the Student Developer Pack.",
           "connects": [
             {
               "line": "python",
               "station": "first-project",
               "label": "Python line: Your first project"
+            },
+            {
+              "line": "perks",
+              "station": "freebies",
+              "label": "Bonus line: The student discount heist"
             }
           ]
         },
@@ -1232,6 +1233,62 @@
             }
           ],
           "boss": "Join one community and introduce yourself. Then star the internship guide for the future version of you."
+        }
+      ]
+    },
+    {
+      "id": "perks",
+      "code": "B",
+      "name": "Bonus line: perks and passports",
+      "color": "#B7791F",
+      "tagline": "Free things and open doors that exist only because you are a student. Most people hear about these in their final year. You are hearing about them now.",
+      "dashed": false,
+      "bossLabel": "Your move",
+      "stations": [
+        {
+          "id": "freebies",
+          "name": "The student discount heist",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Being a student is the one time in your life when companies queue up to give you expensive things for free, hoping you will love them forever. Let them. A single student verification on GitHub unlocks more than eighty offers. A professional buying the same tools would pay about 1,200 dollars a year at individual prices, and several thousand at company prices.",
+          "ar": "أبو بلاش كتّر منه.",
+          "example": "Free samples at the supermarket, except the samples are professional tools, and nobody gives you a look for coming back next year.",
+          "why": "These are the real tools used in industry. Learning on them costs you nothing now, and it saves you an awkward first month at your first job.",
+          "picks": [
+            {
+              "ref": "student-pack",
+              "star": true,
+              "note": "Do this one first. You need a photo of your student ID or an enrolment letter. Many other offers then accept 'sign in with GitHub' as proof."
+            },
+            {
+              "ref": "jetbrains-student",
+              "star": false,
+              "note": "Your faculty's email address may not be on their list. Choose 'Authorize with GitHub' once you have the Pack."
+            },
+            {
+              "ref": "m365-asu",
+              "star": false,
+              "note": "Ask student affairs or the IT unit at your faculty how to activate your university email."
+            },
+            {
+              "ref": "azure-students",
+              "star": false,
+              "note": "For ages 18 and over."
+            },
+            {
+              "ref": "gemini-students-eg",
+              "star": false,
+              "note": "For ages 18 and over. It asks for a payment card and renews at about 250 EGP a month after the free year, so set a reminder to cancel. When checked in September 2026, it could be claimed until the end of 2026."
+            }
+          ],
+          "boss": "Apply for the GitHub Student Developer Pack today. Approval can take a few days, so start the clock now. Then claim one thing from it that you will actually use this month.",
+          "connects": [
+            {
+              "line": "tools",
+              "station": "github",
+              "label": "Tools line: GitHub"
+            }
+          ]
         }
       ]
     },

@@ -6,13 +6,24 @@
   <title>Judy@CS</title>
   <meta name="description" content="A metro map for learning computer science at your own pace: what each stop is, why it matters, and where to go learn it.">
   <meta name="robots" content="noindex">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='44' fill='%231C7ED6'/%3E%3Ccircle cx='50' cy='50' r='22' fill='white'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1b2029" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Judy@CS">
+  <meta property="og:description" content="A metro map for learning computer science, at your own pace.">
+  <meta property="og:url" content="https://omarmamin.github.io/judy-cs/">
+  <meta property="og:image" content="https://omarmamin.github.io/judy-cs/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='44' fill='%231971C2'/%3E%3Ccircle cx='50' cy='50' r='22' fill='white'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <a class="skip" href="#network">Skip to the map</a>
+  <nav class="rail" id="rail" aria-label="Jump to a line"><div class="wrap rail-inner" id="rail-inner"><a class="rail-home" href="#top">Judy@CS</a></div></nav>
 
-  <header class="hero">
+  <header class="hero" id="top">
     <div class="wrap">
       <p class="sign"><span class="sign-dot" aria-hidden="true"></span> Computer Science Metro <span class="sign-ar" lang="ar" dir="rtl">مترو حاسبات</span></p>
       <h1>Judy<span class="at">@</span>CS</h1>
@@ -42,6 +53,7 @@
 
     <nav id="network" class="network" aria-label="Metro lines"></nav>
 
+    <noscript><p class="noscript">This map needs JavaScript to draw its lines and stations. Please turn it on and reload the page.</p></noscript>
     <div id="lines"><p class="loading">Loading the map…</p></div>
 
     <section class="library" aria-labelledby="lib-h">

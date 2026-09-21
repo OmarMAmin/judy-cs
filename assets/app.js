@@ -53,7 +53,7 @@
   function pickCard(res, opts) {
     opts = opts || {};
     var top = el("div", { class: "pick-top" }, [
-      el("a", { href: res.url, target: "_blank", rel: "noopener", text: res.name }),
+      el("a", { href: res.url, target: "_blank", rel: "noopener" }, [res.name, el("span", { class: "sr-only", text: " (opens in a new tab)" })]),
       opts.star ? el("span", { class: "star-badge", text: "★ Start with this" }) : null
     ]);
     var meta = el("div", { class: "pick-meta" }, [
@@ -150,13 +150,19 @@
   function render() {
     var nav = document.getElementById("network");
     var host = document.getElementById("lines");
+    var rail = document.getElementById("rail-inner");
     nav.textContent = ""; host.textContent = "";
+    Array.prototype.slice.call(rail.querySelectorAll(".rail-line")).forEach(function (n) { n.remove(); });
 
     roadmap.lines.forEach(function (line) {
       nav.appendChild(el("a", { class: "net-chip", href: "#line-" + line.id, style: "--line:" + line.color }, [
         el("span", { class: "roundel", text: line.code, "aria-hidden": "true" }),
         el("span", { class: "net-name", text: line.name }),
         el("span", { class: "net-count", id: "net-count-" + line.id })
+      ]));
+
+      rail.appendChild(el("a", { class: "rail-line", href: "#line-" + line.id, style: "--line:" + line.color, title: line.name, "aria-label": line.name, "data-line": line.id }, [
+        el("span", { class: "roundel", text: line.code, "aria-hidden": "true" })
       ]));
 
       var section = el("section", { class: "line" + (line.dashed ? " dashed" : ""), id: "line-" + line.id, style: "--line:" + line.color, "aria-labelledby": "h-" + line.id }, [
@@ -174,6 +180,7 @@
     });
 
     updateProgress();
+    setupRail();
     renderLibraryFilters();
     renderLibrary();
     openFromHash(false);
@@ -184,8 +191,9 @@
     roadmap.lines.forEach(function (line) {
       var n = line.stations.length, d = line.stations.filter(function (s) { return visited.has(key(line.id, s.id)); }).length;
       total += n; done += d;
-      var txt = d + " of " + n + " stations visited";
+      var txt = d === n ? "All " + n + " stations visited. Line complete." : d + " of " + n + " stations visited";
       document.getElementById("line-count-" + line.id).textContent = txt;
+      document.getElementById("line-" + line.id).classList.toggle("done", d === n);
       document.getElementById("net-count-" + line.id).textContent = d + "/" + n;
     });
     document.getElementById("overall-text").textContent = done + " of " + total + " stations visited";
@@ -196,6 +204,25 @@
     CHEERS.forEach(function (c) { if (done >= Math.min(c[0], total)) cheer = c[1]; });
     if (done < total && cheer === CHEERS[CHEERS.length - 1][1]) cheer = CHEERS[CHEERS.length - 2][1];
     document.getElementById("overall-cheer").textContent = cheer;
+  }
+
+  // ---------- sticky rail: appears once the line index has scrolled away, marks the current line
+  function setupRail() {
+    var rail = document.getElementById("rail"), index = document.getElementById("network");
+    if (!("IntersectionObserver" in window)) return;
+    new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { rail.classList.toggle("show", !e.isIntersecting && e.boundingClientRect.top < 0); });
+    }).observe(index);
+    var current = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var id = e.target.id.replace("line-", "");
+        Array.prototype.slice.call(rail.querySelectorAll(".rail-line")).forEach(function (a) {
+          if (a.getAttribute("data-line") === id) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
+        });
+      });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    Array.prototype.slice.call(document.querySelectorAll("section.line")).forEach(function (s) { current.observe(s); });
   }
 
   // ---------- deep links: #python/loops opens that station

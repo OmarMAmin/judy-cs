@@ -63,6 +63,13 @@ playlist. A few sites block automated checks and are flagged as "check by hand".
 Event dates and recruitment windows on the Cairo line change every year, so the page only
 says "usually around". Re-check them each autumn.
 
+## Design notes
+
+- Text and line colours are chosen to meet WCAG AA contrast (4.5 to 1) in light and dark mode. If you change a line colour in `data/roadmap.json`, keep white text on it readable.
+- In dark mode the tracks and dots use a lightened version of each line colour automatically.
+- Tap targets are at least 44 pixels. Text columns are capped at about 70 characters.
+- `assets/og.png` is the preview image shown when the link is shared.
+
 ## Notes
 
 - Progress ticks are stored only in the visitor's own browser.

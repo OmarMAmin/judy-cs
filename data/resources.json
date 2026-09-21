@@ -7,22 +7,10 @@
       "type": "video",
       "topic": "start",
       "cost": "Free",
-      "time": "40 episodes, about 12 min each",
+      "time": "41 videos, about 8 hours in total",
       "level": "easy",
       "lang": "en",
-      "why": "A friendly tour of the whole field, from switches to AI. No coding needed, so it works before you have written a single line."
-    },
-    {
-      "id": "roadmap-sh",
-      "name": "roadmap.sh: Computer Science",
-      "url": "https://roadmap.sh/computer-science",
-      "type": "site",
-      "topic": "start",
-      "cost": "Free",
-      "time": "20 minutes to read",
-      "level": "easy",
-      "lang": "en",
-      "why": "A clickable map of how CS topics connect. Read it for orientation, not as a to-do list."
+      "why": "The whole series, from switches to AI. Do not binge it. Individual episodes are linked at the stations where they fit."
     },
     {
       "id": "cs50x-week0",
@@ -37,18 +25,6 @@
       "why": "What computing actually is, taught with drag-and-drop blocks before any typing."
     },
     {
-      "id": "lhtl",
-      "name": "Learning How to Learn",
-      "url": "https://www.coursera.org/learn/learning-how-to-learn",
-      "type": "course",
-      "topic": "start",
-      "cost": "Free to audit",
-      "time": "About 4 hours of video",
-      "level": "easy",
-      "lang": "en",
-      "why": "How memory, focus and procrastination really work. The highest return per hour on this whole map."
-    },
-    {
       "id": "wizard-zine",
       "name": "So You Want to Be a Wizard, by Julia Evans",
       "url": "https://wizardzines.com/zines/wizard/",
@@ -58,7 +34,7 @@
       "time": "30 minutes",
       "level": "easy",
       "lang": "en",
-      "why": "A short illustrated zine on how to get good at not understanding things yet. Perfect first read."
+      "why": "A short illustrated zine on how to get good at not understanding things yet. It is one of the free ones on her site."
     },
     {
       "id": "python-download",
@@ -115,7 +91,7 @@
       "type": "video",
       "topic": "python",
       "cost": "Free",
-      "time": "About 15 hours total",
+      "time": "11 lectures, about 16 hours in total",
       "level": "easy",
       "lang": "en",
       "why": "The same lectures on YouTube, if you prefer watching there. Watching is not learning, so do the problem sets too."
@@ -127,10 +103,10 @@
       "type": "course",
       "topic": "python",
       "cost": "Free",
-      "time": "One week",
+      "time": "A lecture of 1 hour 45 minutes, plus 5 small problems",
       "level": "easy",
       "lang": "en",
-      "why": "Lecture, notes and problem set for your very first Python."
+      "why": "Your very first Python: the lecture, the notes and Problem Set 0, which has five small problems."
     },
     {
       "id": "cs50p-w1",
@@ -271,7 +247,7 @@
       "type": "video",
       "topic": "cpp",
       "cost": "Free",
-      "time": "A full playlist",
+      "time": "38 videos, about 11 hours in total",
       "level": "easy",
       "lang": "ar",
       "why": "The C++ course Egyptian CS students recommend most. In Arabic, from zero."
@@ -283,7 +259,7 @@
       "type": "video",
       "topic": "start",
       "cost": "Free",
-      "time": "A short playlist",
+      "time": "10 short videos, 78 minutes in total",
       "level": "easy",
       "lang": "ar",
       "why": "An Arabic primer on what programming is and how to approach learning it."
@@ -343,7 +319,7 @@
       "type": "video",
       "topic": "tools",
       "cost": "Free",
-      "time": "About 80 minutes",
+      "time": "81 minutes",
       "level": "easy",
       "lang": "en",
       "why": "From nothing to working on a shared project, in one sitting."
@@ -419,18 +395,6 @@
       "level": "easy",
       "lang": "en",
       "why": "An AI tutor built to nudge you toward the answer instead of handing it over."
-    },
-    {
-      "id": "jvns",
-      "name": "Julia Evans' blog",
-      "url": "https://jvns.ca/",
-      "type": "site",
-      "topic": "computers",
-      "cost": "Free",
-      "time": "10 min per post",
-      "level": "easy",
-      "lang": "en",
-      "why": "The friendliest writing anywhere on how computers, networks and the terminal really work."
     },
     {
       "id": "csunplugged",
@@ -535,7 +499,7 @@
       "type": "video",
       "topic": "thinking",
       "cost": "Free",
-      "time": "84 videos",
+      "time": "84 videos, about 24 hours in total",
       "level": "later",
       "lang": "en",
       "why": "Everything worked out by hand on a whiteboard. The standard rescue when an algorithms course gets hard."
@@ -559,10 +523,10 @@
       "type": "video",
       "topic": "maths",
       "cost": "Free",
-      "time": "About 3 hours total",
+      "time": "16 videos, about 3 hours in total",
       "level": "easy",
       "lang": "en",
-      "why": "Linear algebra as moving pictures. Three hours that make a whole course easier."
+      "why": "The full series. Three hours that make a whole university course easier."
     },
     {
       "id": "3b1b-calc",
@@ -571,34 +535,10 @@
       "type": "video",
       "topic": "maths",
       "cost": "Free",
-      "time": "About 3 hours total",
+      "time": "12 videos, about 3 hours in total",
       "level": "easy",
       "lang": "en",
-      "why": "What derivatives and integrals actually mean, shown visually."
-    },
-    {
-      "id": "prof-leonard",
-      "name": "Professor Leonard: Calculus 1",
-      "url": "https://www.youtube.com/playlist?list=PLF797E961509B4EB5",
-      "type": "video",
-      "topic": "maths",
-      "cost": "Free",
-      "time": "Full-length lectures",
-      "level": "easy",
-      "lang": "en",
-      "why": "Patient, complete classroom lectures. He explains everything three ways."
-    },
-    {
-      "id": "khan-linalg",
-      "name": "Khan Academy: Linear Algebra",
-      "url": "https://www.khanacademy.org/math/linear-algebra",
-      "type": "course",
-      "topic": "maths",
-      "cost": "Free",
-      "time": "Use as needed",
-      "level": "easy",
-      "lang": "en",
-      "why": "Vectors and matrices with worked practice."
+      "why": "The full series, once the first video has won you over."
     },
     {
       "id": "khan-math",
@@ -619,7 +559,7 @@
       "type": "book",
       "topic": "maths",
       "cost": "Free",
-      "time": "A semester",
+      "time": "A full textbook, for a whole semester",
       "level": "easy",
       "lang": "en",
       "why": "A discrete maths textbook written for first-years, with hundreds of exercises, hints and solutions."
@@ -638,39 +578,15 @@
     },
     {
       "id": "brehm-dm",
-      "name": "Kimberly Brehm: Discrete Math",
-      "url": "https://www.youtube.com/c/KimberlyBrehm",
+      "name": "Kimberly Brehm: Discrete Math I, entire course",
+      "url": "https://www.youtube.com/playlist?list=PLl-gb0E4MII28GykmtuBXNUNoej-vY5Rz",
       "type": "video",
       "topic": "maths",
       "cost": "Free",
-      "time": "A full course",
+      "time": "80 lessons, about 19 hours in total",
       "level": "easy",
       "lang": "en",
-      "why": "A full discrete maths course in short lectures, following the most common university textbook."
-    },
-    {
-      "id": "trevtutor",
-      "name": "TrevTutor",
-      "url": "https://www.youtube.com/@Trevtutor",
-      "type": "video",
-      "topic": "maths",
-      "cost": "Free",
-      "time": "Short videos",
-      "level": "easy",
-      "lang": "en",
-      "why": "Short worked examples in discrete maths: logic, sets, proofs, counting."
-    },
-    {
-      "id": "lague-computers",
-      "name": "Sebastian Lague: Exploring How Computers Work",
-      "url": "https://www.youtube.com/playlist?list=PLFt_AvWsXl0dPhqVsKt1Ni_46ARyiCGSq",
-      "type": "video",
-      "topic": "computers",
-      "cost": "Free",
-      "time": "About 2 hours total",
-      "level": "easy",
-      "lang": "en",
-      "why": "Calm, beautiful videos building up from logic gates to a working adder."
+      "why": "A complete discrete maths course in short lessons, following the most common university textbook. Use it alongside your own course, a lesson at a time."
     },
     {
       "id": "lague-sim",
@@ -695,30 +611,6 @@
       "level": "medium",
       "lang": "en",
       "why": "A working computer built from chips on breadboards, one wire at a time. You do not need to build it to learn from it."
-    },
-    {
-      "id": "core-dumped",
-      "name": "Core Dumped",
-      "url": "https://www.youtube.com/@CoreDumpped",
-      "type": "video",
-      "topic": "computers",
-      "cost": "Free",
-      "time": "10 to 25 min each",
-      "level": "medium",
-      "lang": "en",
-      "why": "Clean animated explanations of what a process is, how memory works and what the operating system does."
-    },
-    {
-      "id": "branch-education",
-      "name": "Branch Education",
-      "url": "https://www.youtube.com/@BranchEducation",
-      "type": "video",
-      "topic": "computers",
-      "cost": "Free",
-      "time": "15 to 25 min each",
-      "level": "easy",
-      "lang": "en",
-      "why": "Stunning 3D animations of real hardware: inside a chip, a CPU, a hard drive."
     },
     {
       "id": "nand2tetris",
@@ -755,18 +647,6 @@
       "level": "easy",
       "lang": "en",
       "why": "Interactive circuits from the most enjoyable book on how computers work. The book is worth asking for as a gift."
-    },
-    {
-      "id": "khan-internet",
-      "name": "Khan Academy: Computers and the Internet",
-      "url": "https://www.khanacademy.org/computing/computers-and-internet",
-      "type": "course",
-      "topic": "computers",
-      "cost": "Free",
-      "time": "A few weeks",
-      "level": "easy",
-      "lang": "en",
-      "why": "Binary, how computers are built, and how the internet moves data, with exercises."
     },
     {
       "id": "mdn-internet",
@@ -925,18 +805,6 @@
       "why": "The community behind Global Game Jam in Egypt, usually late January. Beginners and students are welcome."
     },
     {
-      "id": "egd-discord",
-      "name": "Egypt Game Developers on Discord",
-      "url": "https://discord.com/invite/egypt-game-developers-510391183449653269",
-      "type": "community",
-      "topic": "cairo",
-      "cost": "Free",
-      "time": "As you like",
-      "level": "easy",
-      "lang": "en",
-      "why": "A moderated Discord server for Egyptian game makers, artists and students."
-    },
-    {
       "id": "arab-dev-hub",
       "name": "Arab Dev Hub on Discord",
       "url": "https://discord.com/servers/arab-dev-hub-1291109037261197433",
@@ -1019,18 +887,6 @@
       "level": "easy",
       "lang": "ar",
       "why": "Very organised Arabic courses, with a written study plan for each one."
-    },
-    {
-      "id": "coding-train",
-      "name": "The Coding Train",
-      "url": "https://www.youtube.com/@TheCodingTrain",
-      "type": "video",
-      "topic": "side",
-      "cost": "Free",
-      "time": "Browse",
-      "level": "easy",
-      "lang": "en",
-      "why": "Joyful creative coding. He makes mistakes on camera and fixes them live, which is the most reassuring thing you can watch."
     },
     {
       "id": "p5js",
@@ -1127,6 +983,342 @@
       "level": "medium",
       "lang": "en",
       "why": "Classes and objects, introduced gently with clear examples."
+    },
+    {
+      "id": "khan-calc",
+      "name": "Khan Academy: Calculus 1",
+      "url": "https://www.khanacademy.org/math/calculus-1",
+      "type": "course",
+      "topic": "maths",
+      "cost": "Free",
+      "time": "Use as needed",
+      "level": "easy",
+      "lang": "en",
+      "why": "Short videos with practice questions. Ideal for patching one shaky topic."
+    },
+    {
+      "id": "cc-ep1",
+      "name": "Early Computing, Crash Course Computer Science #1",
+      "url": "https://www.youtube.com/watch?v=O5nskjZ_GoI",
+      "type": "video",
+      "topic": "start",
+      "cost": "Free",
+      "time": "12 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "Where computers came from and what problem they were built to solve. One episode is enough to get the flavour."
+    },
+    {
+      "id": "cc-ep3",
+      "name": "Boolean Logic and Logic Gates, Crash Course Computer Science #3",
+      "url": "https://www.youtube.com/watch?v=gI-qXk7XojA",
+      "type": "video",
+      "topic": "computers",
+      "cost": "Free",
+      "time": "10 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "How true and false become real circuits."
+    },
+    {
+      "id": "cc-ep4",
+      "name": "Representing Numbers and Letters with Binary, Crash Course Computer Science #4",
+      "url": "https://www.youtube.com/watch?v=1GSjbWt0c9M",
+      "type": "video",
+      "topic": "computers",
+      "cost": "Free",
+      "time": "11 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "How ones and zeros become numbers and text."
+    },
+    {
+      "id": "cc-ep7",
+      "name": "The Central Processing Unit, Crash Course Computer Science #7",
+      "url": "https://www.youtube.com/watch?v=FZGugFqdr60",
+      "type": "video",
+      "topic": "computers",
+      "cost": "Free",
+      "time": "12 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "A CPU built up piece by piece, then shown running a tiny program."
+    },
+    {
+      "id": "cc-ep8",
+      "name": "Instructions and Programs, Crash Course Computer Science #8",
+      "url": "https://www.youtube.com/watch?v=zltgXvg6r3k",
+      "type": "video",
+      "topic": "computers",
+      "cost": "Free",
+      "time": "11 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "What a program looks like from the CPU's point of view."
+    },
+    {
+      "id": "cc-ep19",
+      "name": "Memory and Storage, Crash Course Computer Science #19",
+      "url": "https://www.youtube.com/watch?v=TQCr9RV7twk",
+      "type": "video",
+      "topic": "computers",
+      "cost": "Free",
+      "time": "12 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "How computers remember things, from early memory to modern drives."
+    },
+    {
+      "id": "cc-ep18",
+      "name": "Operating Systems, Crash Course Computer Science #18",
+      "url": "https://www.youtube.com/watch?v=26QPDBe-NB8",
+      "type": "video",
+      "topic": "computers",
+      "cost": "Free",
+      "time": "14 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "Why operating systems exist and how they share one machine between many programs."
+    },
+    {
+      "id": "cc-ep29",
+      "name": "The Internet, Crash Course Computer Science #29",
+      "url": "https://www.youtube.com/watch?v=AEaKrq3SpW8",
+      "type": "video",
+      "topic": "computers",
+      "cost": "Free",
+      "time": "12 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "How data finds its way across the world."
+    },
+    {
+      "id": "core-dumped-memory",
+      "name": "Why Can't Programs Access Each Other's Memory? Core Dumped",
+      "url": "https://www.youtube.com/watch?v=Zmtxl7LZwjQ",
+      "type": "video",
+      "topic": "computers",
+      "cost": "Free",
+      "time": "15 minutes",
+      "level": "medium",
+      "lang": "en",
+      "why": "A clean animated look at how memory is shared out safely between programs."
+    },
+    {
+      "id": "core-dumped-multitask",
+      "name": "How Hardware Assists Software When Multitasking, Core Dumped",
+      "url": "https://www.youtube.com/watch?v=1HHeyUVz43k",
+      "type": "video",
+      "topic": "computers",
+      "cost": "Free",
+      "time": "13 minutes",
+      "level": "medium",
+      "lang": "en",
+      "why": "How one processor appears to run many programs at once."
+    },
+    {
+      "id": "lague-ep1",
+      "name": "Exploring How Computers Work, Sebastian Lague",
+      "url": "https://www.youtube.com/watch?v=QZwneRb-zqA",
+      "type": "video",
+      "topic": "computers",
+      "cost": "Free",
+      "time": "18 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "Logic gates built up into something that can add, calmly and beautifully explained."
+    },
+    {
+      "id": "3b1b-calc-1",
+      "name": "The essence of calculus, 3Blue1Brown",
+      "url": "https://www.youtube.com/watch?v=WUvTyaaNkzM",
+      "type": "video",
+      "topic": "maths",
+      "cost": "Free",
+      "time": "17 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "What calculus is really about, shown with moving pictures. Start here."
+    },
+    {
+      "id": "3b1b-linalg-1",
+      "name": "Vectors, Essence of linear algebra chapter 1, 3Blue1Brown",
+      "url": "https://www.youtube.com/watch?v=fNk_zzaMoSs",
+      "type": "video",
+      "topic": "maths",
+      "cost": "Free",
+      "time": "10 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "What a vector is, seen three ways. The first ten minutes of the series."
+    },
+    {
+      "id": "brehm-logic",
+      "name": "Propositions, Negations, Conjunctions and Disjunctions, Kimberly Brehm",
+      "url": "https://www.youtube.com/watch?v=A3Ffwsnad0k",
+      "type": "video",
+      "topic": "maths",
+      "cost": "Free",
+      "time": "20 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "The first lesson of a full discrete maths course. It covers exactly AND, OR and NOT."
+    },
+    {
+      "id": "trevtutor-sets",
+      "name": "Introduction to Set Theory, TrevTutor",
+      "url": "https://www.youtube.com/watch?v=tyDKR4FG3Yw",
+      "type": "video",
+      "topic": "maths",
+      "cost": "Free",
+      "time": "17 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "Sets explained from zero with worked examples."
+    },
+    {
+      "id": "levin-logic",
+      "name": "Levin's Discrete Mathematics: Logic and Proofs chapter",
+      "url": "https://discrete.openmathbooks.org/dmoi4/ch_logic.html",
+      "type": "book",
+      "topic": "maths",
+      "cost": "Free",
+      "time": "One chapter",
+      "level": "easy",
+      "lang": "en",
+      "why": "The logic chapter of a free textbook written for first-years, with exercises, hints and solutions."
+    },
+    {
+      "id": "levin-proofs",
+      "name": "Levin's Discrete Mathematics: Proofs section",
+      "url": "https://discrete.openmathbooks.org/dmoi4/sec_logic-proofs.html",
+      "type": "book",
+      "topic": "maths",
+      "cost": "Free",
+      "time": "One section",
+      "level": "medium",
+      "lang": "en",
+      "why": "A short, friendly section on how proofs work, with worked examples."
+    },
+    {
+      "id": "levin-counting",
+      "name": "Levin's Discrete Mathematics: Counting chapter",
+      "url": "https://discrete.openmathbooks.org/dmoi4/ch_counting.html",
+      "type": "book",
+      "topic": "maths",
+      "cost": "Free",
+      "time": "One chapter",
+      "level": "medium",
+      "lang": "en",
+      "why": "Counting done cleverly, with plenty of practice problems."
+    },
+    {
+      "id": "oakley-tedx",
+      "name": "Learning how to learn, Barbara Oakley at TEDx",
+      "url": "https://www.youtube.com/watch?v=O96fE1E-rf8",
+      "type": "video",
+      "topic": "start",
+      "cost": "Free",
+      "time": "About 18 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "A professor who failed maths at school explains how the brain actually learns, and how to stop procrastinating."
+    },
+    {
+      "id": "github-signup",
+      "name": "Create a GitHub account",
+      "url": "https://github.com/signup",
+      "type": "tool",
+      "topic": "start",
+      "cost": "Free",
+      "time": "5 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "Your login for the CS50 coding space, and later the home of all your projects. Pick a sensible username. Employers will see it."
+    },
+    {
+      "id": "cs50-dev",
+      "name": "cs50.dev, your coding space in the browser",
+      "url": "https://cs50.dev/",
+      "type": "tool",
+      "topic": "start",
+      "cost": "Free",
+      "time": "2 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "A full code editor with Python already installed, running in your browser. Log in with GitHub."
+    },
+    {
+      "id": "cs50p-short-vscode",
+      "name": "CS50P Short: Visual Studio Code for CS50",
+      "url": "https://cs50.harvard.edu/python/shorts/visual_studio_code_for_cs50/",
+      "type": "video",
+      "topic": "start",
+      "cost": "Free",
+      "time": "A short video",
+      "level": "easy",
+      "lang": "en",
+      "why": "A quick tour of the editor you will be using, so the screen stops looking scary."
+    },
+    {
+      "id": "cs50p-short-variables",
+      "name": "CS50P Short: Variables",
+      "url": "https://cs50.harvard.edu/python/shorts/variables/",
+      "type": "video",
+      "topic": "python",
+      "cost": "Free",
+      "time": "A short video",
+      "level": "easy",
+      "lang": "en",
+      "why": "The variables part of Week 0 on its own, for a second look."
+    },
+    {
+      "id": "cs50p-short-functions",
+      "name": "CS50P Short: Functions",
+      "url": "https://cs50.harvard.edu/python/shorts/functions/",
+      "type": "video",
+      "topic": "python",
+      "cost": "Free",
+      "time": "A short video",
+      "level": "easy",
+      "lang": "en",
+      "why": "The functions part of Week 0 on its own, for a second look."
+    },
+    {
+      "id": "cs50p-short-lists",
+      "name": "CS50P Short: Lists",
+      "url": "https://cs50.harvard.edu/python/shorts/lists/",
+      "type": "video",
+      "topic": "python",
+      "cost": "Free",
+      "time": "A short video",
+      "level": "easy",
+      "lang": "en",
+      "why": "Lists on their own, taken from Week 2."
+    },
+    {
+      "id": "cs50p-short-dicts",
+      "name": "CS50P Short: Dictionaries",
+      "url": "https://cs50.harvard.edu/python/shorts/dictionaries/",
+      "type": "video",
+      "topic": "python",
+      "cost": "Free",
+      "time": "A short video",
+      "level": "easy",
+      "lang": "en",
+      "why": "Dictionaries on their own, taken from Week 2."
+    },
+    {
+      "id": "coding-train-start",
+      "name": "The Coding Train: Start learning here!",
+      "url": "https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA",
+      "type": "video",
+      "topic": "side",
+      "cost": "Free",
+      "time": "36 videos, about 7 hours in total",
+      "level": "easy",
+      "lang": "en",
+      "why": "Drawing and animation with code for complete beginners. Begin with video 1.1, which is 13 minutes. It uses JavaScript, and it is for play."
     }
   ]
 }

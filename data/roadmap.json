@@ -22,19 +22,20 @@
           "why": "Every subject you will study is one piece of a single picture. Seeing the whole map first makes each piece feel less random.",
           "picks": [
             {
-              "ref": "crashcourse-cs",
+              "ref": "cc-ep1",
               "star": true
-            },
-            {
-              "ref": "roadmap-sh",
-              "star": false
             },
             {
               "ref": "elzero-pre",
               "star": false
+            },
+            {
+              "ref": "crashcourse-cs",
+              "star": false,
+              "note": "Optional. The full series is long, so treat it as a library, not homework."
             }
           ],
-          "boss": "Watch the first three Crash Course episodes. Then explain to someone at home what a computer is, in two sentences. If they nod, you win."
+          "boss": "Watch episode 1. Then explain to someone at home what a computer is, in two sentences. If they nod, you win."
         },
         {
           "id": "how-to-learn",
@@ -47,7 +48,7 @@
           "why": "University moves faster than school. A few study habits picked up now will save you hundreds of hours over four years.",
           "picks": [
             {
-              "ref": "lhtl",
+              "ref": "oakley-tedx",
               "star": true
             },
             {
@@ -68,12 +69,8 @@
           "why": "Knowing this early means you will not panic when it happens, and you will not neglect the subjects that quietly decide your options later.",
           "picks": [
             {
-              "ref": "fcishub",
-              "star": true
-            },
-            {
               "ref": "khan-math",
-              "star": false
+              "star": true
             }
           ],
           "boss": "Ask an older student how department choice works at your faculty and which grades matter. Write the answer on a sticky note where you will see it.",
@@ -82,56 +79,43 @@
               "line": "maths",
               "station": "calculus",
               "label": "Maths line: Calculus"
+            },
+            {
+              "line": "cairo",
+              "station": "campus-toolkit",
+              "label": "Cairo line: past exams for your faculty"
             }
           ]
         },
         {
           "id": "setup",
-          "name": "Set up your laptop",
-          "kind": "station",
+          "name": "Get your coding space",
+          "kind": "terminus",
           "level": "easy",
-          "intro": "Every wizard needs a wand. Yours is a laptop with Python and a code editor on it. Any reasonably modern laptop will do. You do not need a gaming machine with rainbow lights, whatever your cousin says.",
+          "intro": "Every wizard needs a wand. Good news: yours is free and lives in the browser. CS50 gives every student a ready-made coding space with Python and an editor already installed. You need a GitHub account to log in, and nothing else. No installing, and no rainbow gaming laptop, whatever your cousin says.",
           "ar": "مش لازم لابتوب جيمنج بينوّر ألوان.",
-          "example": "Setting up is like arranging your desk before studying. It feels like procrastination, and it is the one time it is not.",
-          "why": "From here on, everything you learn gets typed and run on your own machine, which is where real learning happens.",
+          "example": "Moving into a furnished flat. You can buy your own furniture later. Tonight you only need the key.",
+          "why": "Most beginners lose their first week fighting installers. This way you are writing code within ten minutes. Installing Python on your own laptop can wait, and the Tools line covers it when you are ready.",
           "picks": [
             {
-              "ref": "python-download",
+              "ref": "github-signup",
               "star": true
             },
             {
-              "ref": "vscode",
+              "ref": "cs50-dev",
               "star": false
             },
             {
-              "ref": "vscode-python",
+              "ref": "cs50p-short-vscode",
               "star": false
             }
           ],
-          "boss": "Install Python and VS Code. Then make your computer print your name. Take a photo. This is a historic moment."
-        },
-        {
-          "id": "first-program",
-          "name": "Your first program",
-          "kind": "terminus",
-          "level": "easy",
-          "intro": "Tradition says your first program makes the computer say 'Hello, World'. It is one line of code, it takes two seconds, and it means you are officially a programmer. A very junior one. It still counts.",
-          "ar": "يلا بينا!",
-          "example": "It is the programming version of a baby's first word. Nobody expects poetry. Everyone claps anyway.",
-          "why": "Starting is the hardest station on the whole map. After this one, you are no longer someone who is going to learn to code. You are someone who codes.",
-          "picks": [
-            {
-              "ref": "cs50p-w0",
-              "star": true,
-              "note": "CS50P gives you a ready-made coding space in the browser, so you can start before your laptop is set up."
-            }
-          ],
-          "boss": "Make Python greet you by name, ask how your day was, and then reply 'sounds exhausting' no matter what you type.",
+          "boss": "Create your GitHub account, open cs50.dev, and get the editor to load. Take a photo. This is a historic moment.",
           "connects": [
             {
               "line": "python",
               "station": "pick-course",
-              "label": "Python line: Pick your course"
+              "label": "Python line: Your course"
             }
           ]
         }
@@ -166,7 +150,25 @@
               "star": false
             }
           ],
-          "boss": "Create your CS50 account and submit the very first problem. Then tell someone you have started, so that quitting becomes embarrassing."
+          "boss": "Open the course page and read how it works. Then tell someone you have started, so that quitting becomes embarrassing."
+        },
+        {
+          "id": "first-program",
+          "name": "Your first program",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Tradition says your first program makes the computer say 'Hello, World'. It is one line of code, it takes two seconds, and it means you are officially a programmer. A very junior one. It still counts.",
+          "ar": "يلا بينا!",
+          "example": "It is the programming version of a baby's first word. Nobody expects poetry. Everyone claps anyway.",
+          "why": "Starting is the hardest station on the whole map. After this one, you are no longer someone who is going to learn to code. You are someone who codes.",
+          "picks": [
+            {
+              "ref": "cs50p-w0",
+              "star": true,
+              "note": "Week 0 is the whole of this station and the next two. Watch the lecture, then do the five problems."
+            }
+          ],
+          "boss": "Make Python greet you by name, ask how your day was, and then reply 'sounds exhausting' no matter what you type."
         },
         {
           "id": "variables",
@@ -179,8 +181,9 @@
           "why": "Every program ever written is boxes of data being moved around. This is the first brick, and it never stops being useful.",
           "picks": [
             {
-              "ref": "cs50p-w0",
-              "star": true
+              "ref": "cs50p-short-variables",
+              "star": true,
+              "note": "Already watched the Week 0 lecture? This short is the recap."
             }
           ],
           "boss": "Store your name, your age and your favourite food in three variables. Print one sentence that uses all three."
@@ -196,8 +199,9 @@
           "why": "Functions are how small programs grow into big ones without turning into spaghetti. Every serious program is functions calling functions.",
           "picks": [
             {
-              "ref": "cs50p-w0",
-              "star": true
+              "ref": "cs50p-short-functions",
+              "star": true,
+              "note": "Also part of Week 0. This short is the recap."
             }
           ],
           "boss": "Write a function make_tea(sugars) that returns a sentence. Call it with 0, 2 and 4 sugars. Feel free to judge the four."
@@ -258,11 +262,15 @@
           "intro": "A list is the queue at the bakery: everyone has a position. A dictionary is your phone contacts: you look up 'Mama' and get a number. Nobody has ever scrolled to 'contact number 37'.",
           "ar": "زي الأسامي اللي على موبايلك بالظبط.",
           "example": "A shopping list has an order. A menu is a dictionary: you look up 'koshari, large' and get a price.",
-          "why": "Real programs handle thousands of things, not three variables. These two containers cover most of what you will ever need.",
+          "why": "Real programs handle thousands of things, not three variables. These two containers cover most of what you will ever need. Both are taught inside Week 2, the same week as loops.",
           "picks": [
             {
-              "ref": "cs50p-w2",
+              "ref": "cs50p-short-lists",
               "star": true
+            },
+            {
+              "ref": "cs50p-short-dicts",
+              "star": false
             }
           ],
           "boss": "Build a tiny contact book: a dictionary of three friends and their favourite snacks. Ask for a name and print the snack."
@@ -355,37 +363,9 @@
           "boss": "Write a Cat class with a name and a mood. Create three cats. Make one of them knock something off a table."
         },
         {
-          "id": "bridge-cpp",
-          "name": "Bridge to C++",
-          "kind": "interchange",
-          "level": "medium",
-          "intro": "Your university course will most likely use C++, not Python. Do not panic. You already know the ideas: variables, conditions, loops, functions. C++ is the same ideas wearing a stricter uniform. It wants to know the type of everything, and it wants semicolons. So many semicolons.",
-          "ar": "نفس الأفكار بالظبط، بس لابسة يونيفورم.",
-          "example": "If Python is chatting with a friend, C++ is filling in a government form. Same information. More stamps.",
-          "why": "If you can already think in code, then in C++ you only fight the syntax, instead of fighting the syntax and the ideas at the same time.",
-          "picks": [
-            {
-              "ref": "adel-nasim-cpp",
-              "star": true
-            },
-            {
-              "ref": "learncpp",
-              "star": false
-            }
-          ],
-          "boss": "Take three small Python programs you already wrote and rewrite them in C++. Count the semicolons you forgot.",
-          "connects": [
-            {
-              "line": "cairo",
-              "station": "on-campus",
-              "label": "Cairo line: the campus community trains in C++"
-            }
-          ]
-        },
-        {
           "id": "first-project",
           "name": "Your first project",
-          "kind": "terminus",
+          "kind": "station",
           "level": "medium",
           "intro": "Your first project will be bad. Everyone's is. Build it anyway: a quiz about your family, a number guessing game, a tracker for your koshari budget.",
           "ar": "أول مشروع دايماً بيطلع وحش.. عادي خالص.",
@@ -408,6 +388,35 @@
               "line": "side",
               "station": "build",
               "label": "Side quests: Build something fun"
+            }
+          ]
+        },
+        {
+          "id": "bridge-cpp",
+          "name": "Later: Bridge to C++",
+          "kind": "terminus",
+          "level": "later",
+          "intro": "Not now. Finish CS50P first. Your university course will most likely use C++, and it usually starts after your first term, so there is time. When you get there you will already know the ideas: variables, conditions, loops, functions. C++ is the same ideas wearing a stricter uniform. It wants to know the type of everything, and it wants semicolons. So many semicolons.",
+          "ar": "نفس الأفكار بالظبط، بس لابسة يونيفورم.",
+          "example": "If Python is chatting with a friend, C++ is filling in a government form. Same information. More stamps.",
+          "why": "If you can already think in code, then in C++ you only fight the syntax, instead of fighting the syntax and the ideas at the same time.",
+          "picks": [
+            {
+              "ref": "adel-nasim-cpp",
+              "star": true,
+              "note": "A full course, so take it a few videos at a time."
+            },
+            {
+              "ref": "learncpp",
+              "star": false
+            }
+          ],
+          "boss": "When the time comes, take three small Python programs you already wrote and rewrite them in C++. Count the semicolons you forgot.",
+          "connects": [
+            {
+              "line": "cairo",
+              "station": "on-campus",
+              "label": "Cairo line: the campus community trains in C++"
             }
           ]
         }
@@ -448,7 +457,7 @@
           "name": "Your code editor",
           "kind": "station",
           "level": "easy",
-          "intro": "A code editor is a word processor for code, except it colours your text, finishes your sentences, and underlines mistakes before you make them. Learn five keyboard shortcuts and you will feel like a pianist.",
+          "intro": "CS50 gives you an editor in the browser, which is perfect for starting. At some point you will want one on your own laptop too. A code editor is a word processor for code, except it colours your text, finishes your sentences, and underlines mistakes before you make them. Learn five keyboard shortcuts and you will feel like a pianist.",
           "example": "A chef's knife. You could cook with a butter knife, and people have, but it is slow and sad.",
           "why": "You will spend thousands of hours in this window. Twenty minutes learning it properly pays you back every single day.",
           "picks": [
@@ -458,6 +467,10 @@
             },
             {
               "ref": "vscode-python",
+              "star": false
+            },
+            {
+              "ref": "python-download",
               "star": false
             }
           ],
@@ -601,10 +614,6 @@
             {
               "ref": "khan-algorithms",
               "star": false
-            },
-            {
-              "ref": "visualgo",
-              "star": false
             }
           ],
           "boss": "Shuffle a deck of cards and sort it two different ways. Count your moves each time. You have just compared two algorithms."
@@ -725,11 +734,11 @@
           "why": "Logic is the grammar underneath programming, circuits and proofs. Learn it once and it pays off in three places.",
           "picks": [
             {
-              "ref": "trevtutor",
+              "ref": "brehm-logic",
               "star": true
             },
             {
-              "ref": "levin-dm",
+              "ref": "levin-logic",
               "star": false
             }
           ],
@@ -757,12 +766,17 @@
           "why": "Writing proofs is where many first-years hit a wall. A little early practice turns the wall into a step.",
           "picks": [
             {
-              "ref": "book-of-proof",
+              "ref": "trevtutor-sets",
               "star": true
             },
             {
-              "ref": "levin-dm",
+              "ref": "levin-proofs",
               "star": false
+            },
+            {
+              "ref": "book-of-proof",
+              "star": false,
+              "note": "A whole book. Dip into the chapters on sets and on direct proof."
             }
           ],
           "boss": "Prove that the sum of two even numbers is always even. In words. No hand waving."
@@ -777,12 +791,8 @@
           "why": "Passwords, probability, and working out how long a program will take all come down to counting cleverly.",
           "picks": [
             {
-              "ref": "levin-dm",
+              "ref": "levin-counting",
               "star": true
-            },
-            {
-              "ref": "trevtutor",
-              "star": false
             }
           ],
           "boss": "How many 4-digit PINs are there? How many have no repeated digit? Work it out by reasoning, not by listing them."
@@ -797,11 +807,15 @@
           "why": "It appears early in most computer science degrees, and later it powers graphics, simulations and machine learning.",
           "picks": [
             {
-              "ref": "3b1b-calc",
+              "ref": "3b1b-calc-1",
               "star": true
             },
             {
-              "ref": "prof-leonard",
+              "ref": "3b1b-calc",
+              "star": false
+            },
+            {
+              "ref": "khan-calc",
               "star": false
             }
           ],
@@ -817,15 +831,15 @@
           "why": "If you ever go near graphics, data science or AI, this is the language they are all written in.",
           "picks": [
             {
-              "ref": "3b1b-linalg",
+              "ref": "3b1b-linalg-1",
               "star": true
             },
             {
-              "ref": "khan-linalg",
+              "ref": "3b1b-linalg",
               "star": false
             }
           ],
-          "boss": "Watch the first three chapters of Essence of Linear Algebra. Then describe what a matrix does without using the word 'numbers'."
+          "boss": "Watch the first three chapters of Essence of Linear Algebra, about 30 minutes in total. Then describe what a matrix does without using the word 'numbers'."
         },
         {
           "id": "discrete-journey",
@@ -869,7 +883,7 @@
           "why": "Every idea on this line is built from this one. It also explains why programmers find the number 256 oddly satisfying.",
           "picks": [
             {
-              "ref": "crashcourse-cs",
+              "ref": "cc-ep4",
               "star": true
             },
             {
@@ -889,11 +903,15 @@
           "why": "This is the exact spot where logic turns into a physical machine. It is one of the great 'oh!' moments in the whole subject.",
           "picks": [
             {
-              "ref": "lague-computers",
+              "ref": "lague-ep1",
               "star": true
             },
             {
               "ref": "lague-sim",
+              "star": false
+            },
+            {
+              "ref": "cc-ep3",
               "star": false
             }
           ],
@@ -916,12 +934,17 @@
           "why": "Once you see what the machine really does, programming languages stop looking like magic spells and start looking like conveniences.",
           "picks": [
             {
-              "ref": "ben-eater-8bit",
+              "ref": "cc-ep7",
               "star": true
             },
             {
-              "ref": "branch-education",
+              "ref": "cc-ep8",
               "star": false
+            },
+            {
+              "ref": "ben-eater-8bit",
+              "star": false,
+              "note": "A long and wonderful rabbit hole. Entirely optional."
             }
           ],
           "boss": "Watch how a CPU runs a program. Then explain 'fetch, decode, execute' using a kitchen as your metaphor."
@@ -936,11 +959,11 @@
           "why": "It explains why your laptop slows down with forty tabs open, and why programs have to save things.",
           "picks": [
             {
-              "ref": "core-dumped",
+              "ref": "cc-ep19",
               "star": true
             },
             {
-              "ref": "branch-education",
+              "ref": "core-dumped-memory",
               "star": false
             }
           ],
@@ -963,11 +986,11 @@
           "why": "Windows, macOS, Linux and Android are all the same idea. Knowing the idea makes every one of them less mysterious.",
           "picks": [
             {
-              "ref": "core-dumped",
+              "ref": "cc-ep18",
               "star": true
             },
             {
-              "ref": "jvns",
+              "ref": "core-dumped-multitask",
               "star": false
             }
           ],
@@ -988,7 +1011,7 @@
               "star": true
             },
             {
-              "ref": "khan-internet",
+              "ref": "cc-ep29",
               "star": false
             }
           ],
@@ -1199,10 +1222,6 @@
           "why": "Also worth knowing: company internships in Egypt mostly open from third year, and some programmes are only for graduates or school pupils. Save your application energy for the things on this line.",
           "picks": [
             {
-              "ref": "egd-discord",
-              "star": false
-            },
-            {
               "ref": "arab-dev-hub",
               "star": false
             },
@@ -1282,7 +1301,7 @@
           "why": "On the days when coursework feels grey, this is the reminder of why programming is fun.",
           "picks": [
             {
-              "ref": "coding-train",
+              "ref": "coding-train-start",
               "star": true
             },
             {
@@ -1305,10 +1324,6 @@
             {
               "ref": "rtc",
               "star": true
-            },
-            {
-              "ref": "wtm-cairo",
-              "star": false
             },
             {
               "ref": "sundas-khalid",

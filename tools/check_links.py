@@ -18,7 +18,7 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126 Safari/537.36")
 KNOWN_BOT_BLOCKERS = ("facebook.com", "linkedin.com", "leetcode.com", "exercism.org",
                       "projecteuler.net", "realpython.com", "huawei.com", "depi.gov.eg",
-                      "instagram.com")
+                      "instagram.com", "github.com/signup")
 
 
 def curl(url, body=False):

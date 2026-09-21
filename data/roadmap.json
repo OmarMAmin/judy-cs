@@ -1241,7 +1241,7 @@
       "code": "B",
       "name": "Bonus line: perks and passports",
       "color": "#B7791F",
-      "tagline": "Free things and open doors that exist only because you are a student. Most people hear about these in their final year. You are hearing about them now.",
+      "tagline": "Free tools, communities that back you, and trips somebody else pays for. Most people hear about these in their final year. You are hearing about them now.",
       "dashed": false,
       "bossLabel": "Your move",
       "stations": [
@@ -1287,6 +1287,160 @@
               "line": "tools",
               "station": "github",
               "label": "Tools line: GitHub"
+            }
+          ]
+        },
+        {
+          "id": "start-now",
+          "name": "Start now: become the person they pick",
+          "kind": "station",
+          "level": "easy",
+          "intro": "Every funded programme on this line picks people the same way. They read your grades, your English, what you did outside lectures, and what two lecturers say about you. None of that can be arranged in the week before a deadline. All of it can be built slowly, starting this term.",
+          "ar": "اللي يبدأ بدري يوصل بدري.",
+          "example": "Planting a tree. The best time was ten years ago. The second best time is first year.",
+          "why": "Real numbers from real programmes: one research internship asks for a GPA of 3.5 out of 4 and IELTS 6.5. A US exchange asks for good academic standing, community service and a TOEFL score of 61. A physics lab in Geneva asks for a reference letter and transcripts. The pattern is the same everywhere.",
+          "picks": [
+            {
+              "ref": "globalugrad",
+              "star": true,
+              "note": "Read this eligibility list as a template. Most programmes ask for some version of it."
+            },
+            {
+              "ref": "duolingo-english",
+              "star": false
+            }
+          ],
+          "boss": "Do these five this year. One: get a passport, and keep it valid. Two: protect your GPA from the very first term. Three: join one activity and stay long enough to lead something. Four: let two lecturers know your name for good reasons. Five: keep a folder with your CV in English, transcripts and an enrolment letter, ready to send.",
+          "connects": [
+            {
+              "line": "cairo",
+              "station": "pick-one",
+              "label": "Cairo line: Pick ONE student activity"
+            }
+          ]
+        },
+        {
+          "id": "women-in-tech",
+          "name": "Programmes that want women like you",
+          "kind": "station",
+          "level": "easy",
+          "intro": "You will sometimes be one of only a few women in the room. You will never be the only woman in the field. Large communities exist to back women in computing with mentors, events and money, and their eligibility rules are about what you study and where, never about what you wear. You do not need to change anything about yourself to apply to any of them.",
+          "ar": "إنتي مش لوحدك.. والكرسي ده بتاعك.",
+          "example": "Finding the table at a wedding where everyone already gets your jokes.",
+          "why": "Mentors and peers who have walked the same road make the hard weeks shorter, and they open doors you did not know existed. Some famous programmes are closed to you for now: TechGirls is for ages 15 to 17, and several well-known scholarships are for students in the United States only. This list keeps to ones worth your time.",
+          "picks": [
+            {
+              "ref": "wtm-global",
+              "star": true
+            },
+            {
+              "ref": "acmw-scholarships",
+              "star": false,
+              "note": "The one here that pays for travel."
+            },
+            {
+              "ref": "google-scholarships",
+              "star": false
+            },
+            {
+              "ref": "wids",
+              "star": false
+            },
+            {
+              "ref": "rtc",
+              "star": false
+            },
+            {
+              "ref": "arabwic",
+              "star": false
+            }
+          ],
+          "boss": "Join Women Techmakers this week, then go to one event by the Cairo chapter. Put the Google scholarship page in your calendar to check every September.",
+          "connects": [
+            {
+              "line": "cairo",
+              "station": "cairo-scene",
+              "label": "Cairo line: Women Techmakers Cairo"
+            }
+          ]
+        },
+        {
+          "id": "trips-early",
+          "name": "Trips somebody else pays for",
+          "kind": "station",
+          "level": "medium",
+          "intro": "There are programmes whose whole job is to put students on a plane: a semester at an American university, a hackathon in Abu Dhabi, a conference abroad. They are real, they are competitive, and most students never apply because they never hear of them. A warning that matters: plenty of 'fully funded youth conferences' online charge large fees. If it asks you to pay to be selected, close the tab.",
+          "ar": "السفر ببلاش أحلى سفر.",
+          "example": "A lottery where the ticket is free, and the more you prepare, the more tickets you hold.",
+          "why": "Beyond the trip itself, one of these on your CV changes how every later application is read. Be honest with yourself about AIESEC: joining as a member is free and teaches leadership, but going abroad with it usually means a programme fee plus your own flights, so it is an experience you buy, not a sponsorship.",
+          "picks": [
+            {
+              "ref": "globalugrad",
+              "star": true,
+              "note": "The big one, and it is fully funded. Applications usually open around November to December. Applying in your second year is the safe window, because you must still have a full year left when you come back."
+            },
+            {
+              "ref": "us-embassy-exchanges",
+              "star": false,
+              "note": "Global UGRAD is announced here for Egypt. Check it from late October."
+            },
+            {
+              "ref": "acmw-scholarships",
+              "star": false
+            },
+            {
+              "ref": "nyuad-hackathon",
+              "star": false
+            },
+            {
+              "ref": "aiesec-egypt",
+              "star": false,
+              "note": "Ask the members at the Ain Shams committee what an exchange really costs before you commit."
+            }
+          ],
+          "boss": "Put a reminder in your calendar for late October: open the US Embassy exchanges page and check whether Global UGRAD has opened. Then read its eligibility list and note what you are missing.",
+          "connects": [
+            {
+              "line": "perks",
+              "station": "start-now",
+              "label": "Bonus line: Start now"
+            }
+          ]
+        },
+        {
+          "id": "trips-later",
+          "name": "Later: the big funded summers",
+          "kind": "terminus",
+          "level": "later",
+          "intro": "From third year, a different league opens up: research internships that fly you out, house you and pay you. They are hard to get and completely possible. People from Egyptian public universities get them every year, and what they have in common is that they started preparing early.",
+          "ar": "لسه بدري.. بس حطيها في دماغك.",
+          "example": "Spotting a mountain on the horizon. You are not climbing it today. It is still good to know which direction it is in.",
+          "why": "Students who hear about these in their final year wish they had heard earlier. The requirements are strict and public, so you can aim at them from now: a GPA of 3.5 out of 4 for one, six completed semesters for another, some German for a third.",
+          "picks": [
+            {
+              "ref": "kaust-vsrp",
+              "star": true
+            },
+            {
+              "ref": "cern-summer",
+              "star": false
+            },
+            {
+              "ref": "daad-egypt",
+              "star": false
+            },
+            {
+              "ref": "ghc",
+              "star": false,
+              "note": "A conference, not an internship. Student scholarships exist."
+            }
+          ],
+          "boss": "Read the requirements for one of these. Write down the single thing you could start doing this year that would help.",
+          "connects": [
+            {
+              "line": "perks",
+              "station": "start-now",
+              "label": "Bonus line: Start now"
             }
           ]
         }
@@ -1351,7 +1505,7 @@
         {
           "id": "creative-coding",
           "name": "Creative coding",
-          "kind": "station",
+          "kind": "terminus",
           "level": "easy",
           "intro": "Code is also a paintbrush. People use it to make art, music, animations and simulations of things that have no business being simulated.",
           "example": "Doodling in the margins, except the doodle moves, reacts to your mouse, and occasionally becomes a galaxy.",
@@ -1367,54 +1521,6 @@
             }
           ],
           "boss": "Follow one Coding Train challenge from start to finish. Then change the colours and one rule, and make it yours."
-        },
-        {
-          "id": "women-in-tech",
-          "name": "Women in tech communities",
-          "kind": "station",
-          "level": "easy",
-          "intro": "You will sometimes be one of only a few women in the room. You will never be the only woman in the field. There are large, friendly communities full of people a few steps ahead of you, and they would love to have you.",
-          "ar": "إنتي مش لوحدك.",
-          "example": "Finding the table at a wedding where everyone already gets your jokes.",
-          "why": "Mentors and peers who have walked the same road make the hard weeks shorter, and they open doors you did not know existed.",
-          "picks": [
-            {
-              "ref": "rtc",
-              "star": true
-            },
-            {
-              "ref": "sundas-khalid",
-              "star": false
-            }
-          ],
-          "boss": "Join one community and read what people are talking about this week.",
-          "connects": [
-            {
-              "line": "cairo",
-              "station": "cairo-scene",
-              "label": "Cairo line: The Cairo tech scene"
-            }
-          ]
-        },
-        {
-          "id": "big-dreams",
-          "name": "Scholarships and big dreams",
-          "kind": "terminus",
-          "level": "later",
-          "intro": "Somewhere out there are conferences, scholarships and programmes designed for students exactly like you. Most want you a little further along. Knowing they exist now means you can quietly aim at them.",
-          "example": "Spotting a mountain on the horizon. You are not climbing it today. It is still good to know which direction it is in.",
-          "why": "Students who hear about these in their final year wish they had heard earlier. Now you have.",
-          "picks": [
-            {
-              "ref": "google-scholarships",
-              "star": true
-            },
-            {
-              "ref": "ghc",
-              "star": false
-            }
-          ],
-          "boss": "Read the requirements for one scholarship. Note the one thing you could start doing this year that would help."
         }
       ]
     }

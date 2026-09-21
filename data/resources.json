@@ -901,35 +901,23 @@
       "why": "Draw and animate with code in your browser. It is JavaScript, and it is for play."
     },
     {
-      "id": "sundas-khalid",
-      "name": "Sundas Khalid",
-      "url": "https://www.youtube.com/@SundasKhalid",
-      "type": "video",
-      "topic": "side",
-      "cost": "Free",
-      "time": "Browse",
-      "level": "easy",
-      "lang": "en",
-      "why": "A self-taught data scientist on learning tech skills and building a career, from a non-traditional background."
-    },
-    {
       "id": "rtc",
       "name": "Rewriting the Code",
       "url": "https://rewritingthecode.org/",
       "type": "community",
-      "topic": "side",
+      "topic": "perks",
       "cost": "Free",
       "time": "As you like",
       "level": "easy",
       "lang": "en",
-      "why": "A large international community for university women in tech, with mentorship and events. Open to first-years."
+      "why": "A large, free community for university women in tech, with mentorship and career events. Its student network centres on the United States, Canada, the United Kingdom and Ireland, so check whether it accepts members studying in Egypt."
     },
     {
       "id": "ghc",
       "name": "Grace Hopper Celebration",
       "url": "https://ghc.anitab.org/",
       "type": "event",
-      "topic": "side",
+      "topic": "perks",
       "cost": "Paid, with student scholarships",
       "time": "Yearly",
       "level": "later",
@@ -941,12 +929,12 @@
       "name": "Google scholarships",
       "url": "https://buildyourfuture.withgoogle.com/scholarships",
       "type": "program",
-      "topic": "side",
+      "topic": "perks",
       "cost": "Free to apply",
       "time": "Yearly",
       "level": "later",
       "lang": "en",
-      "why": "Google's scholarships for computer science students, including a Europe, Middle East and Africa edition."
+      "why": "Google's scholarships for computer science students, including an edition for Europe, the Middle East and Africa aimed at women. Rules on country and year of study change each cycle, and the page would not load for an automated check, so read the eligibility list carefully."
     },
     {
       "id": "cs50p-w4",
@@ -1367,6 +1355,150 @@
       "level": "easy",
       "lang": "en",
       "why": "Google's student offer for Egypt: a year of the paid Gemini plan with extra storage."
+    },
+    {
+      "id": "globalugrad",
+      "name": "Global UGRAD: a funded semester in the United States",
+      "url": "https://www.globalugrad.org/student-eligibility/",
+      "type": "program",
+      "topic": "perks",
+      "cost": "Fully funded",
+      "time": "One semester",
+      "level": "medium",
+      "lang": "en",
+      "why": "A US government exchange that lists Egypt as a participating country. It covers flights, tuition, housing, meals and a monthly allowance. You must be 18, a full-time undergraduate in good standing, and have at least one full year of study left when you return."
+    },
+    {
+      "id": "us-embassy-exchanges",
+      "name": "US Embassy in Cairo: exchange opportunities",
+      "url": "https://eg.usembassy.gov/education/exchange-opportunities/",
+      "type": "site",
+      "topic": "perks",
+      "cost": "Free",
+      "time": "Check monthly",
+      "level": "easy",
+      "lang": "en",
+      "why": "Where the embassy announces its exchange programmes for Egyptians, with deadlines. Global UGRAD is run through the embassy in Egypt."
+    },
+    {
+      "id": "acmw-scholarships",
+      "name": "ACM-W scholarships for women students in computing",
+      "url": "https://women.acm.org/scholarships/",
+      "type": "program",
+      "topic": "perks",
+      "cost": "Up to 1,200 dollars of travel support",
+      "time": "A short application",
+      "level": "medium",
+      "lang": "en",
+      "why": "Money for women studying computing to attend a computer science research conference: up to 600 dollars within your continent and up to 1,200 between continents. You do not need to be presenting a paper. Applications are reviewed six times a year."
+    },
+    {
+      "id": "nyuad-hackathon",
+      "name": "NYU Abu Dhabi Hackathon for Social Good in the Arab World",
+      "url": "https://hackathon.nyuad.nyu.edu/",
+      "type": "event",
+      "topic": "perks",
+      "cost": "Check the apply page",
+      "time": "A few days",
+      "level": "medium",
+      "lang": "en",
+      "why": "An international student hackathon in Abu Dhabi focused on the Arab world. When checked in September 2026 the next in-person edition was set for April 2027. Read the apply page for who is eligible and what costs are covered."
+    },
+    {
+      "id": "aiesec-egypt",
+      "name": "AIESEC in Egypt",
+      "url": "https://aiesec.org.eg/",
+      "type": "community",
+      "topic": "perks",
+      "cost": "Membership is free, going abroad is not",
+      "time": "Varies",
+      "level": "easy",
+      "lang": "en",
+      "why": "The world's largest youth-run organisation. Two ways in: join a local committee as a member for leadership experience, or go abroad on a volunteering or internship exchange."
+    },
+    {
+      "id": "kaust-vsrp",
+      "name": "KAUST Visiting Student Research Program",
+      "url": "https://admissions.kaust.edu.sa/study/internships",
+      "type": "program",
+      "topic": "perks",
+      "cost": "Fully funded",
+      "time": "3 to 6 months",
+      "level": "later",
+      "lang": "en",
+      "why": "A research internship in Saudi Arabia for students in third year or above. It pays flights, private housing and 1,000 dollars a month. It asks for a GPA of 3.5 out of 4 and IELTS 6.5 or equivalent."
+    },
+    {
+      "id": "cern-summer",
+      "name": "CERN Summer Student Programme",
+      "url": "https://careers.cern/programmes/summer-studentship/",
+      "type": "program",
+      "topic": "perks",
+      "cost": "Paid, with travel support",
+      "time": "8 to 13 weeks",
+      "level": "later",
+      "lang": "en",
+      "why": "A summer in Geneva working on a real project at CERN, open to computer science students who have completed at least six semesters. It pays a daily allowance and may cover travel. Places for students from non-member countries exist but are limited."
+    },
+    {
+      "id": "daad-egypt",
+      "name": "DAAD Egypt scholarship database",
+      "url": "https://www.daad-egypt.org/en/find-funding/scholarship-database/",
+      "type": "site",
+      "topic": "perks",
+      "cost": "Free to search",
+      "time": "Browse",
+      "level": "later",
+      "lang": "en",
+      "why": "Germany's academic exchange service in Cairo. Its university summer course grants are open to undergraduates in all subjects, and they expect some German."
+    },
+    {
+      "id": "duolingo-english",
+      "name": "Duolingo English Test: free practice test",
+      "url": "https://englishtest.duolingo.com/",
+      "type": "tool",
+      "topic": "perks",
+      "cost": "Practice is free, the real test is paid",
+      "time": "1 hour",
+      "level": "easy",
+      "lang": "en",
+      "why": "A quick way to see where your English stands. Global UGRAD accepts a Duolingo score of 100 or a TOEFL score of 61. Scores are usually valid for two years, so practise now and take the real test when an application needs it."
+    },
+    {
+      "id": "wtm-global",
+      "name": "Women Techmakers",
+      "url": "https://www.technovation.org/women-techmakers",
+      "type": "community",
+      "topic": "perks",
+      "cost": "Free",
+      "time": "As you like",
+      "level": "easy",
+      "lang": "en",
+      "why": "A global network for women in technology, now run by Technovation. Free membership brings event invitations and professional development. The Cairo chapter on the Cairo line is the local face of it."
+    },
+    {
+      "id": "wids",
+      "name": "Women in Data Science Worldwide",
+      "url": "https://www.widsworldwide.org/",
+      "type": "community",
+      "topic": "perks",
+      "cost": "Free events",
+      "time": "As you like",
+      "level": "medium",
+      "lang": "en",
+      "why": "Conferences, workshops and a yearly beginner-friendly data challenge, run by local ambassadors around the world, including Africa and the Middle East."
+    },
+    {
+      "id": "arabwic",
+      "name": "Arab Women in Computing",
+      "url": "https://arabwic.org/",
+      "type": "community",
+      "topic": "perks",
+      "cost": "Free",
+      "time": "As you like",
+      "level": "easy",
+      "lang": "en",
+      "why": "A network of more than 6,000 Arab women in computing, with chapters in 19 countries. Its site lists conferences up to 2019, so check that the Egypt chapter is active before counting on it."
     }
   ]
 }

@@ -1499,6 +1499,54 @@
       "level": "easy",
       "lang": "en",
       "why": "A network of more than 6,000 Arab women in computing, with chapters in 19 countries. Its site lists conferences up to 2019, so check that the Egypt chapter is active before counting on it."
+    },
+    {
+      "id": "atlassian-pm-video",
+      "name": "What do product managers do? Atlassian",
+      "url": "https://www.youtube.com/watch?v=yUOC-Y0f5ZQ",
+      "type": "video",
+      "topic": "side",
+      "cost": "Free",
+      "time": "5 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "A five-minute answer to the question. Watch this before anything else."
+    },
+    {
+      "id": "atlassian-pm-guide",
+      "name": "What is product management? Atlassian's guide",
+      "url": "https://www.atlassian.com/agile/product-management",
+      "type": "site",
+      "topic": "side",
+      "cost": "Free",
+      "time": "30 minutes",
+      "level": "easy",
+      "lang": "en",
+      "why": "A clear written guide to the role: what a product manager is responsible for, the skills, and how they work with engineers and designers."
+    },
+    {
+      "id": "lenny",
+      "name": "Lenny's Newsletter and podcast",
+      "url": "https://www.lennysnewsletter.com/",
+      "type": "site",
+      "topic": "side",
+      "cost": "Free posts, paid extras",
+      "time": "Browse",
+      "level": "medium",
+      "lang": "en",
+      "why": "Where working product managers learn from each other. Read the free posts, and listen to an episode when a topic catches you."
+    },
+    {
+      "id": "uva-pm-course",
+      "name": "Digital Product Management: Modern Fundamentals, University of Virginia on Coursera",
+      "url": "https://www.coursera.org/learn/uva-darden-digital-product-management",
+      "type": "course",
+      "topic": "side",
+      "cost": "Free to audit",
+      "time": "4 modules, about 10 hours",
+      "level": "medium",
+      "lang": "en",
+      "why": "A beginner-level university course on how product managers decide what to build and how to focus a team."
     }
   ]
 }

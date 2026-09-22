@@ -1505,7 +1505,7 @@
         {
           "id": "creative-coding",
           "name": "Creative coding",
-          "kind": "terminus",
+          "kind": "station",
           "level": "easy",
           "intro": "Code is also a paintbrush. People use it to make art, music, animations and simulations of things that have no business being simulated.",
           "example": "Doodling in the margins, except the doodle moves, reacts to your mouse, and occasionally becomes a galaxy.",
@@ -1521,6 +1521,41 @@
             }
           ],
           "boss": "Follow one Coding Train challenge from start to finish. Then change the colours and one rule, and make it yours."
+        },
+        {
+          "id": "product",
+          "name": "Product management: deciding what to build",
+          "kind": "terminus",
+          "level": "easy",
+          "intro": "Engineers answer 'how do we build it?'. Product managers answer the question before that: 'what should we build, for whom, and why this instead of that?'. No code required, just curiosity, people skills and the courage to say no to a nice idea because a better one exists. Many computer science graduates end up loving this job, and almost none of them hear about it in first year.",
+          "ar": "الفكرة الحلوة كتير.. اللي بيفرق مين يختار صح.",
+          "example": "A wedding planner does not cook, sew or play the oud. They decide what the day needs, in what order, within the budget, and they keep the chef and the band talking to each other.",
+          "why": "Even if you stay an engineer forever, thinking like a product manager makes you the engineer everyone wants: the one who asks who the feature is for before writing it. And if you find you enjoy the deciding more than the typing, this is a whole career, and studying computer science is one of the best ways into it.",
+          "picks": [
+            {
+              "ref": "atlassian-pm-video",
+              "star": true
+            },
+            {
+              "ref": "atlassian-pm-guide"
+            },
+            {
+              "ref": "uva-pm-course",
+              "note": "Choose the free audit option. The certificate is the only paid part."
+            },
+            {
+              "ref": "lenny",
+              "note": "For when the first three have hooked you."
+            }
+          ],
+          "boss": "Pick an app you use every day. Write one page: who it is for, the one thing it does best, one thing it does badly, and the single change you would make first and why. Congratulations, that is a product review, and it is most of the job.",
+          "connects": [
+            {
+              "line": "python",
+              "station": "first-project",
+              "label": "Python line: Your first project, now with a 'who is it for?'"
+            }
+          ]
         }
       ]
     }
